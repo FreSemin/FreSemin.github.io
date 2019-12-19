@@ -1,0 +1,385 @@
+@media screen and (max-width: 1180px) {
+  .about {
+    height: auto;
+  }
+  .about_img img {
+    width: 100%;
+  }
+  .about_inf h3 {
+    font-size: 1.7rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .about_inf li {
+    font-size: 16px;
+  }
+  .about_inf p {
+    font-size: 1.2rem;
+  }
+  .team_card {
+    position: relative;
+    width: 30%;
+    padding: 0 5px;
+    margin: 0 10px 1.5rem 10px;
+  }
+
+  .services {
+    height: auto;
+  }
+
+  .pricing {
+    height: auto;
+  }
+
+  /* subs menu */
+  .sub_l1 {
+    position: static;
+  }
+
+  .sub_l2 {
+    position: static;
+  }
+  /* subs menu */
+}
+
+/* Тут все переходит в центр и растягивается 
+  и ширина по 2 блока на экране */
+@media screen and (max-width: 990px) {
+  /* Header */
+
+  .menu_toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+  }
+  .menu_toggle:before {
+    transition: 2s;
+    content: "\f0c9";
+    font-family: "icomoon";
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+  }
+  .menu_toggle.active:before {
+    content: "\e5cd";
+    font-family: "icomoon";
+    color: #6c757d;
+  }
+  .menu_toggle.active {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 5;
+    color: #6c757d;
+  }
+  .menu_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #fff;
+    height: 100vh;
+    -webkit-box-shadow: -6px 1px 11px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -6px 1px 11px 0px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    padding: 2em 0;
+    position: absolute;
+    right: -100%;
+    top: 0px;
+    opacity: 1;
+    transition: 0.8s ease-in all;
+    -webkit-transition: 0.8s ease-in all;
+    -moz-transition: 0.8s ease-in all;
+    -ms-transition: 0.8s ease-in all;
+    -o-transition: 0.8s ease-in all;
+  }
+  .menu_list.active {
+    right: 0px;
+    opacity: 1;
+  }
+  .menu_list > li {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .menu_list > li > a {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 30px;
+    padding: 20px 0px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+  }
+  .menu_list > li > .active {
+    color: #007bff;
+  }
+  .menu_list > li > a:hover {
+    color: #007bff;
+  }
+  .menu_list > li > .active {
+    color: #007bff;
+  }
+
+  /* Header end */
+
+  /* About */
+  .about_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 2em 0 0 0;
+  }
+  .about_img {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .about_img:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+  }
+  .about_inf {
+    padding: 5em 0;
+    width: 90%;
+    margin: 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* About end */
+
+  /* Team */
+  .team_inf p {
+    margin: 0 25%;
+    width: 50%;
+    color: #6c757d;
+  }
+  .team_card {
+    position: relative;
+    width: 40%;
+    padding: 0 5px;
+  }
+  /* Team end */
+
+  /*  Portfolio */
+  .g_p_el {
+    width: 30%;
+  }
+  /*  Portfolio end */
+
+  /* Services */
+  .services_card {
+    width: 45%;
+  }
+  /* Services end */
+
+  /* Testimonials */
+  .testimonials {
+    width: 100%;
+    padding: 5em 0;
+    border: none;
+  }
+  .testimonial_text p {
+    font-size: 1.5rem;
+  }
+  /* Testimonials end */
+
+  /* Pricing */
+  .pricing_cards {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .pricing_card {
+    width: 40%;
+    margin: 0 5% 1.5rem 5%;
+  }
+  /* Pricing end */
+
+  /* Question */
+  .questions_columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* Question end */
+
+  /* Blog */
+  .news_cards {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .news_card {
+    width: 40%;
+    margin: 0 5% 1.5rem 5%;
+  }
+  /* Blog end */
+
+  /* Contact */
+  .contact_cards {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .contact_card {
+    padding: 30px;
+  }
+  /* Contact end */
+}
+
+/* По одному элементу 1 и растягивается
+  на центр */
+@media screen and (max-width: 762px) {
+  /* Header */
+
+  /* header end */
+
+  /* About */
+  .about_img:after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    right: -30px;
+    bottom: -40px;
+    z-index: -1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .about_img img {
+    width: 100%;
+    height: auto;
+  }
+  /* About end */
+
+  /* Team */
+  .team_inf p {
+    margin: 0 5%;
+    width: 90%;
+  }
+  .team_card {
+    width: 100%;
+    padding: 0 5px;
+  }
+  /* Team end */
+
+  /*  Portfolio */
+  .g_p_el {
+    width: 100%;
+  }
+  /*  Portfolio end */
+
+  /* Services */
+  .services_card {
+    width: 100%;
+    margin: 0 15px 2rem 15px;
+  }
+  /* Services end */
+
+  /* Testimonials */
+
+  /* Testimonials end */
+
+  /* Pricing */
+  .pricing_card {
+    width: 100%;
+    /* margin: 0 5% 1.5rem 5%; */
+  }
+  /* Pricing end */
+
+  /* Question */
+
+  /* Question end */
+
+  /* Blog */
+  .news_card {
+    width: 90%;
+    padding: 0;
+  }
+  .news_img {
+    text-align: center;
+  }
+  /* Blog end */
+
+  /* Contact */
+  .contact_cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .contact_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .contact_cont1 {
+    width: 100%;
+    margin: 0 0 2em 0;
+  }
+  /* Contact end */
+
+  /* Footer */
+  .footer_boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .footer_box {
+    width: 100%;
+    padding: 10px;
+  }
+}
