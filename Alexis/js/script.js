@@ -15,13 +15,9 @@ window.onscroll = function() {
 };
 
 function classToggle() {
-  {
     this.classList.toggle("menu_toggle");
-  }
-  {
     this.classList.toggle("menu_active_2");
     document.querySelector(".main_menu").classList.toggle("menu_active");
-  }
 }
 
 document.querySelector(".menu_toggle").addEventListener("click", classToggle);

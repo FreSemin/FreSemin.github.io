@@ -30,47 +30,6 @@
   .menu_active {
     display: block;
   }
-  //     .menu_active {
-  //         display: block;
-  //         position: fixed;
-  //         width: 100%;
-  //         height: 100vh;
-  //         top: 70px;
-  //         left: 0;
-  //         transition: 0.8s;
-  //         -webkit-transition: 0.8s;
-  //         -moz-transition: 0.8s;
-  //         -ms-transition: 0.8s;
-  //         -o-transition: 0.8s;
-
-  //         .menu_list{
-  //             position: absolute;
-  //             width: 100%;
-  //             height: 92vh;
-  //             flex-direction: column;
-  //             align-items: center;
-  //             justify-content: center;
-  //             transition: 0.8s all;
-  //             -webkit-transition: 0.8s all;
-  //             -moz-transition: 0.8s all;
-  //             -ms-transition: 0.8s all;
-  //             -o-transition: 0.8s all;
-
-  //         li{
-  //             width: 100%;
-  //             height: 100%;
-  //             background: #fff;
-  //             margin: 0;
-  //             display: flex;
-  //             justify-content: center;
-  //             align-items: center;
-
-  //             a{
-  //                 padding-bottom: 0;
-  //             }
-  //         }
-  //     }
-  // }
   .header_banner {
     width: 80%;
     margin: 0 10%;
@@ -269,7 +228,7 @@
     align-items: center;
   }
   .selectUs_box {
-    width: 45%;
+    width: 55%;
   }
   .selectUs_box_title {
     margin-bottom: 2em;
@@ -366,12 +325,12 @@
 
   .focus_card {
     padding: 40px 15px;
-    width: 70%;
+    width: 65%;
   }
   // focus
 
   .single_member {
-    width: 70%;
+    width: 65%;
   }
   // team
 
@@ -412,7 +371,7 @@
   // work
 
   .selectUs_box {
-    width: 70%;
+    width: 65%;
   }
   .selectUs_link_box {
     display: -webkit-box;
