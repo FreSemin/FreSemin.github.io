@@ -448,7 +448,7 @@ header {
 .project_card {
   position: relative;
   width: 33.3%;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: 0.8s;
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
@@ -460,13 +460,13 @@ header {
 }
 .project_text:hover .project_title {
   -webkit-animation: move 1s ;
-          animation: move 1s ;
+  animation: move 1s ;
   opacity: 1;
-  transition: 1s ease-in-out;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -ms-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
+  transition: 2s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -ms-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
 }
 .project_text {
   position: absolute;
@@ -497,9 +497,18 @@ header {
   -o-transition: 0.8s;
 }
 .project_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   opacity: 0;
   text-align: center;
   color: #fff;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .project_title h6 {
   font-family: "Playfair Display", serif;
@@ -513,8 +522,22 @@ header {
   font-weight: 600;
   text-transform: uppercase;
 }
-.project_img > div {
+
+.project_img a {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.project_img div {
   height: 375px;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -738,11 +761,11 @@ footer {
 @keyframes move {
   0% {
     opacity: 0;
-    transform: translateY(50%);
-    -webkit-transform: translateY(50%);
-    -moz-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    -o-transform: translateY(50%);
+    transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
 }
   /* 15% {
     opacity: 0.35;
@@ -762,10 +785,10 @@ footer {
 } */
   100% {
     opacity: 1;
-    transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-    -moz-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    -o-transform: translateY(0%);
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
 }
 }
