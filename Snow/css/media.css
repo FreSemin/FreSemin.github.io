@@ -134,6 +134,9 @@
     -webkit-box-direction: normal;
     flex-direction: column;
   }
+  .features_card {
+    width: 100%;
+  }
 
   .contact_box_row_first {
     -webkit-box-orient: vertical;
