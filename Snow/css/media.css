@@ -30,6 +30,9 @@
   .active {
     display: block;
   }
+  .not-active {
+    display: none;
+  }
   .menu_close {
     display: -webkit-box;
     display: flex;

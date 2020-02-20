@@ -22,6 +22,9 @@ function classToggle() {
   document.querySelector(".menu").classList.toggle("mobile_menu");
   document.querySelector(".main-menu").classList.toggle("mobile_main_menu");
   document.querySelector(".mobile_social").classList.toggle("active");
+
+  document.querySelector(".logo").classList.toggle("not-active");
+  document.querySelector(".mobile_logo").classList.toggle("active");
 }
 
 function hideMenu() {
@@ -31,6 +34,9 @@ function hideMenu() {
   document.querySelector(".menu").classList.remove("mobile_menu");
   document.querySelector(".main-menu").classList.remove("mobile_main_menu");
   document.querySelector(".mobile_social").classList.remove("active");
+
+  document.querySelector(".logo").classList.remove("not-active");
+  document.querySelector(".mobile_logo").classList.remove("active");
 }
 
 document.querySelector(".menu_toggle").addEventListener("click", classToggle);

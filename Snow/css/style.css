@@ -126,6 +126,13 @@ header {
 .logo img {
   height: 35px;
 }
+.mobile_logo{
+  float: left;
+  display: none;
+}
+.mobile_logo img{
+  height: 35px;
+}
 #dark_logo {
   display: none;
 }
