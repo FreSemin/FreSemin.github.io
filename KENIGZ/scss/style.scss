@@ -328,6 +328,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  overflow: hidden;
 
   .wrapper {
     height: 100%;
@@ -369,10 +370,15 @@ body {
   height: 90%;
   position: absolute;
   bottom: 0;
-  right: 5%;
+  right: -2%;
+  // overflow: hidden;
+
+  
 
   img {
     // width: 100%;
+    max-height: 580px;
+    // max-width:
     height: 100%;
   }
 
@@ -450,6 +456,7 @@ body {
   height: 100vh;
   // border: 5px solid red;
   // position: relative;
+  
   overflow: hidden;
 }
 .advt_container {
@@ -460,13 +467,14 @@ body {
   height: 100vh;
   // position: relative;
   // justify-content: start;
+  background: $bg_light;
 }
 .advt_img {
   // position: absolute;
   // left: -10%;
   margin-left: -20%;
-  width: 60%;
-  margin-right: 40px;
+  width: 80%;
+  // margin-right: 40px;
   height: 100%;
 
   div {
@@ -485,10 +493,29 @@ body {
   flex-direction: column;
   -webkit-box-pack: center;
   justify-content: center;
-  width: 60%;
-  margin-left: 40px;
+  width: 70%;
+  margin-left: 80px;
+  position: relative;
+  overflow: hidden;
+  // background: $bg_light;
+
+  // &:after {
+  //   content:'';
+  //   position: absolute;
+  //   height: 450px;
+  //   width: 450px;
+  //   // border: 1px solid black;
+  //   background: url('../img/filtres-light.png');
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   right: -10%;
+  //   top: 20%;
+  // }
 }
 .advt_title_box {
+  // margin-left: 80px;
+
   h3 {
     font-size: 44px;
     font-weight: bold;
@@ -514,10 +541,13 @@ body {
     li {
       margin: 20px 0 20px 40px;
       position: relative;
+      font-size: 18px;
+      color: $text-black;
 
       &:before {
         content: "";
         position: absolute;
+        top: -3px;
         left: -40px;
         height: 22px;
         width: 22px;
@@ -531,5 +561,67 @@ body {
     }
   }
 }
-
+.advt_inf_img {
+  position: absolute;
+    right: -40%;
+    top: 22%;
+}
 // advantages end
+
+// statistic start
+.statistic_sec {
+  width: 100%;
+  position: relative;
+  background: url("../img/statistic-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// .wrapper {
+// }
+.stsc_box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  margin: 0 5%;
+}
+  .stsc_card {
+  width: 30%;
+  margin: 0 0 60px 0;
+  display: flex;
+  flex-direction: column;
+}
+.logo_card {
+}
+.stsc_title {
+  margin-bottom: 30px;
+  
+  h5{
+    font-family: 'Rubik';
+    color: $text-orange;
+    font-size: 75px;
+    font-weight: bold;
+  
+    @include bg_text;
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+}
+.stsc_text {
+
+  border-left: 2px solid #fff;
+  margin-left: -20px;
+
+  p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    margin-left: 20px;
+  }
+}
+
+// statistic end

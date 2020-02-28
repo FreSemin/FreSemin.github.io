@@ -2,6 +2,10 @@
     background: rgb(252,178,72);
     background: linear-gradient(180deg, rgba(252,178,72,1) 0%, rgba(255,150,0,1) 100%);
 }
+@mixin bg_text {
+    background: rgb(252,178,72);
+    background: linear-gradient(180deg, rgba(252,178,72,1) 0%, rgba(255,150,0,1) 100%);
+}
 
 @mixin btn_bg_hover {
     background: rgb(255,150,0);
