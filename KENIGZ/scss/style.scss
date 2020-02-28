@@ -192,8 +192,10 @@ body {
     height: 16px;
   }
 }
-.main_text {
+.mail_text {
   p {
+    color: $color_blue;
+    font-size: 16px;
   }
 }
 .social_box {
@@ -269,9 +271,14 @@ body {
       }
     }
     a {
+      color: $color_blue;
+
       &:hover {
         color: $text-orange;
       }
+    }
+    .active_page {
+      color: $text-orange;
     }
   }
 }
@@ -448,6 +455,66 @@ body {
 }
 // about end
 
+// statistic start
+.statistic_sec {
+  width: 100%;
+  position: relative;
+  background: url("../img/statistic-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// .wrapper {
+// }
+.stsc_box {
+  width: 90%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  margin: 0 5%;
+}
+.stsc_card {
+  width: 30%;
+  margin: 0 0 60px 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.logo_card {
+}
+.stsc_title {
+  margin-bottom: 30px;
+
+  h5 {
+    font-family: "Rubik";
+    color: $text-orange;
+    font-size: 75px;
+    font-weight: bold;
+
+    @include bg_text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.stsc_text {
+  border-left: 2px solid #fff;
+  margin-left: -20px;
+
+  p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    margin-left: 20px;
+  }
+}
+// statistic end
+
 // advantages start
 .adventagess {
   width: 100%;
@@ -566,66 +633,104 @@ body {
 }
 // advantages end
 
-// statistic start
-.statistic_sec {
+// work steps start
+.workSteps {
   width: 100%;
+  // height: 100vh;
   position: relative;
-  background: url("../img/statistic-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #fff;
 }
-// .wrapper {
-// }
-.stsc_box {
-  width: 90%;
+.steps_box {
+  padding: 100px 0;
+}
+.steps_title {
+  text-align: center;
+  text-transform: uppercase;
+
+  h4 {
+    font-weight: bold;
+    font-size: 48px;
+    color: $color_blue;
+  }
+}
+.steps_cards {
+  width: 100%;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 60px 0;
-  margin: 0 5%;
+  margin-top: 80px;
+  // margin-bottom: 70px;
 }
-.stsc_card {
-  width: 30%;
-  margin: 0 0 60px 0;
+.step_card {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
+  width: 260px;
 }
-.logo_card {
-}
-.stsc_title {
-  margin-bottom: 30px;
+.step_card_img {
+  width: 260px;
+  height: 200px;
 
-  h5 {
-    font-family: "Rubik";
-    color: $text-orange;
-    font-size: 75px;
-    font-weight: bold;
-
-    @include bg_text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  div {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
-.stsc_text {
-  border-left: 2px solid #fff;
-  margin-left: -20px;
+.step_card_inf {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  background: $text-light;
+  padding: 30px 0;
+  height: 200px;
+
+  // text-align:center;
+}
+.step_card_title {
+  //border: 1px solid red;
+  background: $color_blue;
+  border-radius: 200%;
+  -webkit-border-radius: 200%;
+  -moz-border-radius: 200%;
+  -ms-border-radius: 200%;
+  -o-border-radius: 200%;
+  p {
+    font-family: "Rubik";
+    font-weight: bold;
+    color: #fff;
+    font-size: 30px;
+    padding: 15px 20px;
+  }
+}
+.step_card_text {
+  margin-top: 30px;
+  text-align: center;
 
   p {
-    font-size: 20px;
-    color: #fff;
-    line-height: 30px;
-    margin-left: 20px;
+    font-size: 16px;
+    color: $text-black;
+    line-height: 25px;
   }
 }
+.steps_link {
+  margin-top: 70px;
+  text-align: center;
 
-// statistic end
+  a {
+    @include btn_light;
+  }
+}
+// work steps end
 
 // consultation start
 .consultation {
@@ -668,7 +773,7 @@ body {
     -webkit-box-pack: center;
     justify-content: center;
 
-    input {
+    .input_white {
       width: 300px;
       background: none;
       color: #fff;
@@ -676,14 +781,227 @@ body {
       padding: 10px 20px;
       margin: 0 15px;
       font-size: 18px;
-      // line-height: 40px;
+
+      &::-webkit-input-placeholder {
+        color: #fff;
+      }
+
+      &::-moz-placeholder {
+        color: #fff;
+      }
+
+      &:-ms-input-placeholder {
+        color: #fff;
+      }
+
+      &::-ms-input-placeholder {
+        color: #fff;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
     }
   }
 }
 .send_btn {
-  width: auto;
-  // @include btn_light;
-  // background: red;
+  @include btn_light;
+  padding: 16px 30px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+// consultation end
+
+// map
+.map_nav {
+  height: 60vh;
+  width: 100%;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+// map
+
+// footer start
+.footer {
+  width: 100%;
+  background: #fff;
+}
+// .wrapper {
+// }
+.footer_container {
+  padding: 75px 0;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+}
+.footer_box_logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.logo {
+}
+.logo_text {
+  margin-top: 18px;
+
+  p {
+    color: $color_blue;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+.footer_logo_links {
+  margin-top: 60px;
+}
+// .links_list {
+// }
+.footer_box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.footer_box_title {
+  padding-bottom: 20px;
+  border-bottom: 2px solid $color_blue;
+
+  h6 {
+    color: $color_blue;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+.footer_box_menu {
+  margin-top: 20px;
+}
+.menu_footer_list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+
+  li {
+    margin: 10px 0;
+
+    a {
+      font-size: 16px;
+      color: $color_blue;
+
+      &:hover {
+        color: $text-orange;
+      }
+    }
+
+    .active_page {
+      color: $text-orange;
+    }
+  }
 }
 
-// consultation end
+// footer contacts
+.footer_contact {
+  margin-top: 20px;
+}
+.contact_tel {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.contact_tel_img {
+  img {
+    height: 25px;
+  }
+}
+.contact_tel_numbers {
+  margin-left: 20px;
+
+  p {
+    color: $color_blue;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+// contact mail
+.contact_mail {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.contact_mail_img {
+  img {
+    height: 15px;
+  }
+}
+.contact_mail_text {
+  margin-left: 20px;
+
+  p {
+    color: $color_blue;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+.contact_time {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.contact_time_img {
+  img {
+    height: 18px;
+  }
+}
+.contact_time_text {
+  margin-left: 20px;
+
+  p {
+    color: $color_blue;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+// contact adres
+.footer_adres {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.footer_adres_img {
+  img {
+    // height: 18px;
+  }
+}
+.footer_adres_text {
+  margin-left: 20px;
+
+  p {
+    color: $color_blue;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+// footer contacts
+// footer end
+
+// down
+.down {
+  background: #060818;
+  width: 100%;
+  height: 40px;
+}
+// down
