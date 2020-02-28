@@ -373,8 +373,6 @@ body {
   right: -2%;
   // overflow: hidden;
 
-  
-
   img {
     // width: 100%;
     max-height: 580px;
@@ -456,7 +454,7 @@ body {
   height: 100vh;
   // border: 5px solid red;
   // position: relative;
-  
+
   overflow: hidden;
 }
 .advt_container {
@@ -563,8 +561,8 @@ body {
 }
 .advt_inf_img {
   position: absolute;
-    right: -40%;
-    top: 22%;
+  right: -40%;
+  top: 22%;
 }
 // advantages end
 
@@ -581,42 +579,45 @@ body {
 // }
 .stsc_box {
   width: 90%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 60px 0;
   margin: 0 5%;
 }
-  .stsc_card {
+.stsc_card {
   width: 30%;
   margin: 0 0 60px 0;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
 }
 .logo_card {
 }
 .stsc_title {
   margin-bottom: 30px;
-  
-  h5{
-    font-family: 'Rubik';
+
+  h5 {
+    font-family: "Rubik";
     color: $text-orange;
     font-size: 75px;
     font-weight: bold;
-  
-    @include bg_text;
-     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
+    @include bg_text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 .stsc_text {
-
   border-left: 2px solid #fff;
   margin-left: -20px;
 
-  p{
+  p {
     font-size: 20px;
     color: #fff;
     line-height: 30px;
@@ -625,3 +626,64 @@ body {
 }
 
 // statistic end
+
+// consultation start
+.consultation {
+  width: 100%;
+  background: url("../img/cons_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+// .wrapper {
+// }
+.cons_box {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 90px 0;
+}
+.cons_title {
+  text-align: center;
+
+  h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+.cons_form {
+  margin-top: 80px;
+
+  form {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+    input {
+      width: 300px;
+      background: none;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 10px 20px;
+      margin: 0 15px;
+      font-size: 18px;
+      // line-height: 40px;
+    }
+  }
+}
+.send_btn {
+  width: auto;
+  // @include btn_light;
+  // background: red;
+}
+
+// consultation end
