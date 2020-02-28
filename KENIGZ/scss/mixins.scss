@@ -1,64 +1,94 @@
 @mixin btn_bg {
-    background: rgb(252,178,72);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(252,178,72,1)), to(rgba(255,150,0,1)));
-    background: linear-gradient(180deg, rgba(252,178,72,1) 0%, rgba(255,150,0,1) 100%);
+  background: rgb(252, 178, 72);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(252, 178, 72, 1)),
+    to(rgba(255, 150, 0, 1))
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(252, 178, 72, 1) 0%,
+    rgba(255, 150, 0, 1) 100%
+  );
 }
 @mixin bg_text {
-    background: rgb(252,178,72);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(252,178,72,1)), to(rgba(255,150,0,1)));
-    background: linear-gradient(180deg, rgba(252,178,72,1) 0%, rgba(255,150,0,1) 100%);
+  background: rgb(252, 178, 72);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(252, 178, 72, 1)),
+    to(rgba(255, 150, 0, 1))
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(252, 178, 72, 1) 0%,
+    rgba(255, 150, 0, 1) 100%
+  );
 }
 
 @mixin btn_bg_hover {
-    background: rgb(255,150,0);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,150,0,1)), to(rgba(225,133,3,1)));
-    background: linear-gradient(180deg, rgba(255,150,0,1) 0%, rgba(225,133,3,1) 100%);
+  background: rgb(255, 150, 0);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(255, 150, 0, 1)),
+    to(rgba(225, 133, 3, 1))
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 150, 0, 1) 0%,
+    rgba(225, 133, 3, 1) 100%
+  );
 }
 
 @mixin btn_light {
-    font-family: 'Open Sans';
-        font-weight: bold;
-        color: #fff;
-        font-size: 16px;
-        padding: 16px 20px;
-        border: none;
-        border-radius: 40px;
-        -webkit-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -o-border-radius: 40px;
-        @include btn_bg;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  @include btn_bg;
 
-        // &:first-letter{
-            // text-transform: uppercase;
-        // }
-        //как пофиксить первую букву???
+  // &:first-letter{
+  // text-transform: uppercase;
+  // }
+  //как пофиксить первую букву???
 
-         &:hover {
-             @include btn_bg_hover;
-             cursor: pointer;
-         }
+  &:hover {
+    @include btn_bg_hover;
+    cursor: pointer;
+  }
 }
 @mixin btn_dark {
-    font-family: 'Open Sans';
-        font-weight: bold;
-        color: #fff;
-        font-size: 16px;
-        padding: 16px 20px;
-        border: none;
-        border-radius: 40px;
-        -webkit-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -o-border-radius: 40px;
-        @include btn_bg_hover;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  @include btn_bg_hover;
 
-        &:first-letter{
-            text-transform: uppercase;
-        }
+  &:first-letter {
+    text-transform: uppercase;
+  }
 
-         &:hover {
-             @include btn_bg;
-             cursor: pointer;
-         }
+  &:hover {
+    @include btn_bg;
+    cursor: pointer;
+  }
 }

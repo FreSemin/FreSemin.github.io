@@ -732,6 +732,124 @@ body {
 }
 // work steps end
 
+// categories start
+.categories {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  // z-index: 2;
+
+  //  &::after{
+  //   content: 'filters';
+  //   position: absolute;
+  //   text-transform: uppercase;
+  //   font-weight: bold;
+  //   font-family: 'Roboto';
+  //   font-size: 300px;
+  //   letter-spacing: 30px;
+  //   top: 0;
+  //   color: $text-light;
+  //   // z-index: -1;
+  // }
+}
+.ctg_box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 100px 0;
+  // position: relative;
+
+  // &::after {
+  //   content: "filters";
+  //   position: absolute;
+  //   text-transform: uppercase;
+  //   font-weight: bold;
+  //   font-family: "Roboto";
+  //   font-size: 300px;
+  //   letter-spacing: 30px;
+  //   top: 0;
+  //   color: $text-light;
+  //   // z-index: -1;
+  // }
+}
+.ctg_title {
+  text-align: center;
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    color: $color_blue;
+  }
+}
+.ctg_cards {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.ctg_card {
+  width: 30%;
+  border: 1px solid $bg-grey;
+  padding: 60px 20px 40px 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  // transition:1s all;
+  // -webkit-transition:1s all;
+  // -moz-transition:1s all;
+  // -ms-transition:1s all;
+  // -o-transition:1s all;
+
+  &:hover {
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.5);
+    // transition:1s all;
+    // -webkit-transition:1s all;
+    // -moz-transition:1s all;
+    // -ms-transition:1s all;
+    // -o-transition:1s all;
+  }
+}
+.ctg_card_img {
+  // position: absolute;
+  padding: 0 20px;
+
+  img {
+    width: 100%;
+  }
+}
+.ctg_card_title {
+  margin-top: 50px;
+
+  h6 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: $color_blue;
+  }
+}
+.ctg_card_btn-more {
+  margin-top: 50px;
+  padding-bottom: 50px;
+
+  a {
+    @include btn_light;
+    padding: 16px 40px;
+  }
+}
+// categories end
+
 // consultation start
 .consultation {
   width: 100%;
