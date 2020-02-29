@@ -367,6 +367,8 @@ body {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px; }
+  .search_inp input:placeholder {
+    color: #16226e; }
 
 .search_btn {
   position: absolute;
@@ -383,6 +385,8 @@ body {
     margin-top: 10px;
     margin-left: 10px;
     height: 20px; }
+  .search_btn:hover {
+    cursor: pointer; }
 
 .header_main {
   width: 100%;
@@ -962,6 +966,16 @@ body {
       padding: 10px 20px;
       margin-left: -15px;
       font-size: 18px; }
+      .ctg_choise_anlg_form form input[type="text"]::-webkit-input-placeholder {
+        color: #fff; }
+      .ctg_choise_anlg_form form input[type="text"]::-moz-placeholder {
+        color: #fff; }
+      .ctg_choise_anlg_form form input[type="text"]:-ms-input-placeholder {
+        color: #fff; }
+      .ctg_choise_anlg_form form input[type="text"]::-ms-input-placeholder {
+        color: #fff; }
+      .ctg_choise_anlg_form form input[type="text"]::placeholder {
+        color: #fff; }
     .ctg_choise_anlg_form form input[type="submit"] {
       width: 150px;
       margin-top: 20px;
@@ -1022,14 +1036,7 @@ body {
 
 .ctg_choise_size_form {
   margin-top: 20px;
-  margin-left: -15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  margin-left: -15px; }
   .ctg_choise_size_form select {
     width: 300px;
     background: none;
@@ -1074,6 +1081,28 @@ body {
       background: -o-linear-gradient(top, #ff9600 0%, #e18503 100%);
       background: linear-gradient(180deg, #ff9600 0%, #e18503 100%);
       cursor: pointer; }
+
+.chs_form_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.chs_form {
+  position: relative; }
+  .chs_form:before {
+    content: ">";
+    color: #ff9600;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    cursor: pointer; }
 
 .consultation {
   width: 100%;
