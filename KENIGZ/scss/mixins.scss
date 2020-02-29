@@ -83,9 +83,9 @@
   -o-border-radius: 40px;
   @include btn_bg_hover;
 
-  &:first-letter {
-    text-transform: uppercase;
-  }
+  // &:first-letter {
+  //   text-transform: uppercase;
+  // }
 
   &:hover {
     @include btn_bg;
