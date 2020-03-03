@@ -360,7 +360,7 @@ body {
     -o-border-radius: 30px;
 
     &:placeholder {
-      color: $color-blue;
+      color: $color_blue;
     }
   }
 }
@@ -1010,7 +1010,7 @@ body {
     color: $text-black;
   }
   input[type="submit"] {
-    width: 150px;
+    // width: 150px;
     margin-top: 20px;
     @include btn_light;
     padding: 16px 30px;
@@ -1314,12 +1314,13 @@ body {
 .page_title_box {
   height: 70vh;
   width: 100%;
-  position: relative;
-  // background: $text-orange;
+  // position: relative;
 }
 .page_title_bg {
   height: 100%;
   width: 100%;
+  // max-width: 1290px;
+  position: relative;
 
   div {
     height: 100%;
@@ -1328,6 +1329,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+.blue_bg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(6, 12, 68, 0.8);
+  // background: red;
+  // z-index: 10;
 }
 .page_title_text {
   position: absolute;
@@ -1768,3 +1779,348 @@ body {
   }
 }
 // page catalog end
+
+// space block
+.space_block {
+  height: 100px;
+  width: 100%;
+}
+// space block
+
+// page masfil start
+.masfil_about {
+  margin-top: 100px;
+  background: #fff;
+  width: 100%;
+}
+.masfil_box {
+  padding: 10px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $color_blue;
+  margin-bottom: 20px;
+}
+.masfil_about_title {
+text-transform: uppercase;
+
+  h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: $color_blue;
+  }
+}
+.masfil_container {
+  display: flex;
+  margin-top: 50px;
+}
+.masfil_about_img {
+  display: flex;
+  align-items: center;
+}
+.masfil_about_text_box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+.masfil_about_text {
+
+  p {
+    font-size: 16px;
+    color: $text-black;
+    line-height: 25px;
+  }
+}
+.text-light {
+  font-weight: 300;
+}
+
+
+// masfil choise start
+
+.masfil_choise {
+
+  .ctg_choise_anlg {
+    background: $bg_light;
+  }
+
+  .ctg_choise_title {
+    h5 {
+      color: $color_blue;
+    }
+  }
+
+  .ctg_choise_anlg_form {
+    input[type='text'] {
+      border-color: $color_blue;
+
+      &::placeholder {
+        color: $text-black;
+      }
+    }
+  }
+  .ctg_choise_size {
+    background: $bg_light;
+  }
+  .ctg_choise_size_form {
+    select {
+      border-color: $color_blue;
+      color: $text-black;
+    
+    }
+  }
+}
+// masfil choise end
+
+// masfil parametres start
+.masfil_parametres {
+  margin-top: 60px;
+}
+.masfil_par_box {
+  width: 100%;
+  padding: 50px 0;
+  background: $bg_light;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  &:after {
+    content: "filters";
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 200px;
+    letter-spacing: 30px;
+    right: -4%;
+    bottom: -12%;
+    color: $text-light;
+    z-index: 3;
+  }
+}
+.masfil_par_img {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+}
+.masfil_par_choise_box {
+margin: 0 10%;
+position: relative;
+  z-index: 4;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.masfil_par_choise_conteiner {
+  display: flex;
+  position: relative;
+  z-index: 4;
+}
+.masfil_par_choise_cont {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+.masfil_par_ch_title {
+  margin-bottom: 20px;
+
+  h4 {
+    color: $color_blue;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.masfil_par_sel_box {
+  display: flex;
+  flex-direction: column;
+
+  select {
+    width: 150px;
+    background: none;
+    border: 1px solid $color_blue;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 5px 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  option {
+    color: $text-black;
+  }
+}
+
+.masfil_par_choise_btn {
+  margin-top: 40px;
+  position: relative;
+  z-index: 4;
+
+  input[type="submit"] {
+    // width: 150px;
+    margin-top: 20px;
+    @include btn_light;
+    padding: 16px 30px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+.masfil_par_legend {
+  position: relative;
+  z-index: 4;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+  p{
+    color: $text-black;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 15px 0;
+
+    span {
+      text-transform: uppercase;
+      padding-right: 5px;
+      font-weight: bold;
+    }
+  }
+}
+
+// masfil parametres end
+
+// page masfil end
+
+// result start
+.result {
+  margin: 80px 0;
+}
+.result_box {
+  display: flex;
+  flex-direction: column;
+  // padding: 20px 0;
+
+
+}
+.resilt_title {
+
+  text-align: center;
+
+  p {
+    font-size: 24px;
+    line-height: 30px;
+    color: $color_blue;
+
+    span {
+      font-weight: bold;
+      color: $text-orange;
+    }
+  }
+
+}
+.result_content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product_card {
+  width: 28%;
+  border: 1px solid $text-grey;
+  // height: 400px;
+  // height: 300px;
+  // width: 300px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  padding: 15px 10px;
+  margin-top: 30px;
+}
+.card_code {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+
+  span{
+    background: $color_blue;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 8px;
+  }
+}
+.product_card_img {
+  text-align: center;
+
+  img{
+    height: 155px;
+    width: 115px;
+  }
+}
+.product_card_name {
+  margin-top: 25px;
+  text-align: center;
+
+  h6{
+    font-size: 16px;
+    line-height: 20px;
+    color: $text-black;
+  }
+}
+.product_card_link {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+
+
+  a{
+    color: $text-orange;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 10px;
+      height: 7px;
+      background: url('../img/right-arrow.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-left: 10px;
+      position: absolute;
+      top: 8px;
+    }
+  }
+}
+
+.result_btn {
+  margin-top: 70px;
+  text-align: center;
+
+  form {
+
+    input[type='submit'] {
+      // width: 150px;
+      // margin-top: 20px;
+      @include btn_light;
+      padding: 16px 30px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}
+.result_pages {
+  margin-top: 40px;
+
+  text-align:center;
+}
+
+// result end
