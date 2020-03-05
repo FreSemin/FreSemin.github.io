@@ -1,0 +1,9 @@
+@media (min-width: 1291px) {
+  .wrapper {
+    width: 80%;
+    margin: 0 10%; } }
+
+@media (max-width: 1290px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 5%; } }
