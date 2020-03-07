@@ -190,12 +190,17 @@
                                 <div class="input_btns_box">
                                     <div class="inputs_btns_file">
                                         <p>Приложить файл(чертеж/схему)</p>
-                                        <input type="file">
+                                        <div class="inpust_file_form">
+                                            <input type="file" name="file" id="input__file">
+                                            <label for="input__file" class="label_file">
+                                                <span class="label_file_name">Выберете файл</span>
+                                            </label>
+                                            <p class="file_name">Файл не выбран</p>
+                                        </div>
                                     </div>
                                     <div class="inputs_btns_send">
                                         <input type="submit">
                                     </div>
-
                                 </div>
                             </form>
                         </div>
@@ -384,6 +389,8 @@
     <div class="down">
     </div>
     <!-- down -->
+
+    <script src="js/script.js"></script>
 
 </body>
 

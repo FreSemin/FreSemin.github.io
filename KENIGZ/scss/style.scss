@@ -239,7 +239,12 @@ body {
 
 .main_nav {
   width: 100%;
-  padding: 10px 0;
+  height: 70px;
+  // padding: 10px 0;
+
+    .wrapper {
+    height: 100%;
+  }
 }
 .menu_box {
   display: -webkit-box;
@@ -248,19 +253,32 @@ body {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
+  height: 100%;
+
 }
 .main_menu {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  height: 100%;
+
+  nav {
+    height: 100%;
+  }
+
 }
 .menu_list {
   display: -webkit-box;
   display: flex;
+  height: 100%;
+
 
   li {
     position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
     &:after {
       content: "|";
       margin: 0 18px;
@@ -298,7 +316,7 @@ body {
   background: #fff;
   opacity: 0;
   visibility: hidden;
-  top: 20px;
+  top: 70px;
   position: absolute;
   z-index: 5;
 
@@ -307,7 +325,13 @@ body {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    padding: 20px 15px;
+    margin: 20px 15px;
+    border-bottom: 1px solid $bg_grey;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    
     &:after {
       content: "";
     }
@@ -344,6 +368,8 @@ body {
   -webkit-box-align: center;
   align-items: center;
   position: relative;
+  // padding: 10px 0;
+  // border: 1px solid red;
 }
 .search_inp {
   input {
@@ -2584,25 +2610,61 @@ body {
     color: $text-black;
   }
 
-  input[type="file"] {
-    margin-top: 20px;
-    color: $text-black;
-    padding: 10px 20px;
-    // border-radius: 30px;
-    font-size: 14px;
-    line-height: 16px;
-    // -webkit-border-radius: 30px;
-    // -moz-border-radius: 30px;
-    // -ms-border-radius: 30px;
-    // -o-border-radius: 30px;
-  }
+  // input[type="file"] {
+    // margin-top: 20px;
+    // color: $text-grey;
+    // font-size: 16px;
+    // line-height: 18px;
+    // border: 1px solid red;
+  // }
 }
+.inpust_file_form {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input[type="file"] {
+    outline:0;
+    display: none;
+    opacity:0;
+    visibility: hidden;
+    pointer-events:none;
+    user-select:none;
+  }
+   p {
+     font-size: 16px;
+     line-height: 18px;
+      color: $text-grey;
+      margin-left: 20px;
+    }
+}
+
+  .label_file {
+    background: $text-light;
+    position: relative;
+    z-index: 4;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 30px  ;
+    -webkit-border-radius: 30px  ;
+    -moz-border-radius: 30px  ;
+    -ms-border-radius: 30px  ;
+    -o-border-radius: 30px  ;
+    
+    span {
+      color: $text-black;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+// }
 .inputs_btns_send {
+  margin-left: 20px;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  // margin-left: 10px;
 
   input {
     @include btn_light;
