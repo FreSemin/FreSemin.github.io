@@ -3025,3 +3025,90 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
+
+.news_sec {
+  margin-top: 60px; }
+
+.news_sec_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: 1px solid #16226e;
+  padding-bottom: 60px; }
+
+.news_sec_header {
+  position: relative;
+  height: 400px;
+  width: 100%; }
+  .news_sec_header div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .news_sec_header .news_when_box {
+    position: absolute;
+    max-height: 90px;
+    max-width: 90px;
+    right: 30px;
+    bottom: 30px; }
+
+.news_sec_inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.news_sec_inf_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 40px; }
+  .news_sec_inf_title .news_title_text {
+    text-transform: uppercase; }
+
+.news_sec_inf_text p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #161616;
+  margin: 40px 0; }
+
+.antr_news_title {
+  margin-top: 80px; }
+  .antr_news_title h6 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #16226e;
+    line-height: 55px;
+    text-transform: uppercase; }
+
+.antr_news_link a {
+  color: #16226e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 25px; }
+  .antr_news_link a img {
+    margin-right: 20px;
+    width: 10px;
+    height: 7px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg); }
