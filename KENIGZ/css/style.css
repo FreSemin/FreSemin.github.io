@@ -1147,6 +1147,7 @@ body {
   .ctg_choise_size_form option {
     color: #161616; }
   .ctg_choise_size_form input[type="submit"] {
+    width: 150px;
     margin-top: 20px;
     font-family: "Open Sans";
     font-weight: bold;
@@ -2058,6 +2059,7 @@ body {
   position: relative;
   z-index: 4; }
   .masfil_par_choise_btn input[type="submit"] {
+    width: 150px;
     margin-top: 20px;
     font-family: "Open Sans";
     font-weight: bold;

@@ -1046,6 +1046,7 @@ body {
     color: $text-black;
   }
   input[type="submit"] {
+    width: 150px;
     margin-top: 20px;
     @include btn_light;
     padding: 16px 30px;
@@ -2037,6 +2038,7 @@ body {
   z-index: 4;
 
   input[type="submit"] {
+    width: 150px;
     margin-top: 20px;
     @include btn_light;
     padding: 16px 30px;
