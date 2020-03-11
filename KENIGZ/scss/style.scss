@@ -2317,8 +2317,8 @@ body {
   // border: 1px solid green;
 }
 .item_img_box {
-  width: 40%;
-  max-width: 410px;
+  width: 300px;
+  // max-width: 410px;
   // border: 1px solid red;
   display: flex;
   justify-content: center;
@@ -2387,7 +2387,8 @@ body {
 .img_scroll_btn {
   position: absolute;
   right: 0;
-  height: 100%;
+  bottom: 0;
+  height: 55px;
   width: 15px;
   background: $bg_grey;
   display: flex;

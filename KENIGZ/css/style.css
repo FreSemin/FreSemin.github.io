@@ -2346,8 +2346,7 @@ body {
   justify-content: space-between; }
 
 .item_img_box {
-  width: 40%;
-  max-width: 410px;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2399,7 +2398,8 @@ body {
 .img_scroll_btn {
   position: absolute;
   right: 0;
-  height: 100%;
+  bottom: 0;
+  height: 55px;
   width: 15px;
   background: #dfe0ea;
   display: -webkit-box;
