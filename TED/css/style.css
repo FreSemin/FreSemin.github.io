@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*--------------------*/
+@font-face {
+  font-family: "Peace Sansf";
+  src: url("../fonts/Peace Sans.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-ExtraBold.otf");
+  font-weight: bold;
+  font-style: normal; }
+
+html {
+  scroll-behavior: smooth; }
+
+.sec {
+  width: 100%;
+  height: 100vh;
+  max-height: 900px; }
+
+.first {
+  background-color: #121212; }
+
+.wrapper {
+  margin: 0 4%;
+  max-width: 1340px;
+  height: 100%; }
+
+.first .wrapper {
+  background-image: url("../img/myan-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.first-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%; }
+
+.wrapper-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 75px; }
+
+.menu-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu-title {
+  margin-right: 35px; }
+
+.menu__title {
+  font-size: 18px;
+  font-family: "Gilroy";
+  text-transform: uppercase; }
+
+.menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .menu-btn span {
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-bottom: 7px; }
+    .menu-btn span:last-child {
+      width: 35px; }
+
+.first-main {
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  height: 100%;
+  width: 100%; }
+
+.first-main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%; }
+
+.main-text-box {
+  position: relative;
+  margin-left: 95px;
+  width: 50%; }
+
+.main-title {
+  font-size: 76px;
+  line-height: 100px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.main-subtitle {
+  position: absolute;
+  right: -70px;
+  bottom: 20px; }
+
+.main-subtitle-line-box {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.main-subtitle-line {
+  height: 1px;
+  width: 200px;
+  background: #f1f1f1; }
+
+.main-subtitle-text {
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.wrapper-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  height: 83px; }
+
+.bottom-logo {
+  position: relative; }
+
+.bottom-logo-text-box {
+  margin-top: 10px;
+  width: 20%; }
+
+.bottom-logo-text {
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 20px; }
+
+.bottom-scroll {
+  position: absolute;
+  left: 50%;
+  right: 50%; }
+
+.bottom-scroll {
+  height: 76px;
+  background: #fff;
+  width: 2px; }
+
+.bottom-link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.bottom-link {
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.white-text {
+  color: #fff; }

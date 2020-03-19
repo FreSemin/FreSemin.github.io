@@ -1,0 +1,267 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
+@import "../css/fonts";
+@import "variables.scss";
+@import "mixins.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sec {
+  width: 100%;
+  height: 100vh;
+  max-height: 900px;
+  //   max-width:1440px;
+}
+.first {
+  background-color: $bg-first;
+  //   background-image: url('../img/myan-bg.png');
+  //   background-position: center;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+}
+.wrapper {
+  margin: 0 4%;
+  //   border: 1px solid #fff;
+  max-width: 1340px;
+  height: 100%;
+}
+.first .wrapper {
+  background-image: url("../img/myan-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.first-cont {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+//   155 75
+.wrapper-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 75px;
+  //   border: 1px solid #fff;
+}
+.logo {
+}
+.logo-box {
+}
+.menu-cont {
+  display: flex;
+  // align-items: flex-start;
+  // width: 100px;
+  // border: 1px solid pink;
+}
+.menu-title {
+  margin-right: 35px;
+}
+.menu__title {
+  font-size: 18px;
+  font-family: "Gilroy";
+  text-transform: uppercase;
+}
+.menu_btn-box {
+}
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  span {
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-bottom: 7px;
+
+    &:last-child {
+      width: 35px;
+    }
+  }
+}
+
+.first-main {
+  align-content: stretch;
+  height: 100%;
+  width: 100%;
+  // border: 1px solid yellow;
+}
+.first-main-text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  // justify-content: center;
+}
+.main-text-box {
+  position: relative;
+  margin-left: 95px;
+  width: 50%;
+  // border: 1px solid orange;
+}
+.main-title {
+  font-size: 76px;
+  line-height: 100px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.main-subtitle {
+  position: absolute;
+  right: -70px;
+  bottom: 20px;
+}
+.main-subtitle-line-box {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.main-subtitle-line {
+  height: 1px;
+  width: 200px;
+  background: $grey-line;
+}
+
+.main-subtitle-text-box {
+  // position: absolute;
+  // right: 0;
+  // bottom: 0;
+}
+.main-subtitle-text {
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  height: 83px;
+  // border: 1px solid red;
+}
+.bottom-logo {
+  position: relative;
+}
+.bottom-logo-img {
+}
+.bottom-logo-text-box {
+  margin-top: 10px;
+  width: 20%;
+}
+.bottom-logo-text {
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.bottom-scroll {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+.bottom-scroll {
+  // height: 100%;
+  height: 76px;
+  background: #fff;
+  width: 2px;
+}
+.bottom-link-box {
+  display: flex;
+  align-items: flex-end;
+}
+.bottom-link {
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+// --------------------------------------!!!!!!
+.white-text {
+  color: #fff;
+}
