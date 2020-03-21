@@ -1,18 +1,24 @@
 @font-face {
-    font-family: "Peace Sansf";
-    src: url("../fonts/Peace Sans.otf");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: "Gilroy";
     src: url("../fonts/Gilroy-Light.otf");
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: "Gilroy";
     src: url("../fonts/Gilroy-ExtraBold.otf");
     font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Conthrax";
+    src: url("../fonts/ConthraxSemiBold.otf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PeaceSans";
+    src: url("../fonts/PeaceSans.otf");
+    font-weight: normal;
     font-style: normal;
 }
