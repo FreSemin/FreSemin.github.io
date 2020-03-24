@@ -117,7 +117,7 @@ body {
 
 .s-sec__wrapper {
   margin: 0 4%;
-  max-width: 1340px;
+  max-width: 1440px;
   height: 100%; }
 
 .s-sec__wrapper_first-bg {
@@ -145,15 +145,25 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-item-align: center;
-  align-self: center; }
-
-.alg-i_cent {
+  align-self: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
 
 .border-block {
+  position: absolute;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   max-width: 870px;
@@ -166,15 +176,14 @@ body {
   border-right-style: solid; }
 
 .border-block__shadow {
+  height: 100%;
   width: 100%;
-  max-width: 310px; }
+  max-width: 310px;
+  background: none; }
 
 .block-block__shadow_dark {
   -webkit-box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.75); }
-
-.border-block_abs {
-  position: absolute; }
 
 .border-block_border-dark {
   border-color: #141414; }
@@ -264,7 +273,6 @@ body {
 .menu-cont__title {
   margin-right: 35px;
   font-size: 18px;
-  font-family: "Gilroy";
   text-transform: uppercase; }
 
 .menu-btn-cont {
@@ -308,15 +316,14 @@ body {
   align-items: center;
   height: 100%; }
 
-.first-cont__title {
+.first-cont-title {
   position: relative;
   margin-left: 95px;
   width: 50%; }
 
-.first-cont__title-text {
+.first-cont__title {
   font-size: 76px;
   line-height: 100px;
-  font-family: "Gilroy";
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px; }
@@ -408,7 +415,7 @@ body {
 .elaboration {
   overflow: hidden; }
 
-.elaboration__text-box {
+.elaboration-text {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,7 +430,6 @@ body {
 
 .elaboration__text {
   font-size: 125px;
-  font-family: "Gilroy";
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 10px; }
@@ -442,7 +448,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   font-size: 15px;
-  font-family: "Gilroy";
   font-weight: bold;
   letter-spacing: 1.5px; }
   .elaboration__scroll-link:before {
@@ -538,12 +543,13 @@ body {
   cursor: pointer;
   opacity: 1; }
 
+.instr__img-python {
+  -o-object-fit: fill;
+  object-fit: fill;
+  width: 130px; }
+
 .text-white {
   color: #fff; }
 
 .text-black {
   color: #000; }
-
-@media (max-width: 1341px) {
-  .s-sec__wrapper {
-    margin: 0 auto; } }
