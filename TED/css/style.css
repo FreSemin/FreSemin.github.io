@@ -115,6 +115,9 @@ body {
 .s-sec_bg-dark {
   background-color: #121212; }
 
+.s-sec_bg-light {
+  background: #ffffff; }
+
 .s-sec__wrapper {
   margin: 0 4%;
   max-width: 1440px;
@@ -166,7 +169,6 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  max-width: 870px;
   z-index: 2; }
 
 .border-block_borders {
@@ -250,6 +252,11 @@ body {
 
 .border-text__title-main_ml-tech {
   margin-left: -150px; }
+
+.border-text__parag {
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 30px; }
 
 .wrapper-top {
   display: -webkit-box;
@@ -547,6 +554,97 @@ body {
   -o-object-fit: fill;
   object-fit: fill;
   width: 130px; }
+
+.request {
+  position: relative; }
+
+.request-head {
+  width: 100%;
+  height: 70%; }
+
+.request__head {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .request__head .wrapper-top {
+    position: absolute;
+    z-index: 3;
+    width: 100%; }
+
+.request__half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 70%; }
+
+.request__half-text {
+  position: relative;
+  z-index: 2;
+  margin-left: 50px;
+  width: 50%; }
+
+.request__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.request__parag {
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 20px; }
+
+.request__half_bg-img {
+  background: url("../img/request-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.request__link {
+  position: absolute;
+  bottom: 80px;
+  padding: 10px 60px;
+  color: #fff;
+  border: 6px solid #fff;
+  font-size: 18px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #121212; }
+
+.request-body {
+  position: relative;
+  height: 30%; }
+
+.request__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%; }
+  .request__body .wrapper-bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .request__body .border-block__border-text {
+    width: 100%; }
 
 .text-white {
   color: #fff; }
