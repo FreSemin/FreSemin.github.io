@@ -112,6 +112,10 @@ body {
   max-height: 900px;
   position: relative; }
 
+.s-block {
+  width: 100%;
+  position: relative; }
+
 .s-sec_bg-dark {
   background-color: #121212; }
 
@@ -140,19 +144,6 @@ body {
   flex-direction: column;
   height: 100%; }
 
-.border-block_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
 .border-block {
   position: absolute;
   margin: 0 auto;
@@ -169,6 +160,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+  max-width: 880px;
   z-index: 2; }
 
 .border-block_borders {
@@ -214,18 +206,21 @@ body {
     border-right-width: 1px;
     border-right-style: solid; }
 
-.border-block__border-text {
-  position: absolute;
-  max-width: 870px;
-  z-index: 2; }
+.border-cont {
+  position: relative;
+  z-index: 2;
+  margin: 130px auto 0 auto;
+  width: 100%;
+  max-width: 880px; }
 
-.border-text__subtitle {
+.border-cont__subtitle {
   position: relative;
   font-size: 20px;
   font-weight: bold;
-  margin-left: -55px; }
+  margin-left: -55px;
+  margin-bottom: 40px; }
 
-.border-text__subtitle:before {
+.border-cont__subtitle:before {
   content: "";
   position: absolute;
   top: 11px;
@@ -234,31 +229,36 @@ body {
   height: 2px;
   background: #000; }
 
-.border-text__title {
+.border-cont__title {
   width: 80%;
   font-size: 38px;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 50px; }
 
-.border-text__title-main {
+.border-cont__title-main {
+  margin-top: -20px;
   text-align: center;
   font-size: 180px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 15px; }
 
-.border-text__title-main_grey {
+.border-cont__title-main_grey {
   color: #dbdbdb; }
 
-.border-text__title-main_ml-tech {
-  margin-left: -150px; }
+.border-cont__title-main_ml-tech {
+  margin-left: -150px;
+  letter-spacing: 0; }
 
-.border-text__parag {
+.border-cont__parag {
   margin-top: 25px;
   font-size: 20px;
   line-height: 30px; }
 
 .wrapper-top {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,7 +308,7 @@ body {
 .bar-line_dark {
   background: #000; }
 
-.cont-stretch {
+.first-cont__main {
   -ms-flex-line-pack: stretch;
   align-content: stretch;
   height: 100%;
@@ -369,12 +369,10 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 83px; }
-
-.wrapper-bottom_falg-end {
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: flex-end; }
+  align-items: flex-end;
+  height: 83px; }
 
 .wrapper-bottom_mr8 {
   margin-bottom: 80px; }
@@ -423,6 +421,9 @@ body {
   overflow: hidden; }
 
 .elaboration-text {
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  height: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,12 +469,7 @@ body {
     font-weight: bold;
     font-size: 15px; }
 
-.design-wrapper-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
-
-.border-text__advantages {
+.border-cont__advantages {
   position: relative;
   z-index: 10;
   margin-top: 50px;
@@ -512,13 +508,17 @@ body {
 .advantages-text__parag {
   margin-top: 15px;
   margin-left: 30px;
+  padding-right: 40px;
   font-weight: 300;
   line-height: 20px;
   font-size: 17px; }
 
 .border-block__programms {
+  margin-top: 100px;
+  width: 100%; }
+
+.design-wrapper-bottom {
   position: absolute;
-  left: 0;
   bottom: 0;
   width: 100%; }
 
@@ -527,7 +527,15 @@ body {
   font-size: 20px;
   font-weight: bold; }
 
+.programms__inst-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .programms__instruments {
+  padding: 30px 0;
+  width: 50%;
   border-top: 1px solid #afafaf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,6 +567,7 @@ body {
   position: relative; }
 
 .request-head {
+  position: relative;
   width: 100%;
   height: 70%; }
 
@@ -568,13 +577,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  overflow: hidden; }
-  .request__head .wrapper-top {
-    position: absolute;
-    z-index: 3;
-    width: 100%; }
+  height: 100%; }
+
+.request-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%; }
 
 .request__half {
   display: -webkit-box;
@@ -588,15 +603,17 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-  width: 70%; }
+  width: 50%; }
 
 .request__half-text {
+  padding-bottom: 100px;
   position: relative;
   z-index: 2;
   margin-left: 50px;
   width: 50%; }
 
 .request__title {
+  margin-top: 100px;
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
@@ -609,9 +626,17 @@ body {
   line-height: 20px; }
 
 .request__half_bg-img {
-  background: url("../img/request-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1; }
+  .request__half_bg-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
 .request__link {
   position: absolute;
@@ -626,8 +651,7 @@ body {
   background: #121212; }
 
 .request-body {
-  position: relative;
-  height: 30%; }
+  position: relative; }
 
 .request__body {
   position: relative;
@@ -637,14 +661,28 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100%;
   width: 100%; }
-  .request__body .wrapper-bottom {
-    position: absolute;
-    width: 100%;
-    height: 100%; }
-  .request__body .border-block__border-text {
-    width: 100%; }
+
+.request-cont-bord {
+  margin-top: 100px; }
+  .request-cont-bord .border-cont__parag {
+    padding-bottom: 60px; }
+
+.wrapper-top_partner {
+  position: absolute;
+  width: 100%; }
+
+.partner-team-box {
+  border: 1px solid black;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.partner-cont__half {
+  border: 1px solid red;
+  height: 600px;
+  width: 50%; }
 
 .text-white {
   color: #fff; }
