@@ -565,7 +565,7 @@ body {
 .request-head {
   position: relative;
   width: 100%;
-  height: 70%;
+  // height: 70%;
 }
 .request__head {
   position: relative;
@@ -825,6 +825,50 @@ body {
   }
 
 // parthers
+
+
+// contact
+  .contact {
+    position: relative;
+  }
+  .contact-head {
+    width: 100%;
+  }
+  .contact-head-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 280px;
+  }
+  .contact-head__text {
+    margin: 0 25%;
+    // width: 35%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+  .contact-body {
+    width: 100%;
+  }
+  .contact-body-title {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-body__title {
+    // 
+    padding-bottom: 200px;
+    // 
+
+    margin-top: 90px;
+    font-weight: bold;
+    font-size: 125px;
+    text-transform: uppercase;
+  }
+// contact
 
 // --------------------------------------!!!!!!
 .text-white {
