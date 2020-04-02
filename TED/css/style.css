@@ -208,7 +208,7 @@ body {
 
 .border-cont {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   margin: 130px auto 0 auto;
   width: 100%;
   max-width: 880px; }
@@ -804,6 +804,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 76px;
   -webkit-transition: 0.8s all;
   -o-transition: 0.8s all;
   transition: 0.8s all;
@@ -848,15 +849,109 @@ body {
   width: 100%; }
 
 .contact-body-title {
+  margin: 0 auto;
   width: 100%;
-  text-align: center; }
+  max-width: 880px; }
 
 .contact-body__title {
-  padding-bottom: 200px;
+  margin-left: 60px;
   margin-top: 90px;
   font-weight: bold;
   font-size: 125px;
+  letter-spacing: 2px;
   text-transform: uppercase; }
+
+.contact-b-link {
+  margin: 0 20px; }
+
+.contact-shadow-block {
+  max-width: 580px;
+  border: none; }
+
+.contact-border-block {
+  border-left: none; }
+
+.contact-body__main {
+  position: relative;
+  z-index: 4;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.contact__tel {
+  min-width: 220px;
+  padding-top: 70px; }
+
+.contact__tel-text {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px; }
+
+.contact-body__text-parg {
+  margin-top: 70px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px; }
+
+.contact-body__ipcard {
+  margin-left: 50px;
+  max-width: 400px; }
+
+.ipcard__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50px; }
+
+.ipcard__img {
+  margin-right: 30px; }
+
+.ipcard-check__subtitle {
+  font-size: 12px; }
+
+.ipcard__body {
+  margin-top: 20px; }
+
+.ipcard__title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px; }
+
+.ipcard__subtitle {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px; }
+
+.contact-wr-b {
+  margin-top: 20px;
+  z-index: 4;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contact-wr-b__text-box {
+  text-align: center; }
+
+.contact-wr-b__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px; }
+
+.contact-wr-b__subtitle {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 300; }
 
 .text-white {
   color: #fff; }

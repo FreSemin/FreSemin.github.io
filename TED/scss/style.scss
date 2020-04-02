@@ -183,7 +183,7 @@ body {
 }
 .border-cont {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   // margin-top: 130px;
   margin: 130px auto 0 auto;
   width: 100%;
@@ -666,208 +666,305 @@ body {
 }
 // request
 
-
 // parthers
-  .parter {
+.parter {
+}
+.wrapper-top_partner {
+  position: absolute;
+  width: 100%;
+}
+.partner-team-box {
+  // border: 1px solid black;
+  // height: 300px;
+  display: flex;
+}
+.partner-cont__half {
+  // border: 1px solid red;
+  // height: 600px;
+  width: 50%;
+}
+.team-card-box {
+  padding: 0 50px 0 40px;
+  // border: 1px solid green;
+}
+.team-card-head {
+  // border: 1px solid yellow;
+  display: flex;
+}
+.team-card__img {
+  // height: 130px;
+  // width: 130px;
+  // border-radius: 50%;
 
-  }
-  .wrapper-top_partner {
-    position: absolute;
-    width: 100%;
-  }
-  .partner-team-box {
-    // border: 1px solid black;
-    // height: 300px;
-    display: flex;
-  }
-  .partner-cont__half {
-    // border: 1px solid red;
-    // height: 600px;
-    width: 50%;
-  }
-  .team-card-box {
-    padding: 0 50px 0 40px;
-    // border: 1px solid green;
-  }
-  .team-card-head {
-    // border: 1px solid yellow;
-    display: flex;
-  }
-  .team-card__img {
-    // height: 130px;
-    // width: 130px;
-    // border-radius: 50%;
-    
-    img {
-      object-fit: cover;
-      object-position: center;
-      height: 130px;
-      width: 130px;
-      overflow: hidden;
-      border-radius: 50%;
-      filter: grayscale(100%);
-    }
-  }
-  .team-card-text {
-    margin-left: 30px;
-  }
-  .team-card__title {
-    margin-top: 30px;
-    font-size: 24px;
-    // text-transform: uppercase;
-    font-weight: bold;
-    line-height: 30px;
-  }
-  .team-card__subtitle {
-    margin-top: 15px;
-    font-weight: 300;
-    font-size: 16px;
-  }
-  .team-card-body {
-    margin-top: 30px;
-    display: flex;
-    // border: 1px solid pink;
-  }
-  .team-chrt {
-    display: flex;
-    flex-direction: column;
-  }
-  .chrt-box {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-  .chrt__title {
-
-  }
-  .chrt__title-text {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .chrt-scors {
-    margin-left: 20px;
-    display: flex;
-  }
-  .score-line {
-    margin: 0 2px;
-    display: block;
-    width: 4px;
-    height: 12px;
-    border-radius: 4px;
-    background: $bg-dark;
-    // filter: blur(1px);
-  }
-  .team-chrt-link {
-    margin-left: 30px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center
-  }
-  .team-chrt__link {
-    padding: 10px 10px;
-    display: block;    
-    width: 100%;
-    color: #fff;
-    border: 1px solid $border-grey;
-    font-size: 14px;
-    font-family: "Gilroy";
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    background: $bg-dark;
-  }
-  .partner-bor-sub {
-    position: absolute;
-    top: -60px;
-    left: 0;
-    // margin-top: 120px;
-    // margin-bottom: 20px;
-    font-size: 38px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .partner-bor-sub::before {
-    top: 16px;
-  }
-  .partners-imgs-box {
-    position: relative;
-    margin-top: 180px;
-
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    // min-height: 240px;
-    border-top: 1px solid $border-grey;
-    border-bottom: 1px solid $border-grey;
-
-
-    // img {
-      // margin: 40px 5px;
-      // max-width: 200px;
-
-      // object-fit: cover;
-    // }
-  }
-  .partners-img {
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    // min-height: 100px;
-    transition: 0.8s all;
+  img {
+    object-fit: cover;
+    object-position: center;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    border-radius: 50%;
     filter: grayscale(100%);
   }
-  .partners-imgs-box_second {
-    border-top: none;
-    margin-top: 0;
-  }
-  .partners-img:hover {
-    filter: grayscale(0%);
-  }
+}
+.team-card-text {
+  margin-left: 30px;
+}
+.team-card__title {
+  margin-top: 30px;
+  font-size: 24px;
+  // text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
+}
+.team-card__subtitle {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 16px;
+}
+.team-card-body {
+  margin-top: 30px;
+  display: flex;
+  // border: 1px solid pink;
+}
+.team-chrt {
+  display: flex;
+  flex-direction: column;
+}
+.chrt-box {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.chrt__title {
+}
+.chrt__title-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+.chrt-scors {
+  margin-left: 20px;
+  display: flex;
+}
+.score-line {
+  margin: 0 2px;
+  display: block;
+  width: 4px;
+  height: 12px;
+  border-radius: 4px;
+  background: $bg-dark;
+  // filter: blur(1px);
+}
+.team-chrt-link {
+  margin-left: 30px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center
+}
+.team-chrt__link {
+  padding: 10px 10px;
+  display: block;
+  width: 100%;
+  color: #fff;
+  border: 1px solid $border-grey;
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background: $bg-dark;
+}
+.partner-bor-sub {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  // margin-top: 120px;
+  // margin-bottom: 20px;
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.partner-bor-sub::before {
+  top: 16px;
+}
+.partners-imgs-box {
+  position: relative;
+  margin-top: 180px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  // min-height: 240px;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+
+  // img {
+  // margin: 40px 5px;
+  // max-width: 200px;
+
+  // object-fit: cover;
+  // }
+}
+.partners-img {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  height: 76px;
+  transition: 0.8s all;
+  filter: grayscale(100%);
+}
+.partners-imgs-box_second {
+  border-top: none;
+  margin-top: 0;
+}
+.partners-img:hover {
+  filter: grayscale(0%);
+}
 
 // parthers
 
-
 // contact
-  .contact {
-    position: relative;
-  }
-  .contact-head {
-    width: 100%;
-  }
-  .contact-head-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 280px;
-  }
-  .contact-head__text {
-    margin: 0 25%;
-    // width: 35%;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 40px;
+.contact {
+  position: relative;
+  // z-index: 2;
+}
+.contact-head {
+  width: 100%;
+}
+.contact-head-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+}
+.contact-head__text {
+  margin: 0 25%;
+  // width: 35%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
 
-    span {
-      font-weight: bold;
-    }
-  }
-  .contact-body {
-    width: 100%;
-  }
-  .contact-body-title {
-    width: 100%;
-    text-align: center;
-  }
-  .contact-body__title {
-    // 
-    padding-bottom: 200px;
-    // 
-
-    margin-top: 90px;
+  span {
     font-weight: bold;
-    font-size: 125px;
-    text-transform: uppercase;
   }
+}
+.contact-body {
+  width: 100%;
+}
+.contact-body-title {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 880px;
+  // text-align: center;
+}
+.contact-body__title {
+  margin-left: 60px;
+  margin-top: 90px;
+  font-weight: bold;
+  font-size: 125px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.contact-b-link {
+  margin: 0 20px;
+}
+.contact-shadow-block {
+  max-width: 580px;
+  border: none;
+}
+.contact-border-block {
+  border-left: none;
+}
+
+.contact-body__main {
+  position: relative;
+  z-index: 4;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__tel {
+  min-width: 220px;
+  padding-top: 70px;
+  // text-align: center;
+  // border: 1px solid green;
+}
+.contact__tel-text {
+  // margin-top: 70px;
+  // margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.contact-body__text {
+  // width: 100%;
+  // min-width: 680px;
+  // border: 1px solid red;
+}
+.contact-body__text-parg {
+  margin-top: 70px;
+  // width: 90%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+.contact-body__ipcard {
+  margin-left: 50px;
+  max-width: 400px;
+  // border: 1px solid gold;
+}
+.ipcard__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  // text-align: center;
+}
+.ipcard__img {
+  margin-right: 30px;
+
+  // img {
+
+  // }
+}
+.ipcard-check__subtitle {
+  // align-self: flex-end;
+  font-size: 12px;
+}
+.ipcard__body {
+  margin-top: 20px;
+}
+.ipcard__title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.ipcard__subtitle {
+  // width: 98%;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.contact-wr-b {
+  margin-top: 20px;
+  // position: relative;
+  z-index: 4;
+  align-items: center;
+}
+.contact-wr-b__text-box {
+  text-align: center;
+}
+.contact-wr-b__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.contact-wr-b__subtitle {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
 // contact
 
 // --------------------------------------!!!!!!
