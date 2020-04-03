@@ -1959,8 +1959,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
   z-index: 2; }
@@ -1973,19 +1977,9 @@ body {
     font-size: 180px;
     letter-spacing: 30px;
     right: -5%;
-    bottom: -8%;
+    bottom: -60px;
     color: #efeff5;
     z-index: 3; }
-
-.masfil_par_img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  z-index: 4; }
 
 .masfil_par_choise_box {
   position: relative;
@@ -2098,10 +2092,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  flex-direction: column; }
   .masfil_par_legend p {
     color: #161616;
     font-size: 16px;
