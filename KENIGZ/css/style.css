@@ -460,6 +460,7 @@ body {
 .header_main {
   width: 100%;
   height: 80vh;
+  max-height: 980px;
   background: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1130,11 +1131,11 @@ body {
   margin-top: 20px;
   margin-left: -15px; }
   .ctg_choise_size_form select {
-    width: 250px;
+    min-width: 250px;
     background: none;
     color: #9495aa;
     border: 1px solid #fff;
-    padding: 10px 20px;
+    padding: 10px 30px 10px 20px;
     margin: 0 15px;
     font-size: 18px;
     -webkit-appearance: none;
