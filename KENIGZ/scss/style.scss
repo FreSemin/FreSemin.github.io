@@ -92,7 +92,6 @@ body {
   max-width: 1290px;
 }
 .header {
-  height: 100vh;
   position: relative;
 }
 .main_nav_box {
@@ -116,6 +115,8 @@ body {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  justify-content: center;
+
 }
 .phone_img {
   img {
@@ -235,11 +236,11 @@ body {
 
 .main_nav {
   width: 100%;
-  height: 70px;
+  // height: 70px;
 
-  .wrapper {
-    height: 100%;
-  }
+  // .wrapper {
+    // height: 100%;
+  // }
 }
 .menu_box {
   display: -webkit-box;
@@ -248,7 +249,8 @@ body {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  height: 100%;
+  // padding: 10px 0;
+  height: 70px;
 }
 .main_menu {
   display: -webkit-box;
@@ -264,6 +266,8 @@ body {
 .menu_list {
   display: -webkit-box;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100%;
 
   li {
@@ -428,7 +432,7 @@ body {
 .header_main {
   width: 100%;
   height: 80vh;
-  max-height: 980px;
+  max-height: 500px;
   background: url("../img/header-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -450,6 +454,8 @@ body {
   align-items: center;
 }
 .banner_inf {
+  position: relative;
+  z-index: 3;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -457,6 +463,7 @@ body {
   flex-direction: column;
 }
 .banner_text {
+  width: 100%;
   text-transform: uppercase;
   color: #fff;
 
@@ -473,10 +480,14 @@ body {
   }
 }
 .banner_img {
+  // position: absolute;
+  position: relative;
+  z-index: 2;
   height: 90%;
-  position: absolute;
+  align-self: flex-end;
+  margin-right: -15%;
   bottom: 0;
-  right: -3%;
+  // right: -3%;
 
   img {
     max-height: 580px;
@@ -488,6 +499,7 @@ body {
 // about start
 .about {
   background: #fff;
+  overflow: hidden;
 }
 .about_box {
   display: -webkit-box;
@@ -499,7 +511,8 @@ body {
     content: "kenigz";
     text-transform: uppercase;
     position: absolute;
-    right: -25%;
+    z-index: 2;
+    right: -30%;
     top: 40%;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -513,6 +526,8 @@ body {
   }
 }
 .about_img {
+  position: relative;
+  z-index: 3;
   margin-left: -20%;
   width: 60%;
   height: 100%;
@@ -523,6 +538,8 @@ body {
   }
 }
 .about_inf {
+  position: relative;
+  z-index: 3;
   width: 45%;
   display: -webkit-box;
   display: flex;
@@ -622,13 +639,13 @@ body {
 .advt_container {
   display: -webkit-box;
   display: flex;
-  height: 100vh;
+  min-height: 100px;
+  // height: 100vh;
   background: $bg_light;
 }
 .advt_img {
   margin-left: -20%;
   width: 80%;
-  height: 100%;
 
   div {
     width: 100%;
@@ -639,6 +656,7 @@ body {
   }
 }
 .advt_inf {
+  padding: 100px 0 80px 0;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -736,6 +754,7 @@ body {
 }
 .step_card_img {
   width: 100%;
+  // height: 100%;
   height: 200px;
 
   div {
@@ -747,6 +766,7 @@ body {
   }
 }
 .step_card_inf {
+  padding: 30px 0;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -756,9 +776,10 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  background: $text-light;
-  padding: 30px 0;
+  // height: 100%;
+  // min-height: 200px;
   height: 200px;
+  background: $text-light;
 }
 .step_card_title {
   background: $color_blue;
@@ -929,8 +950,10 @@ body {
   &:before {
     content: "";
     position: absolute;
-    height: 50%;
-    width: 30%;
+    height: 120px;
+    width: 115px;
+    // height: 50%;
+    // width: 30%;
     background: url("../img/ctg-anlg-img.webp");
     background-size: cover;
     background-position: center;
@@ -1015,13 +1038,16 @@ body {
   &:before {
     content: "";
     position: absolute;
-    height: 80%;
-    width: 30%;
+    height: 120px;
+    width: 155px;
+    // height: 80%;
+    // width: 30%;
     background: url("../img/ctg-size-img.webp");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    bottom: -20%;
+    bottom: 0;
+    // bottom: -20%;
     right: 0;
   }
 }
@@ -1123,13 +1149,16 @@ body {
     -webkit-box-pack: center;
     justify-content: center;
 
+    input {
+      margin: 0 15px;
+    }
+
     .input_white {
       width: 300px;
       background: none;
       color: #fff;
       border: 1px solid #fff;
       padding: 10px 20px;
-      margin: 0 15px;
       font-size: 18px;
 
       &::-webkit-input-placeholder {

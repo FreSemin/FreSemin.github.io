@@ -1,13 +1,429 @@
 @import "variables.scss";
 @media (min-width: 1291px) {
-    .wrapper {
-        // width: 80%;
-        margin: 0 auto;
-    }
+  .wrapper {
+    // width: 80%;
+    margin: 0 auto;
+  }
 }
+
+// media 1290px
 @media (max-width: 1290px) {
-    .wrapper {
-        width: 90%;
-        margin: 0 5%;
+  .wrapper {
+    width: 96%;
+    margin: 0 2%;
+  }
+
+ 
+  .about_box {
+    &:after {
+      right: -18%;
     }
+  }
+  .about_inf {
+    width: 35%;
+  }
+}
+
+// media 1200px
+@media (max-width: 1200px) {
+  .banner_img {
+    // height: 85%;
+    // right: -10%;
+  }
+}
+
+// media 1060px
+@media (max-width: 1060px) {
+  .menu_list {
+
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  .banner_img {
+    // height: 80%;
+  }
+  .about_box {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &:after {
+      right: -30%;
+    }
+  }
+  .about_inf {
+    width: 90%;
+    margin: 0;
+  }
+  .about_img {
+    margin: 50px 0 0 0;
+    width: 80%;
+  }
+  .main_nav_links_box {
+    flex-wrap: wrap;
+
+    > div {
+      width: 33%;
+      margin: 15px 0;
+    }
+  }
+  .menu_box {
+    // flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .stsc_box {
+    > div {
+      width: 50%;
+      align-items: center;
+    }
+  }
+  // .advt_inf_img {
+  //   right: -60%;
+  // }
+  .steps_cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    // justify-content: center;
+  }
+  .step_card {
+    margin: 30px 0;
+    width: 40%;
+  }
+  .ctg_box {
+
+    &:after {
+      top: 30px;
+      font-size: 200px;
+    }
+  }
+  .ctg_cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .ctg_card {
+    margin: 40px 0;
+    width: 40%;
+  }
+  .ctg_choise_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ctg_choise_anlg {
+    width: 100%;
+  }
+  .ctg_choise_size {
+    margin-top: 50px;
+    align-items: center;
+    width: 100%;
+  }
+  .cons_form {
+    // margin-top: 50px;
+
+    form {
+      // flex-direction: column;
+      // align-items: center;
+
+      input {
+        // margin: 30px auto 0 auto;
+      }
+    }
+  }
+  .footer_container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    > div {
+      margin-bottom: 50px;
+      width: 40%;
+    }
+  }
+}
+
+// media 920px
+@media (max-width: 920px) {
+  .banner_img {
+    // right: -15%;
+  }
+  .about_box {
+
+    &:after {
+      right: -35%;
+    }
+  }
+  .advt_container {
+    min-height: 100px;
+    flex-direction: column-reverse;
+  }
+  .advt_inf {
+    width: 100%;
+    padding: 100px 30px 80px 30px;
+    margin: 0;
+  }
+  .advt_img {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+  }
+  .advt_inf {
+    align-items: center;
+  }
+  .ctg_box {
+
+    &:after {
+      top: 40px;
+      font-size: 150px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main_nav_links_box {
+    // flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      width: 100%;
+      justify-content: center;
+      margin: 50px 0 0 0;
+    }
+  }
+  .logo {
+    text-align: center;
+  }
+  .menu_box {
+    flex-direction: column;
+    // height: auto;
+    // padding: 10px 0;
+  }
+  .menu_list {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+
+      &:after {
+        content: "";
+      }
+    }
+  }
+  .submenu_ctlg {
+    display: none;
+  }
+  .search_box {
+    margin: 30px 0 20px 0;
+  }
+  .header_main {
+    height: auto;
+    max-height: none;
+    padding: 100px 0 60px 0;
+  }
+  .banner_inf {
+    align-items: center;
+  }
+  .banner_text {
+    text-align: center;
+  }
+  .header_banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner_img {
+
+    align-self: center;
+    margin-right: 0;
+    margin-top: 80px;
+
+    img {
+      max-height: 400px;
+    }
+  }
+  .about_title {
+    text-align: center;
+  }
+  .about_box {
+
+    &:after {
+      right: -40%;
+    }
+  }
+  .about_btn {
+    text-align: center;
+  }
+
+  .ctg_box {
+
+    &:after {
+      top: 80px;
+      font-size: 100px;
+    }
+  }
+  .ctg_card {
+    // margin: 40px 0;
+    width: 60%;
+  }
+
+  .cons_form {
+    margin-top: 50px;
+
+    form {
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        margin: 30px auto 0 auto;
+      }
+    }
+  }
+
+  // .steps_cards {
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+    // justify-content: center;
+  // }
+  .step_card {
+    margin: 30px 0;
+    width: 60%;
+  }
+
+  .stsc_box {
+    > div {
+      width: 100%;
+    }
+  }
+
+  .footer_container {
+
+    > div {
+      margin-bottom: 50px;
+      width: 90%;
+    }
+
+    div {
+      text-align: center;
+    }
+  }
+  .footer_contact {
+
+    > div {
+      justify-content: center;
+    }
+  }
+  .footer_adres {
+    justify-content: center;
+  }
+  .footer_logo_links {
+
+    .links_list {
+      justify-content: center;
+    }
+  } 
+}
+
+@media (max-width: 576px) {
+
+
+  .ctg_card {
+    width: 100%;
+  }
+  .step_card {
+    width: 100%;
+  }
+  .footer_container {
+
+    > div {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .banner_text {
+    width: 90%;
+
+    h1 {
+      font-size: 35px;
+    }
+  }
+  .about_title {
+
+    h2 {
+      font-size: 40px;
+    }
+  }
+  .about_box {
+
+    &:after {
+      right: -65%;
+    }
+  }
+  .advt_title_box {
+    h3 {
+      font-size: 32px;
+  
+      span {
+        font-size: 38px;
+      }
+    }
+  }
+  .advt_inf_img {
+    right: -80%;
+  }
+  .advt_img div {
+    background-position: right;
+  }
+  
+}
+
+@media (max-width: 375px) {
+  .banner_text {
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .banner_img {
+
+    img {
+      width: 100%;
+    }
+  }
+  .about_title {
+    
+    h2 {
+      font-size: 35px;
+    }
+  }
+  .about_box {
+
+    &:after {
+      right: -85%;
+    }
+  }
+  .advt_title_box {
+    h3 {
+      font-size: 28px;
+  
+      span {
+        font-size: 32px;
+      }
+    }
+  }
+  .advt_inf_img {
+    right: -120%;
+  }
+  .ctg_choise_anlg_form {
+    width: 100%;
+  
+    form {
+      width: 100%;
+  
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+  }
 }
