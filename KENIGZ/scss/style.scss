@@ -116,7 +116,6 @@ body {
   -webkit-box-align: center;
   align-items: center;
   justify-content: center;
-
 }
 .phone_img {
   img {
@@ -236,11 +235,6 @@ body {
 
 .main_nav {
   width: 100%;
-  // height: 70px;
-
-  // .wrapper {
-    // height: 100%;
-  // }
 }
 .menu_box {
   display: -webkit-box;
@@ -249,7 +243,6 @@ body {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  // padding: 10px 0;
   height: 70px;
 }
 .main_menu {
@@ -359,6 +352,12 @@ body {
     }
   }
 }
+.active_sub {
+  visibility: visible;
+  opacity: 1;
+}
+.submenu_ctlg-active {
+}
 
 .search_box {
   display: -webkit-box;
@@ -366,8 +365,6 @@ body {
   -webkit-box-align: center;
   align-items: center;
   position: relative;
-  // padding: 10px 0;
-  // border: 1px solid red;
 }
 .search_inp {
   input {
@@ -480,14 +477,10 @@ body {
   }
 }
 .banner_img {
-  // position: absolute;
   position: relative;
   z-index: 2;
   height: 90%;
   align-self: flex-end;
-  margin-right: -15%;
-  bottom: 0;
-  // right: -3%;
 
   img {
     max-height: 580px;
@@ -504,7 +497,8 @@ body {
 .about_box {
   display: -webkit-box;
   display: flex;
-  padding: 100px 0;
+  align-items: center;
+  padding: 120px 0;
   position: relative;
 
   &:after {
@@ -512,7 +506,7 @@ body {
     text-transform: uppercase;
     position: absolute;
     z-index: 2;
-    right: -30%;
+    right: -250px;
     top: 40%;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -528,25 +522,24 @@ body {
 .about_img {
   position: relative;
   z-index: 3;
-  margin-left: -20%;
-  width: 60%;
+  width: 50%;
   height: 100%;
+  text-align: center;
 
   img {
     width: 100%;
-    height: 100%;
   }
 }
 .about_inf {
   position: relative;
   z-index: 3;
-  width: 45%;
+  width: 35%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  margin-left: 5%;
+  margin-left: 50px;
 }
 .about_title {
   text-transform: uppercase;
@@ -640,7 +633,6 @@ body {
   display: -webkit-box;
   display: flex;
   min-height: 100px;
-  // height: 100vh;
   background: $bg_light;
 }
 .advt_img {
@@ -714,7 +706,7 @@ body {
 }
 .advt_inf_img {
   position: absolute;
-  right: -40%;
+  right: -10%;
   top: 22%;
 }
 // advantages end
@@ -754,7 +746,6 @@ body {
 }
 .step_card_img {
   width: 100%;
-  // height: 100%;
   height: 200px;
 
   div {
@@ -776,8 +767,6 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  // height: 100%;
-  // min-height: 200px;
   height: 200px;
   background: $text-light;
 }
@@ -845,7 +834,6 @@ body {
     font-family: "Roboto";
     font-size: 250px;
     letter-spacing: 30px;
-    // left: 0%;
     top: -20px;
     width: 100%;
     color: $text-light;
@@ -952,8 +940,6 @@ body {
     position: absolute;
     height: 120px;
     width: 115px;
-    // height: 50%;
-    // width: 30%;
     background: url("../img/ctg-anlg-img.webp");
     background-size: cover;
     background-position: center;
@@ -1040,14 +1026,11 @@ body {
     position: absolute;
     height: 120px;
     width: 155px;
-    // height: 80%;
-    // width: 30%;
     background: url("../img/ctg-size-img.webp");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     bottom: 0;
-    // bottom: -20%;
     right: 0;
   }
 }
@@ -1438,7 +1421,7 @@ body {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    
+
     li {
       margin: 10px 0;
       word-wrap: break-word;
@@ -1639,8 +1622,7 @@ body {
   position: relative;
   display: -webkit-box;
   display: flex;
-      justify-content: flex-end;
-
+  justify-content: flex-end;
 }
 .history_about_content {
   margin-right: 50px;
@@ -1655,7 +1637,7 @@ body {
 }
 .his_about_text_title {
   position: absolute;
-  left: -20%;
+  left: -250px;
   top: 50%;
   text-transform: uppercase;
   transform: rotate(-90deg);
@@ -1698,10 +1680,7 @@ body {
   justify-content: flex-end;
 }
 .his_list_img {
-  // position: absolute;
-  // height: 100%;
   width: 100%;
-  // max-width: 450px;
   margin-left: -60%;
 
   div {
@@ -1803,7 +1782,6 @@ body {
   position: relative;
 }
 .product_img {
-  margin-left: -20%;
   width: 60%;
   display: -webkit-box;
   display: flex;
@@ -1817,7 +1795,7 @@ body {
   }
 }
 .product_inf {
-  width: 45%;
+  width: 40%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -2077,8 +2055,6 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  // -webkit-box-pack: center;
-  // justify-content: center;
 
   p {
     color: $text-black;
@@ -2412,7 +2388,6 @@ body {
     font-size: 16px;
     color: $color_blue;
     line-height: 20px;
-
   }
 }
 .item_avaible {
@@ -2569,10 +2544,8 @@ body {
   div {
     width: 100%;
     height: 100%;
-    //
     max-height: 680px;
     max-width: 410px;
-    //
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -2720,14 +2693,6 @@ body {
     line-height: 18px;
     color: $text-black;
   }
-
-  // input[type="file"] {
-  // margin-top: 20px;
-  // color: $text-grey;
-  // font-size: 16px;
-  // line-height: 18px;
-  // border: 1px solid red;
-  // }
 }
 .inpust_file_form {
   margin-top: 20px;
@@ -2774,7 +2739,6 @@ body {
     line-height: 16px;
   }
 }
-// }
 .inputs_btns_send {
   margin-left: 20px;
   display: -webkit-box;
@@ -2850,7 +2814,7 @@ body {
   position: relative;
 
   &:after {
-    // content: "KENIGZ";
+    content: "KENIGZ";
     text-align: center;
     position: absolute;
     text-transform: uppercase;
@@ -3106,7 +3070,6 @@ body {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  // justify-content: center;
 
   div {
     width: 100%;
