@@ -13,7 +13,6 @@
     margin: 0 2%;
   }
 
- 
   .about_box {
     &:after {
       right: -18%;
@@ -31,7 +30,6 @@
     // right: -10%;
   }
 
-
   // about page
   .days_steps_container {
     justify-content: space-around;
@@ -46,7 +44,6 @@
 // media 1060px
 @media (max-width: 1060px) {
   .menu_list {
-
     li {
       margin: 10px 0;
     }
@@ -104,7 +101,6 @@
     width: 40%;
   }
   .ctg_box {
-
     &:after {
       top: 30px;
       font-size: 200px;
@@ -152,47 +148,47 @@
     }
   }
 
-    // about page
-    .history_about_box {
-      position: relative;
-      display: flex;
-      justify-content: flex-end;
-    }
-    .history_about_content {
-      margin-right: 50px;
-      padding: 10px 0;
-      width: 45%;
-    }
-    .his_about_text_title {
-      left: -30%;
-    }
-    .history_list_box {
-      margin-top: 70px;
-      position: relative;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: end;
-      justify-content: flex-end;
-    }
-    
-    // about page
+  // about page
+  .history_about_box {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .history_about_content {
+    margin-right: 50px;
+    padding: 10px 0;
+    width: 45%;
+  }
+  .his_about_text_title {
+    left: -30%;
+  }
+  .history_list_box {
+    margin-top: 70px;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+  }
 
-    //catalog page
-    .product_box {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-    .product_inf {
-      margin-left: 0;
-      width: 100%;
-    }
-    .product_img {
-      margin-left: 0;
-    }
-    // .product_title {
-      // text-align: center;
-    // }
-    // catalop page
+  // about page
+
+  //catalog page
+  .product_box {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .product_inf {
+    margin-left: 0;
+    width: 100%;
+  }
+  .product_img {
+    margin-left: 0;
+  }
+  // .product_title {
+  // text-align: center;
+  // }
+  // catalop page
 }
 
 // media 920px
@@ -201,7 +197,6 @@
     // right: -15%;
   }
   .about_box {
-
     &:after {
       right: -35%;
     }
@@ -224,7 +219,6 @@
     align-items: center;
   }
   .ctg_box {
-
     &:after {
       top: 40px;
       font-size: 150px;
@@ -234,7 +228,7 @@
   // about page
   .history_intro_box {
     flex-direction: column-reverse;
-    align-items:center;
+    align-items: center;
 
     > div {
       width: 100%;
@@ -248,7 +242,7 @@
   }
   .history_about_box {
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 
     > div {
       width: 100%;
@@ -268,7 +262,7 @@
   }
   .history_list_box {
     flex-direction: column-reverse;
-    align-items:center;
+    align-items: center;
 
     > div {
       width: 100%;
@@ -294,14 +288,97 @@
   }
   // about page
 
-  // catalog page 
+  // catalog page
   .product_img {
-    
     img {
       width: 100%;
     }
   }
   // catalog page
+
+  // masfil page
+  .masfil_box {
+    // justify-content: center;
+    // flex-direction: column-reverse;
+  }
+  .masfil_container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .masfil_about_text_box {
+    margin-left: 0;
+    width: 100%;
+  }
+  .masfil_about_img {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+  .result_content {
+    justify-content: space-evenly;
+  }
+  .product_card {
+    width: 40%;
+  }
+  // masfil page
+
+  // item page
+  .item_title {
+    justify-content: center;
+  }
+  .item_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item_img_box {
+    width: 100%;
+  }
+  .item_inf {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .item_quest_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item_ques_text {
+    text-align: center;
+  }
+  .item_ques_btn {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .similar_title {
+    text-align: center;
+  }
+  // item page
+
+  // news page
+  .news_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news_img {
+    margin-top: 30px;
+    height: 250px;
+    max-width: none;
+  }
+  // news page
+
+  // contact page
+  .contact_inf_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_inf_conteiner {
+    margin: 50px 0;
+    width: 100%;
+  }
+  // contact page
 }
 
 @media (max-width: 768px) {
@@ -329,7 +406,6 @@
     align-items: center;
 
     li {
-
       &:after {
         content: "";
       }
@@ -358,7 +434,6 @@
   }
 
   .banner_img {
-
     align-self: center;
     margin-right: 0;
     margin-top: 80px;
@@ -371,7 +446,6 @@
     text-align: center;
   }
   .about_box {
-
     &:after {
       right: -40%;
     }
@@ -381,7 +455,6 @@
   }
 
   .ctg_box {
-
     &:after {
       top: 80px;
       font-size: 100px;
@@ -406,9 +479,9 @@
   }
 
   // .steps_cards {
-    // flex-wrap: wrap;
-    // justify-content: space-evenly;
-    // justify-content: center;
+  // flex-wrap: wrap;
+  // justify-content: space-evenly;
+  // justify-content: center;
   // }
   .step_card {
     margin: 30px 0;
@@ -422,7 +495,6 @@
   }
 
   .footer_container {
-
     > div {
       margin-bottom: 50px;
       width: 90%;
@@ -433,7 +505,6 @@
     }
   }
   .footer_contact {
-
     > div {
       justify-content: center;
     }
@@ -442,23 +513,21 @@
     justify-content: center;
   }
   .footer_logo_links {
-
     .links_list {
       justify-content: center;
     }
-  } 
-
+  }
 
   // about page
   .days_steps_box {
     width: 100%;
     justify-content: center;
-    }
+  }
 
-    .his_about_text_title {
-      left: -45%;
-      // top: 20%;
-    }
+  .his_about_text_title {
+    left: -45%;
+    // top: 20%;
+  }
   // abput page
 
   //catalog page
@@ -466,11 +535,63 @@
     text-align: center;
   }
   // catalop page
+
+  // masfil page
+  .masfil_about_title {
+    text-align: center;
+  }
+  .product_card {
+    width: 60%;
+  }
+  .masfil_par_box {
+    flex-direction: column;
+  }
+  .masfil_par_choise_box {
+    form {
+      align-items: center;
+    }
+  }
+  .masfil_par_legend {
+    margin-top: 30px;
+    padding-right: 0;
+    align-items: center;
+  }
+  // masfil page
+
+  // news-page page
+  .antr_news_title {
+    text-align: center;
+  }
+  // news-page page
+
+  // razrab page
+  .razrab_conteiner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .razrab_cont_img {
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+  }
+  .razrab_cont_form {
+    width: 70%;
+  }
+  // razrap page
+
+  // contact page
+  .contact_form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  // contact page
 }
 
 @media (max-width: 576px) {
-
-
   .ctg_card {
     width: 100%;
   }
@@ -478,7 +599,6 @@
     width: 100%;
   }
   .footer_container {
-
     > div {
       width: 100%;
       text-align: center;
@@ -493,13 +613,11 @@
     }
   }
   .about_title {
-
     h2 {
       font-size: 40px;
     }
   }
   .about_box {
-
     &:after {
       right: -65%;
     }
@@ -507,7 +625,7 @@
   .advt_title_box {
     h3 {
       font-size: 32px;
-  
+
       span {
         font-size: 38px;
       }
@@ -519,60 +637,124 @@
   .advt_img div {
     background-position: right;
   }
-  
-    // about page
-    .page_title_text {
 
-      h2 {
-        font-size: 45px;
-      }
+  // about page
+  .page_title_text {
+    h2 {
+      font-size: 45px;
     }
-      .his_about_text_title {
-        left: -65%;
-      }
-      .days_title {
+  }
+  .his_about_text_title {
+    left: -65%;
+  }
+  .days_title {
+    h3 {
+      font-size: 35px;
+    }
+  }
+  .contactUs_text {
+    text-align: center;
 
-        h3 {
-          font-size: 35px;
-        }
-      }
-      .contactUs_text {
-        text-align: center;
+    p {
+      font-size: 20px;
+    }
+  }
+  .intro_title {
+    h4 {
+      font-size: 40px;
+    }
+  }
+  // about page
 
-        p {
-          font-size: 20px;
-        }
-      }
-      .intro_title {
+  // masfil page
+  .product_card {
+    width: 90%;
+  }
+  .masfil_par_choise_conteiner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .masfil_par_choise_cont {
+    margin-top: 30px;
+  }
+  .masfil_par_choise_conteiner {
+    width: 100%;
+  }
+  .masfil_par_choise_cont {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 30px;
+    width: 100%;
+  }
+  .masfil_par_ch_title {
+    text-align: center;
+  }
+  .masfil_par_sel_box {
+    select {
+      width: 100%;
+    }
+  }
+  // masfil page
 
-        h4 {
-          font-size: 40px;
-        }
-      }
-    // abput page
+  // news page
+  .news_title_box {
+    align-items: center;
+    flex-direction: column;
+  }
+  .news_when_box {
+    width: fit-content;
+    margin-bottom: 30px;
+  }
+  .news_title_cont {
+    margin-left: 0;
+  }
+  .news_inf_btn-more {
+    text-align: center;
+  }
+  .news_title_text {
+    // text-align: center;
+  }
+  // news page
+
+  // razrap page
+  .razrab_cont_form {
+    width: 100%;
+  }
+  .razrab_title {
+    justify-content: center;
+  }
+  .input_btns_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputs_btns_file {
+    width: 100%;
+    align-items: center;
+  }
+  .inputs_btns_send {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  // razrap page
 }
 
 @media (max-width: 375px) {
   .banner_text {
-
     h1 {
       font-size: 30px;
     }
   }
   .banner_img {
-
     img {
       width: 100%;
     }
   }
   .about_title {
-    
     h2 {
       font-size: 35px;
     }
   }
   .about_box {
-
     &:after {
       right: -85%;
     }
@@ -580,7 +762,7 @@
   .advt_title_box {
     h3 {
       font-size: 28px;
-  
+
       span {
         font-size: 32px;
       }
@@ -591,16 +773,29 @@
   }
   .ctg_choise_anlg_form {
     width: 100%;
-  
+
     form {
       width: 100%;
-  
+
       input[type="text"] {
         width: 100%;
       }
     }
   }
+  .cons_title {
+    h6 {
+      font-size: 32px;
+    }
+  }
+  .cons_form {
 
+    form {
+
+      .input_white {
+        width: 100%;
+      }
+    }
+  }
 
   // about page
   .his_about_text_title {
