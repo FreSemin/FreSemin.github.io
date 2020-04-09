@@ -11,6 +11,14 @@
   .about_inf {
     width: 35%; } }
 
+@media (max-width: 1200px) {
+  .days_steps_container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .days_steps_box {
+    width: 40%;
+    margin: 40px 0; } }
+
 @media (max-width: 1060px) {
   .menu_list li {
     margin: 10px 0; }
@@ -88,7 +96,43 @@
     justify-content: space-evenly; }
     .footer_container > div {
       margin-bottom: 50px;
-      width: 40%; } }
+      width: 40%; }
+  .history_about_box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .history_about_content {
+    margin-right: 50px;
+    padding: 10px 0;
+    width: 45%; }
+  .his_about_text_title {
+    left: -30%; }
+  .history_list_box {
+    margin-top: 70px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .product_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .product_inf {
+    margin-left: 0;
+    width: 100%; }
+  .product_img {
+    margin-left: 0; } }
 
 @media (max-width: 920px) {
   .about_box:after {
@@ -113,7 +157,72 @@
     align-items: center; }
   .ctg_box:after {
     top: 40px;
-    font-size: 150px; } }
+    font-size: 150px; }
+  .history_intro_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .history_intro_box > div {
+      width: 100%; }
+  .history_intro_img {
+    margin-top: 50px;
+    margin-left: 0;
+    width: 100%;
+    height: 500px; }
+  .history_about_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .history_about_box > div {
+      width: 100%; }
+  .his_about_text {
+    margin-left: 30%;
+    width: 70%; }
+  .his_about_img {
+    margin-top: 50px;
+    margin-right: 0;
+    height: 500px; }
+  .his_about_text_title {
+    top: 20%; }
+  .history_list_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .history_list_box > div {
+      width: 100%; }
+  .his_list_container {
+    padding: 10px;
+    margin-left: 0; }
+  .his_list_img {
+    margin-top: 50px;
+    margin-left: 0;
+    height: 500px; }
+  .contactUs_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .contactUs_btn {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 0; }
+  .product_img img {
+    width: 100%; } }
 
 @media (max-width: 768px) {
   .main_nav_links_box {
@@ -221,7 +330,16 @@
   .footer_logo_links .links_list {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center; }
+  .days_steps_box {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .his_about_text_title {
+    left: -45%; }
+  .product_title {
+    text-align: center; } }
 
 @media (max-width: 576px) {
   .ctg_card {
@@ -246,7 +364,19 @@
   .advt_inf_img {
     right: -80%; }
   .advt_img div {
-    background-position: right; } }
+    background-position: right; }
+  .page_title_text h2 {
+    font-size: 45px; }
+  .his_about_text_title {
+    left: -65%; }
+  .days_title h3 {
+    font-size: 35px; }
+  .contactUs_text {
+    text-align: center; }
+    .contactUs_text p {
+      font-size: 20px; }
+  .intro_title h4 {
+    font-size: 40px; } }
 
 @media (max-width: 375px) {
   .banner_text h1 {
@@ -268,4 +398,6 @@
     .ctg_choise_anlg_form form {
       width: 100%; }
       .ctg_choise_anlg_form form input[type="text"] {
-        width: 100%; } }
+        width: 100%; }
+  .his_about_text_title {
+    left: -90%; } }

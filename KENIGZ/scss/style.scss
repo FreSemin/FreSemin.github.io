@@ -1583,16 +1583,12 @@ body {
 }
 .history_intro_box {
   position: relative;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: end;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 .history_intro_img {
-  height: 100%;
   width: 100%;
-  position: absolute;
-  left: -60%;
+  margin-left: -60%;
 
   div {
     height: 100%;
@@ -1638,9 +1634,11 @@ body {
   position: relative;
   display: -webkit-box;
   display: flex;
+      justify-content: flex-end;
+
 }
 .history_about_content {
-  margin-left: 20%;
+  margin-right: 50px;
   padding: 10px 0;
   width: 45%;
 
@@ -1669,11 +1667,13 @@ body {
     color: $text-dark;
   }
 }
+.his_about_text {
+  position: relative;
+  z-index: 3;
+}
 .his_about_img {
-  position: absolute;
-  height: 100%;
   width: 70%;
-  right: -40%;
+  margin-right: -40%;
 
   div {
     height: 100%;
@@ -1693,11 +1693,11 @@ body {
   justify-content: flex-end;
 }
 .his_list_img {
-  position: absolute;
-  height: 100%;
+  // position: absolute;
+  // height: 100%;
   width: 100%;
   // max-width: 450px;
-  left: -60%;
+  margin-left: -60%;
 
   div {
     height: 100%;
@@ -1715,7 +1715,7 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   width: 45%;
-  margin-right: 10%;
+  margin-left: 50px;
 }
 .his_list_text {
   p {
