@@ -464,6 +464,8 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    .masfil_par_box:after {
+      display: none; }
   .masfil_par_choise_box form {
     -webkit-box-align: center;
     -ms-flex-align: center;

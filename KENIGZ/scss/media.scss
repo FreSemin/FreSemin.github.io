@@ -530,6 +530,10 @@
   }
   .masfil_par_box {
     flex-direction: column;
+
+    &:after {
+      display: none;
+    }
   }
   .masfil_par_choise_box {
     form {
