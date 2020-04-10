@@ -330,14 +330,6 @@ body {
         color: #ff9600; }
     .menu_list li .active_page {
       color: #ff9600; }
-    .menu_list li:hover .submenu_ctlg {
-      opacity: 1;
-      visibility: visible;
-      transition: 0.5s all;
-      -webkit-transition: 0.5s all;
-      -moz-transition: 0.5s all;
-      -ms-transition: 0.5s all;
-      -o-transition: 0.5s all; }
 
 .submenu_ctlg {
   width: 400px;
