@@ -3,13 +3,22 @@
   .wrapper {
     margin: 0 auto;
   }
+  .banner_img {
+    margin-right: -40px;
+  }
+  .about_img {
+    margin-left: -40px;
+  }
+  .about_inf {
+    margin-left: 90px;
+  }
 }
 
 // media 1290px
 @media (max-width: 1290px) {
   .wrapper {
-    width: 96%;
-    margin: 0 2%;
+    width: 94%;
+    margin: 0 3%;
   }
 }
 
