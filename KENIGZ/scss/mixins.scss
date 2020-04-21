@@ -40,12 +40,13 @@
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
-  transition: all 0.5s;
+  transition: all 0.3s;
   @include btn_bg;
 
   &:hover {
     @include btn_bg_hover;
     cursor: pointer;
+    transition: all 0.3s;
   }
 }
 @mixin btn_dark {
@@ -61,10 +62,6 @@
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   @include btn_bg_hover;
-
-  // &:first-letter {
-  //   text-transform: uppercase;
-  // }
 
   &:hover {
     @include btn_bg;
