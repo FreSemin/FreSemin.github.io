@@ -39,6 +39,8 @@
     left: -70px; } }
 
 @media (max-width: 1200px) {
+  .submenu_ctlg {
+    top: 38px; }
   .advt_inf_img {
     right: 0;
     width: 100%; }
@@ -61,8 +63,6 @@
     bottom: 4%; } }
 
 @media (max-width: 1060px) {
-  .menu_list li {
-    margin: 10px 0; }
   .header_main {
     height: auto;
     max-height: none;
@@ -119,8 +119,6 @@
     .main_nav_links_box > div {
       width: 33%;
       margin: 15px 0; }
-  .submenu_ctlg {
-    top: 40px; }
   .advt_container {
     min-height: 100px;
     -webkit-box-orient: vertical;
@@ -476,6 +474,7 @@
     align-items: center; }
     .menu_list li {
       width: 100%;
+      margin: 10px 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
