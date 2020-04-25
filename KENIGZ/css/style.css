@@ -78,43 +78,43 @@ h6 {
 
 /*--------------------*/
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   src: url("../fonts/rubik/Rubik-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   src: url("../fonts/rubik/Rubik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/opensans/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/opensans/OpenSans.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("../fonts/opensans/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("OpenSans-Semibold.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("../fonts/opensans/OpenSans-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
@@ -1289,6 +1289,48 @@ body {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
+  .ctg_choise_size_form input[type="button"] {
+    position: relative;
+    z-index: 2;
+    width: 150px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 20px;
+    min-width: 200px;
+    border: none;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #fcb248;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcb248), to(#ff9600));
+    background: -webkit-linear-gradient(top, #fcb248 0%, #ff9600 100%);
+    background: -o-linear-gradient(top, #fcb248 0%, #ff9600 100%);
+    background: linear-gradient(180deg, #fcb248 0%, #ff9600 100%);
+    padding: 16px 30px;
+    margin-left: 10px;
+    cursor: pointer; }
+    .ctg_choise_size_form input[type="button"]:hover {
+      background: #ff9600;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ff9600), to(#e18503));
+      background: -webkit-linear-gradient(top, #ff9600 0%, #e18503 100%);
+      background: -o-linear-gradient(top, #ff9600 0%, #e18503 100%);
+      background: linear-gradient(180deg, #ff9600 0%, #e18503 100%);
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(255, 150, 0, 0.4);
+      box-shadow: 0px 5px 10px 0px rgba(255, 150, 0, 0.4);
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
 
 .chs_form_box {
   display: -webkit-box;
@@ -2123,15 +2165,21 @@ body {
     color: #161616; }
 
 .masfil_parametres {
-  margin-top: 60px; }
+  position: relative;
+  overflow: hidden; }
+  .masfil_parametres .wrapper {
+    max-height: 0;
+    -webkit-transition: max-height 1.5s ease;
+    -o-transition: max-height 1.5s ease;
+    transition: max-height 1.5s ease; }
 
 .masfil_par_box {
-  width: 100%;
-  padding: 50px 0;
-  background: #f7f7fa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  padding: 50px 0;
+  background: #f7f7fa;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;

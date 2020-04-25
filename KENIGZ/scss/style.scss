@@ -98,7 +98,7 @@ body {
   width: 100%;
   background: #fff;
   color: $color_blue;
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .main_nav_links {
   width: 100%;
@@ -114,6 +114,7 @@ body {
 .logo {
   a {
     img {
+      -o-object-fit: cover;
       object-fit: cover;
       width: 220px;
       height: 52px;
@@ -125,6 +126,7 @@ body {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 .phone_img {
@@ -217,6 +219,7 @@ body {
 
     a {
       img {
+        -o-object-fit: cover;
         object-fit: cover;
         height: 20px;
       }
@@ -266,6 +269,7 @@ body {
 .menu_list {
   display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
@@ -331,7 +335,9 @@ body {
       height: 60px;
 
       img {
+        -o-object-fit: fill;
         object-fit: fill;
+        -o-object-position: center;
         object-position: center;
         height: 60px;
         width: 60px;
@@ -496,6 +502,7 @@ body {
 .about_box {
   display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   padding: 120px 0;
   position: relative;
@@ -882,12 +889,14 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   background: #fff;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 
   &:hover {
     border: none;
     cursor: pointer;
-    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
   &:hover .ctg_card_btn-more a {
@@ -921,7 +930,9 @@ body {
   }
 }
 .ctg_choise_box {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   margin: 100px 0 0 0;
   width: 100%;
@@ -930,7 +941,10 @@ body {
   margin-top: 60px;
 }
 .ctg_choise_anlg {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   position: relative;
   width: 100%;
@@ -1091,6 +1105,16 @@ body {
     margin-left: 10px;
     cursor: pointer;
   }
+  input[type="button"] {
+    position: relative;
+    z-index: 2;
+    width: 150px;
+    margin-top: 20px;
+    @include btn_light;
+    padding: 16px 30px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
 }
 .chs_form_box {
   display: -webkit-box;
@@ -1217,6 +1241,7 @@ body {
   padding: 75px 0;
   display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 .footer_box_logo {
@@ -1595,7 +1620,9 @@ body {
 }
 .history_intro_box {
   position: relative;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 .history_intro_img {
@@ -1649,13 +1676,16 @@ body {
   position: relative;
   display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   min-height: 600px;
 }
 .history_about_content {
   margin-left: 80px;
   margin-right: 110px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 
   width: 50%;
@@ -1784,8 +1814,11 @@ body {
 }
 .strategy_text {
   min-height: 350px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
 
   p {
@@ -1909,6 +1942,7 @@ body {
   max-width: 410px;
 
   img {
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -1935,7 +1969,6 @@ body {
 }
 
 // masfil choise start
-
 .masfil_choise {
   .ctg_choise_anlg {
     background: $bg_light;
@@ -1977,14 +2010,23 @@ body {
 
 // masfil parametres start
 .masfil_parametres {
-  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+
+  .wrapper {
+    max-height: 0;
+    -webkit-transition: max-height 1.5s ease;
+    transition: max-height 1.5s ease;
+  }
 }
 .masfil_par_box {
+  // margin-top: 60px;      in js(param_box)
+  display: -webkit-box;
+  display: flex;
   width: 100%;
   padding: 50px 0;
   background: $bg_light;
-  display: -webkit-box;
-  display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -2360,6 +2402,7 @@ body {
 }
 .item_container {
   margin-top: 60px;
+  display: -webkit-box;
   display: flex;
 }
 .item_img_box {
@@ -2557,6 +2600,7 @@ body {
 .razrab_conteiner {
   display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   background: $bg_light;
   margin-top: 50px;
@@ -2809,6 +2853,7 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
   align-items: flex-start;
 }
 .contact_inf_conteiner {
@@ -2917,7 +2962,7 @@ body {
   padding: 50px 140px 30px 140px;
   position: relative;
   z-index: 3;
-  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.2);
 
   form {
     display: -webkit-box;
@@ -3042,6 +3087,8 @@ body {
   display: flex;
 }
 .news_when_box {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border: 1px solid $text-orange;
 }

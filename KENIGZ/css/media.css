@@ -573,6 +573,7 @@
   .masfil_par_legend {
     margin-top: 30px;
     padding-right: 0;
+    margin-left: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
