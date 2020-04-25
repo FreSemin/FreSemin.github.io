@@ -98,7 +98,7 @@ body {
   width: 100%;
   background: #fff;
   color: $color_blue;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
 }
 .main_nav_links {
   width: 100%;
@@ -887,7 +887,7 @@ body {
   &:hover {
     border: none;
     cursor: pointer;
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.2);
     transition: all 0.4s;
   }
   &:hover .ctg_card_btn-more a {
@@ -2917,7 +2917,7 @@ body {
   padding: 50px 140px 30px 140px;
   position: relative;
   z-index: 3;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.2);
 
   form {
     display: -webkit-box;
@@ -2964,6 +2964,7 @@ body {
       line-height: 18px;
       padding: 14px 12px;
       min-height: 140px;
+      border: 1px solid $bg_grey;
 
       &::-webkit-input-placeholder {
         color: $text-grey;
