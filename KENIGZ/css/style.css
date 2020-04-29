@@ -367,7 +367,6 @@ body {
 .submenu_ctlg {
   position: absolute;
   top: 60px;
-  padding-bottom: 10px;
   width: 410px;
   background: #fff;
   opacity: 0;
@@ -387,16 +386,9 @@ body {
       border-bottom: none; }
     .submenu_ctlg li:after {
       content: ""; }
-    .submenu_ctlg li .submenu_img {
-      width: 60px;
-      height: 60px; }
-      .submenu_ctlg li .submenu_img img {
-        -o-object-fit: fill;
-        object-fit: fill;
-        -o-object-position: center;
-        object-position: center;
-        height: 60px;
-        width: 60px; }
+    .submenu_ctlg li .submenu_img img {
+      height: 45px;
+      width: 60px; }
     .submenu_ctlg li .submenu_link {
       margin-left: 30px; }
       .submenu_ctlg li .submenu_link a {
@@ -795,7 +787,7 @@ body {
   position: absolute;
   z-index: 1;
   right: -10%;
-  top: 22%; }
+  bottom: 0; }
 
 .workSteps {
   width: 100%;
@@ -870,7 +862,7 @@ body {
     font-weight: bold;
     color: #fff;
     font-size: 30px;
-    padding: 15px 20px; }
+    padding: 15px 18px; }
 
 .step_card_text {
   margin-top: 30px;

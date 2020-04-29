@@ -306,7 +306,6 @@ body {
 .submenu_ctlg {
   position: absolute;
   top: 60px;
-  padding-bottom: 10px;
   width: 410px;
   background: #fff;
   opacity: 0;
@@ -331,15 +330,10 @@ body {
     }
 
     .submenu_img {
-      width: 60px;
-      height: 60px;
+
 
       img {
-        -o-object-fit: fill;
-        object-fit: fill;
-        -o-object-position: center;
-        object-position: center;
-        height: 60px;
+        height: 45px;
         width: 60px;
       }
     }
@@ -720,7 +714,7 @@ body {
   position: absolute;
   z-index: 1;
   right: -10%;
-  top: 22%;
+  bottom: 0;
 }
 // advantages end
 
@@ -795,7 +789,7 @@ body {
     font-weight: bold;
     color: #fff;
     font-size: 30px;
-    padding: 15px 20px;
+    padding: 15px 18px;
   }
 }
 .step_card_text {
