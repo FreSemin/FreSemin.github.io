@@ -104,8 +104,8 @@ body {
 .first {
 }
 .s-sec__wrapper {
-  margin: 0 4%;
-  max-width: 1440px;
+  margin: 0 30px;
+  max-width: 1340px;
   height: 100%;
 }
 .s-sec__wrapper_first-bg {
@@ -150,7 +150,10 @@ body {
   background: none;
 }
 .block-block__shadow_dark {
-  box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.75);
+  // 191e25
+  box-shadow: 0px 0px 32px 20px rgba(0, 0, 0, 0.75);
+  // box-shadow: 0px 0px 32px 20px rgba(25,30,37,1);
+  // box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.75);
 }
 
 .border-block_border-dark {
@@ -207,14 +210,15 @@ body {
   background: #000;
 }
 .border-cont__title {
-  width: 80%;
+  width: 100%;
+  max-width: 590px;
   font-size: 38px;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 50px;
 }
 .border-cont__title-main {
-  margin-top: -20px;
+  margin-top: -25px;
   text-align: center;
   font-size: 180px;
   font-weight: bold;
@@ -269,6 +273,7 @@ body {
   text-transform: uppercase;
 }
 .menu-btn {
+  margin-top: 4px;
 }
 .menu-btn-cont {
   display: -webkit-box;
@@ -317,23 +322,25 @@ body {
 }
 .first-cont-title {
   position: relative;
-  margin-left: 95px;
-  width: 50%;
+  margin-left: 100px;
+  max-width: 725px;
+  width: 100%;
 }
 .first-cont__title {
   font-size: 76px;
   line-height: 100px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 .main-subtitle {
   position: absolute;
-  right: -70px;
+  right: 0;
+  right: 25px;
   bottom: 20px;
 }
 .main-subtitle-linecont {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: end;
@@ -342,7 +349,7 @@ body {
 .main-subtitle__line {
   height: 1px;
   width: 200px;
-  background: $grey-line;
+  background: $bg-light;
 }
 
 .main-subtitle-text {
@@ -467,7 +474,7 @@ body {
 .border-cont__advantages {
   position: relative;
   z-index: 10;
-  margin-top: 50px;
+  margin-top: 20px;
   display: -webkit-box;
   display: flex;
   width: 100%;
@@ -499,7 +506,7 @@ body {
 }
 .advantages-text__parag {
   margin-top: 15px;
-  margin-left: 30px;
+  margin-left: 20px;
   padding-right: 40px;
   font-weight: 300;
   line-height: 20px;
@@ -561,11 +568,13 @@ body {
 // request
 .request {
   position: relative;
+  overflow: hidden;
 }
 .request-head {
   position: relative;
   width: 100%;
-  // height: 70%;
+  height: 100vh;
+  max-height: 625px;
 }
 .request__head {
   position: relative;
@@ -599,19 +608,21 @@ body {
   position: relative;
   z-index: 2;
   margin-left: 50px;
-  width: 50%;
+  width: 100%;
+  max-width: 440px;
 }
 .request__title {
-  margin-top: 100px;
-  font-size: 60px;
+  // margin-top: 100px;
+  font-size: 80px;
   line-height: 60px;
   // font-family: "Gilroy";
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  line-height: 100px ;
 }
 .request__parag {
-  margin-top: 60px;
+  margin-top: 30px;
   font-size: 18px;
   line-height: 20px;
 }
