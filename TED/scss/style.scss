@@ -103,6 +103,9 @@ body {
 }
 .first {
 }
+.first_bg-first-dark {
+  background: $first-bg-dark;
+}
 .s-sec__wrapper {
   margin: 0 30px;
   max-width: 1340px;
@@ -155,7 +158,9 @@ body {
 
 .border-block_border-black {
   border-color: $border-black;
-  // color: red;
+}
+.border-block_border-contact-page-black {
+  border-color: $border-contact-page-black;
 }
 .border-block_border-menu-black {
   border-color: $border-menu-black;
@@ -189,16 +194,10 @@ body {
 }
 .border-block__menu-block {
   position: relative;
-  // display: -webkit-box;
-  // display: flex;
   z-index: 1;
-  // -webkit-box-align: center;
-  // align-items: center;
-  // -webkit-box-pack: center;
-  // justify-content: center;
   height: 100%;
   width: 50%;
-  max-width: 440px;
+  max-width: 360px;
   border-left-width: 1px;
   border-left-style: solid;
 
@@ -209,8 +208,6 @@ body {
 }
 .border-cont {
   position: relative;
-  // z-index: 4;
-  // margin-top: 130px;
   margin: 130px auto 0 auto;
   width: 100%;
   max-width: 880px;
@@ -336,11 +333,11 @@ body {
   height: 100%;
   width: 100%;
 }
-// .cont-stretch {
-//   align-content: stretch;
-//   height: 100%;
-//   width: 100%;
-// }
+.cont-stretch {
+  align-content: stretch;
+  height: 100%;
+  width: 100%;
+}
 .first-cont__text {
   display: -webkit-box;
   display: flex;
@@ -402,6 +399,7 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   height: 83px;
+  z-index: 5;
 }
 .wrapper-bottom_mr8 {
   margin-bottom: 80px;
@@ -1036,48 +1034,161 @@ body {
 // contact
 
 // menu
-  .menu-content {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-  .menu-text {
-
-  }
-  .menu__text {
-      font-size: 100px;
-      font-weight: bold;
-  }
-  .menu-nav-box {
-
-  }
-  .menu__nav {
-    margin-left: 160px;
-  }
-  .menu__list {
-    display: flex;
-    flex-direction: column;
-  }
-  .menu__item {
-
-  }
-  .menu__link {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .menu__link-number {
-    margin-right: 30px;
-  }
+.menu-content {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.menu-text {
+}
+.menu__text {
+  margin-left: 45px;
+  font-size: 250px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu-nav-box {
+}
+.menu__nav {
+  margin-left: 160px;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+}
+.menu__item {
+  margin-top: 30px;
+}
+.menu__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.menu__link-number {
+  margin-right: 40px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 // menu
+
+
+
+// contact page
+.contact-border-cont {
+  margin-top: 0;
+  height: 100%;
+}
+.contact-border-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // font-size: 125px;
+
+  
+  .border-cont__advantages  {
+    margin-top: 95px;
+  }
+
+  .border-cont__title {
+    font-size: 125px;
+    letter-spacing: 20px;
+    margin-left: -85px;
+  }
+
+  .contact-body__main {
+    max-width: 50%;
+    margin-top: 0;
+    margin-left: -85px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .contact-body__ipcard {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .ipcard__body  {
+    margin-top: 0;
+  }
+
+  .advantages-text {
+    margin-left: 85px;
+  }
+
+  .contact__tel  {
+    padding-top: 50px;
+  }
+}
+.w-b-l_contact-page {
+  flex-direction: column;
+  justify-content: center;
+
+
+  .ipcard__head {
+    margin-bottom: 40px;
+  }
+}
+.contact-bottom-link__box {
+
+}
+.contact-form-box {
+  width: 100%;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__label {
+  margin-left: 18px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.contact__input {
+  margin-top: 10px;
+  padding: 0 20px 8px 18px;
+  background: none;
+  border-bottom: 1px solid $border-white;
+  max-width: 365px;
+  transition: max-width 0.6s ease-out;
+  font-size: 18px;
+  color: $text-white;
+
+  &:focus {
+    max-width: 100%;
+  }
+}
+.contact__btn {
+  // display: inline;
+  margin-top: 75px;
+  margin-left: 50px;
+  max-width: 270px;
+  font-size: 20px;
+  padding: 20px 40px;
+}
+
+// contact page
 
 // --------------------------------------!!!!!!
 .text-white {
-  color: #fff;
+  color: $text-white;
 }
 .text-black {
   color: $text-black;
 }
 .text-dark {
   color: $text-dark;
+}
+.btn_white {
+  background: $btn-bg-white;
+  color: $text-dark;
+  font-weight: bold;
+  text-transform: uppercase;
 }
