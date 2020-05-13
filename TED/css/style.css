@@ -1165,6 +1165,170 @@ body {
   font-size: 20px;
   padding: 20px 40px; }
 
+.prices {
+  position: relative;
+  overflow: hidden; }
+
+.wrapper-top_width {
+  width: 1340px; }
+
+.prices-head {
+  position: relative;
+  width: 100%; }
+
+.prices__head {
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%; }
+
+.prices_cont-width {
+  margin: 0 auto;
+  max-width: 970px; }
+
+.prices__head-cont {
+  margin-top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.prices__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.prices__banner-title {
+  font-size: 260px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  background: url("../img/roots.png") no-repeat;
+  background-position: -35px -115px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.prices__banner-body {
+  margin-top: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%; }
+
+.prices__banner-text_left {
+  margin-left: -100px; }
+
+.prices__banner-text_right {
+  margin-right: -160px; }
+
+.prices__banner-parag {
+  font-size: 22px;
+  font-weight: 300; }
+
+.prices__banner-text-title {
+  font-weight: bold;
+  font-size: 32px; }
+
+.prices__body {
+  position: relative;
+  width: 100%; }
+
+.prices__offers {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%; }
+
+.prices__offers-title {
+  position: absolute;
+  top: 100px;
+  left: -16px;
+  z-index: 4; }
+
+.prices__offers-title_grey {
+  font-size: 280px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #eeeeee; }
+
+.prices__offers-card {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%; }
+
+.prices__offers-card_border-b-grey {
+  border-bottom: 1px solid #c7c7c7; }
+
+.prices__offers-inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.price__offers-inf-title {
+  font-weight: bold;
+  font-size: 25px; }
+
+.price__offers-inf-text {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 20px; }
+
+.prices__offers-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.prices__offers-price-text {
+  font-weight: 300;
+  font-size: 20px; }
+  .prices__offers-price-text span {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase; }
+
 .text-white {
   color: #fff; }
 
