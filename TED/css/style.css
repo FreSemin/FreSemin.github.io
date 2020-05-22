@@ -300,7 +300,7 @@ body {
 .logo__link {
   height: 75px; }
 
-.menu-cont {
+.menu-cont__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }

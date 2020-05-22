@@ -286,7 +286,8 @@ body {
 
 // menu
 .menu-cont {
-  display: -webkit-box;
+}
+.menu-cont__link {
   display: flex;
 }
 .menu-cont-title {
