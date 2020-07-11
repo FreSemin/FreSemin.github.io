@@ -111,6 +111,14 @@ body {
   max-width: 1340px;
   height: 100%;
 }
+.s-sec__wrapper_no-height {
+  height: auto;
+  max-height: none;
+}
+.s-sec__wrapper_no-width {
+  max-width: none;
+}
+
 .s-sec__wrapper_first-bg {
   background-image: url("../img/myan-bg.png");
   background-position: center;
@@ -1551,8 +1559,27 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 // portfolio page
+
+// portfolio pages
+.portfolio-design {
+  max-height: none;
+  height: auto;
+}
+.portfolio__container {
+  min-height: 580px;
+}
+.portfolio__container_bg-white {
+  background: $bg-light;
+}
+.portfolio__container_mg-top {
+  margin-top: 100px;
+}
+.portfolio-design__wrapper-top {
+  width: 100%;
+  max-width: 1340px;
+}
+// portfolio pages
 
 // --------------------------------------!!!!!!
 .text-white {

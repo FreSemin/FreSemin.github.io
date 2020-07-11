@@ -1,3 +1,6 @@
 @media (min-width: 1341px) {
   .s-sec__wrapper {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .portfolio-design__wrapper-top {
+    margin-left: auto;
+    margin-right: auto; } }
