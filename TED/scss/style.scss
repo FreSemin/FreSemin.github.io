@@ -1567,17 +1567,169 @@ body {
   height: auto;
 }
 .portfolio__container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
   min-height: 580px;
 }
 .portfolio__container_bg-white {
   background: $bg-light;
 }
+.portfolio__container_design-shadow {
+  box-shadow: $portfolio-design-block-shadow;
+}
 .portfolio__container_mg-top {
   margin-top: 100px;
+}
+.portfolio__container_design-layerupper {
+  z-index: 5;
+}
+.portfolio__container_design-layerup {
+  z-index: 4;
 }
 .portfolio-design__wrapper-top {
   width: 100%;
   max-width: 1340px;
+}
+.portfolio__container-boxes {
+  display: flex;
+  max-width: 1440px;
+}
+.portfolio__container-box {
+}
+.portfolio__container-box_images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio__side-text {
+  height: 580px;
+  width: 200px;
+}
+.portfolio__container-images {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid red;
+}
+.portfolio__container-images_line {
+  flex-direction: row;
+}
+.portfolio__container-images_line-end {
+  justify-content: flex-end;
+}
+.portfolio__container-images-text {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__container-images-subtitle {
+  margin-top: 35px;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.portfolio__container-images-title {
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-size: 150px;
+  font-weight: bold;
+}
+.portfolio__container-images-title_with-slash-text {
+  display: flex;
+  align-items: center;
+  span {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 70px;
+
+      &:first-of-type {
+        margin-top: 10px;
+        line-height: 45px;
+      }
+      &:last-of-type {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+.portfolio__container-image {
+  // object-fit: ;
+  box-sizing: border-box;
+  border: 1px solid green;
+}
+.portfolio__container-image_mrg-b {
+  margin-bottom: 10px;
+}
+.portfolio__container-image_mrg-t {
+  margin-top: 10px;
+}
+.portfolio__container-image_mrg-l {
+  margin-left: 10px;
+}
+.portfolio__container-image_mrg-l-big {
+  margin-left: 20px;
+}
+.portfolio__container-image_mrg-r {
+  margin-right: 10px;
+}
+.portfolio__container-image_mrg-r-big-for-elements {
+  margin-right: 114px;
+}
+.portfolio__container-image_mrg-sides {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.portfolio-image_mrg-top-min {
+  margin-top: -80px;
+}
+.portfolio__container-image_190x110 {
+  @include portfolio-design-image(190px, 110px);
+}
+.portfolio__container-image_190x250 {
+  @include portfolio-design-image(190px, 250px);
+}
+.portfolio__container-image_250x240 {
+  @include portfolio-design-image(250px, 240px);
+}
+.portfolio__container-image_250x120 {
+  @include portfolio-design-image(250px, 120px);
+}
+.portfolio__container-image_140x240 {
+  @include portfolio-design-image(140px, 240px);
+}
+.portfolio__container-image_140x120 {
+  @include portfolio-design-image(140px, 120px);
+}
+.portfolio__container-image_110x70 {
+  @include portfolio-design-image(110px, 70px);
+}
+.portfolio__container-image_140x70 {
+  @include portfolio-design-image(140px, 70px);
+}
+.portfolio__container-image_150x70 {
+  @include portfolio-design-image(150px, 70px);
+}
+.portfolio__container-image_250x200 {
+  @include portfolio-design-image(250px, 200px);
+}
+.portfolio__container-image_130x200 {
+  @include portfolio-design-image(130px, 200px);
+}
+.portfolio__container-image_320x200 {
+  @include portfolio-design-image(320px, 200px);
+}
+.portfolio__container-image_300x95 {
+  @include portfolio-design-image(300px, 95px);
+}
+.portfolio__container-image_200x95 {
+  @include portfolio-design-image(200px, 95px);
+}
+.portfolio__container-image_90x95 {
+  @include portfolio-design-image(90px, 95px);
+}
+.portfolio__container-image_200x280 {
+  @include portfolio-design-image(200px, 280px);
 }
 // portfolio pages
 
@@ -1590,6 +1742,12 @@ body {
 }
 .text-dark {
   color: $text-dark;
+}
+.text-design-dark-grey {
+  color: $text-design-dark-grey;
+}
+.text-design-light-grey {
+  color: $text-design-light-grey;
 }
 .btn_white {
   background: $btn-bg-white;
