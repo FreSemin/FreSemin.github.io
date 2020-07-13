@@ -1681,9 +1681,25 @@ body {
         margin-left: 15px; }
 
 .portfolio__container-image {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid green; }
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s; }
+  .portfolio__container-image:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    cursor: pointer;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s; }
+  .portfolio__container-image img {
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
 .portfolio__container-image_mrg-b {
   margin-bottom: 10px; }
