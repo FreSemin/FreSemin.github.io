@@ -1,4 +1,66 @@
 @mixin portfolio-design-image($width, $height) {
-    width: $width;
-    height: $height;
+  width: $width;
+  height: $height;
+}
+
+@mixin half-buttons-effects($bg-color, $text-color-first, $text-color-second) {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 480px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: $bg-color;
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+    // clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: all 1s ease;
+  }
+
+  a {
+    position: relative;
+    z-index: 3;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    height: 86px;
+    transition: color 1.5s;
+    font-size: 25px;
+    font-weight: bold;
+
+    &:first-of-type {
+      color: $text-color-second;
+    }
+    &:last-of-type {
+      color: $text-color-first;
+    }
+  }
+
+  &:hover {
+    &::after {
+      right: 40%;
+      //   clip-path: polygon(0 0, 90% 0, 65% 100%, 0% 100%);
+      clip-path: polygon(0 0, 85% 0, 66% 100%, 0% 100%);
+      transition: all 1s ease;
+    }
+    a {
+      transition: color 1.5s;
+      &:first-of-type {
+        color: $text-color-first;
+      }
+      &:last-of-type {
+        color: $text-color-second;
+      }
+    }
+  }
 }
