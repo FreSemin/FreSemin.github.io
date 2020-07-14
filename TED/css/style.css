@@ -1591,6 +1591,7 @@ body {
   font-weight: bold;
   text-transform: uppercase; }
 
+/*#region portfolio design page */
 .portfolio-design {
   max-height: none;
   height: auto; }
@@ -1741,10 +1742,8 @@ body {
     -o-transition: all 0.6s;
     transition: all 0.6s; }
   .portfolio__container-image img {
-    -o-object-position: center;
-    object-position: center;
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: none;
+    object-fit: none;
     width: 100%;
     height: 100%; }
 
@@ -1819,7 +1818,8 @@ body {
     .portfolio__footer-half-buttons:hover a:last-of-type {
       color: #ffffff; }
 
-/*#region portfolio image margins */
+/*#endregion*/
+/*#region portfolio design image margins */
 .portfolio__container-image_mrg-b {
   margin-bottom: 10px; }
 
@@ -1912,6 +1912,63 @@ body {
   height: 280px; }
 
 /*#endregion*/
+/*#region portfolio technology page */
+.portfolio__container-image_technology {
+  position: relative;
+  min-width: 380px;
+  height: 255px;
+  -webkit-box-shadow: 0px 0px 20px 0px #9b9b9c;
+  box-shadow: 0px 0px 20px 0px #9b9b9c; }
+
+.portfolio__technology-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
+/*#endregion*/
+/*#region portfolio design image margins */
+.portfolio__technology-image_mrg-b {
+  margin-bottom: 5px; }
+
+.portfolio__technology-image_mrg-t {
+  margin-top: 5px; }
+
+.portfolio__technology-image_mrg-l {
+  margin-left: 5px; }
+
+.portfolio__container-image_mrg-l-big {
+  margin-left: 20px; }
+
+.portfolio__technology-image_mrg-r {
+  margin-right: 5px; }
+
+.portfolio__technology-image_mrg-sides {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.portfolio__technology-mrg-l-big-min {
+  margin-left: -140px; }
+
+.portfolio__technology-mrg-r-big-min {
+  margin-right: -140px; }
+
+.portfolio__container-images-subtitle_mrg-sml {
+  margin-top: 25px; }
+
+.portfolio__container-images-title_mrg-none {
+  margin-bottom: 0; }
+
+/*#endregion*/
+.portfolio__technology-side-text {
+  min-width: 140px;
+  width: 140px; }
+
+.portfolio__technology-images_line-end {
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
 .text-white {
   color: #ffffff; }
 
