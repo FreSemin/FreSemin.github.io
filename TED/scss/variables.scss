@@ -1,10 +1,9 @@
-
 // bg
 $first-bg-dark: #121212;
 $bg-dark: #191919;
 $bg-white: #ffffff;
 $bg-black: #000000;
-
+$bg-request-form-block: rgba(0, 0, 0, 0.8); 
 
 // borders
 // $border-dark: #141414;
@@ -27,12 +26,12 @@ $text-design-rotate: #c2c2c2;
 $text-design-dark-grey: #525252;
 $text-design-light-grey: #9d9d9d;
 
-
 // btns
 $btn-bg-white: #ffffff;
 
 // shadows
-$price-shadow: 0px 0px 160px 0px rgba(39,70,9,1);
-$portfolio-shadow: 0px 0px 20px 25px rgba(6,8,9, 1);
-$portfolio-design-block-shadow: 0px 5px 20px 0px rgba(0,3,6,0.5);
-$portfolio-technology-block-shadow:  0px 0px 20px 0px rgba(155,155,156,1);
+$price-shadow: 0px 0px 160px 0px rgba(39, 70, 9, 1);
+$portfolio-shadow: 0px 0px 20px 25px rgba(6, 8, 9, 1);
+$portfolio-design-block-shadow: 0px 5px 20px 0px rgba(0, 3, 6, 0.5);
+$portfolio-technology-block-shadow: 0px 0px 20px 0px rgba(155, 155, 156, 1);
+$request-contact-field-box-shadow: 0px 0px 20px 10px rgba(0, 5, 7, 0.7);
