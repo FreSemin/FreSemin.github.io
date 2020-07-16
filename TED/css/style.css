@@ -189,17 +189,22 @@ body {
   border-right-style: solid; }
 
 .border-block__shadow {
-  height: calc(100% + 5px);
+  height: 100%;
   width: 100%;
   max-width: 300px; }
 
 .border-block__elaboration {
   z-index: 3; }
 
-.border-block__shadow_elaboration {
-  background: #191919;
+.border-block__shadow-request {
+  -webkit-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.6); }
+
+.border-block__shadow-elaboration {
+  height: calc(100% + 5px);
   -webkit-box-shadow: 0px 0px 32px 22px #000306;
-  box-shadow: 0px 0px 32px 22px #000306; }
+  box-shadow: 0px 0px 32px 22px #000306;
+  background: #191919; }
 
 .border-block_border-black {
   border-color: #000000; }
@@ -313,6 +318,9 @@ body {
   margin-top: 25px;
   font-size: 20px;
   line-height: 30px; }
+
+.border-block_no-borders {
+  border: none; }
 
 /*#endregion*/
 /*#region wrapper top */
@@ -614,7 +622,7 @@ body {
   display: flex; }
 
 .programms__instruments {
-  padding: 35px 0;
+  padding: 35px 0 40px 0;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,11 +643,6 @@ body {
     cursor: pointer;
     opacity: 1; }
 
-.instr__img-python {
-  width: 130px;
-  -o-object-fit: fill;
-  object-fit: fill; }
-
 .request {
   position: relative;
   overflow: hidden; }
@@ -648,7 +651,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  max-height: 625px; }
+  max-height: 620px; }
 
 .request__head {
   position: relative;
@@ -666,10 +669,6 @@ body {
 .border-block-request .border-block__grey-block:last-child {
   border: none; }
 
-.border-block-request .border-cont__title {
-  text-transform: none;
-  font-size: 45px; }
-
 .request-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,36 +680,32 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
   width: 50%; }
 
 .request__half-text {
   padding-bottom: 30px;
   position: relative;
   z-index: 2;
-  margin-left: 50px;
+  margin-left: 45px;
   width: 100%;
   max-width: 440px; }
 
 .request__title {
-  font-size: 80px;
-  line-height: 60px;
+  margin-top: 105px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  line-height: 100px; }
+  line-height: 82px;
+  font-size: 70px; }
 
 .request__parag {
-  margin-top: 30px;
-  font-size: 20px;
-  line-height: 20px; }
+  margin-top: 45px;
+  line-height: 20px;
+  font-size: 18px; }
 
 .request__half_bg-img {
   position: absolute;
@@ -727,19 +722,34 @@ body {
 
 .request__link {
   position: absolute;
-  display: inline-block;
-  width: 100%;
-  max-width: 270px;
-  text-align: center;
   bottom: 80px;
-  padding: 15px 0px;
-  color: #fff;
-  border: 6px solid #fff;
+  width: 100%;
+  height: 100%;
+  max-width: 260px;
+  max-height: 55px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  border: 0.5px solid #ffffff;
+  color: #ffffff;
+  background: #191919;
   font-size: 20px;
   font-family: "Gilroy";
+  letter-spacing: 1px;
   font-weight: bold;
-  text-transform: uppercase;
-  background: #191919; }
+  text-transform: uppercase; }
+  .request__link:hover {
+    color: #000000;
+    background: #ffffff; }
 
 .request-body {
   position: relative; }
@@ -755,13 +765,21 @@ body {
   width: 100%; }
 
 .request-cont-bord {
-  margin-top: 100px; }
+  margin-top: 95px;
+  z-index: 6; }
+  .request-cont-bord .border-block__grey-block:last-child {
+    border: none; }
+  .request-cont-bord .border-cont__title {
+    margin-left: -2px;
+    text-transform: none;
+    letter-spacing: -2px;
+    font-size: 50px; }
   .request-cont-bord .border-cont__parag {
-    margin-top: 30px;
-    position: relative;
-    padding-bottom: 60px;
-    z-index: 4;
-    line-height: 28px; }
+    margin-top: 5px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    line-height: 24px; }
 
 .wrapper-top_partner {
   position: absolute;
