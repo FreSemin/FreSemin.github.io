@@ -288,6 +288,9 @@ body {
 .border-cont__title_ls-design {
   letter-spacing: -1.5px; }
 
+.border-cont__title_ls-technology {
+  letter-spacing: -3px; }
+
 .border-cont__title-main {
   margin-top: -20px;
   text-align: center;
@@ -299,9 +302,11 @@ body {
 .border-cont__title-main_grey {
   color: #e2e2e2; }
 
-.border-cont__title-main_ml-tech {
-  position: relative;
-  margin-left: -155px;
+.border-cont__title-main_technology {
+  margin-left: -100px;
+  margin-top: -5px;
+  margin-bottom: 35px;
+  font-size: 150px;
   letter-spacing: 10px; }
 
 .border-cont__parag {
@@ -620,8 +625,6 @@ body {
   border-top: 1px solid #afafaf; }
 
 .instriments__img {
-  height: 50px;
-  width: 50px;
   opacity: 0.5;
   -o-object-fit: none;
   object-fit: none;

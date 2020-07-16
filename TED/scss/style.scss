@@ -263,6 +263,9 @@ body {
 .border-cont__title_ls-design {
   letter-spacing: -1.5px;
 }
+.border-cont__title_ls-technology {
+  letter-spacing: -3px;
+}
 .border-cont__title-main {
   margin-top: -20px;
   text-align: center;
@@ -274,9 +277,11 @@ body {
 .border-cont__title-main_grey {
   color: $border-text-grey;
 }
-.border-cont__title-main_ml-tech {
-  position: relative;
-  margin-left: -155px;
+.border-cont__title-main_technology {
+  margin-left: -100px;
+  margin-top: -5px;
+  margin-bottom: 35px;
+  font-size: 150px;
   letter-spacing: 10px;
 }
 
@@ -564,15 +569,15 @@ body {
   display: flex;
 }
 .programms__instruments {
-  padding: 35px 0;
+  padding: 35px 0 40px 0;
   width: 50%;
   display: flex;
   justify-content: space-evenly;
   border-top: 1px solid $border-grey;
 }
 .instriments__img {
-  height: 50px;
-  width: 50px;
+  // height: 50px;
+  // width: 50px;
   opacity: 0.5;
   object-fit: none;
   transition: 0.5s all;
@@ -582,9 +587,6 @@ body {
     opacity: 1;
   }
 }
-.instr__img-python {
-  width: 130px;
-  object-fit: fill;
 }
 // design
 
