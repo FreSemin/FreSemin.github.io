@@ -179,7 +179,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  max-width: 880px;
+  max-width: 860px;
   z-index: 2; }
 
 .border-block_borders {
@@ -189,17 +189,23 @@ body {
   border-right-style: solid; }
 
 .border-block__shadow {
-  height: 100%;
+  height: calc(100% + 5px);
   width: 100%;
-  max-width: 310px;
-  background: none; }
+  max-width: 300px; }
 
-.border-block__shadow_dark {
-  -webkit-box-shadow: 0px 0px 32px 20px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 32px 20px rgba(0, 0, 0, 0.75); }
+.border-block__elaboration {
+  z-index: 3; }
+
+.border-block__shadow_elaboration {
+  background: #191919;
+  -webkit-box-shadow: 0px 0px 32px 22px #000306;
+  box-shadow: 0px 0px 32px 22px #000306; }
 
 .border-block_border-black {
   border-color: #000000; }
+
+.border-block_border-dark {
+  border-color: #111111; }
 
 .border-block_border-contact-page-black {
   border-color: #111111; }
@@ -227,7 +233,7 @@ body {
   justify-content: center;
   height: 100%;
   width: 50%;
-  max-width: 440px;
+  max-width: 430px;
   border-left-width: 1px;
   border-left-style: solid; }
   .border-block__grey-block:last-child {
@@ -248,23 +254,24 @@ body {
 
 .border-cont {
   position: relative;
-  margin: 130px auto 0 auto;
+  margin: 140px auto 0 auto;
   width: 100%;
-  max-width: 880px; }
+  max-width: 860px; }
 
 .border-cont__subtitle {
-  margin-bottom: 40px;
-  margin-left: -55px;
+  margin-bottom: 35px;
+  margin-left: -43px;
   position: relative;
   z-index: 4;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: 1px; }
 
 .border-cont__subtitle:before {
   content: "";
   position: absolute;
   top: 11px;
-  left: -100px;
+  left: -120px;
   width: 90px;
   height: 2px;
   background: #000; }
@@ -273,22 +280,24 @@ body {
   position: relative;
   z-index: 4;
   width: 100%;
-  max-width: 590px;
   font-size: 38px;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 50px; }
+  line-height: 45px; }
+
+.border-cont__title_ls-design {
+  letter-spacing: -1.5px; }
 
 .border-cont__title-main {
-  margin-top: -25px;
+  margin-top: -20px;
   text-align: center;
-  font-size: 180px;
+  font-size: 190px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 15px; }
+  letter-spacing: 10px; }
 
 .border-cont__title-main_grey {
-  color: #dbdbdb; }
+  color: #e2e2e2; }
 
 .border-cont__title-main_ml-tech {
   position: relative;
@@ -350,7 +359,7 @@ body {
   height: 1px;
   width: 26px;
   margin-bottom: 6px;
-  opacity: 0.5; }
+  opacity: 0.7; }
   .menu-btn-cont__bar-line:last-child {
     width: 20px;
     margin-bottom: 0px; }
@@ -359,7 +368,7 @@ body {
   background: #ffffff; }
 
 .bar-line_dark {
-  background: #000; }
+  background: #000000; }
 
 .first-cont__main {
   -ms-flex-line-pack: stretch;
@@ -479,9 +488,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-.elaboration {
-  overflow: hidden; }
-
 .elaboration-text {
   -ms-flex-line-pack: stretch;
   align-content: stretch;
@@ -499,12 +505,13 @@ body {
   z-index: 3; }
 
 .elaboration__text {
-  font-size: 125px;
+  font-size: 130px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 10px; }
 
 .elaboration-scroll {
+  margin-bottom: 20px;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
@@ -517,9 +524,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1px; }
   .elaboration__scroll-link:before {
     content: "V";
     margin-top: 5px;
@@ -534,7 +541,7 @@ body {
 .border-cont__advantages {
   position: relative;
   z-index: 10;
-  margin-top: 20px;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,37 +555,39 @@ body {
   width: 50%; }
 
 .advantages-text__number {
+  margin-left: -3px;
   -ms-flex-item-align: start;
   align-self: flex-start;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-family: "PeaceSans";
+  letter-spacing: 1px;
   font-size: 20px; }
   .advantages-text__number:before {
     content: "";
     position: absolute;
-    top: 7px;
-    left: -40px;
-    height: 2px;
+    top: 9px;
+    left: -30px;
+    height: 1px;
     width: 20px;
-    background: #000;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    background: #000000; }
 
 .advantages-text__parag {
-  margin-top: 15px;
+  margin-top: 10px;
   margin-left: 20px;
-  padding-right: 40px;
+  padding-right: 130px;
   font-weight: 300;
   line-height: 20px;
-  font-size: 17px; }
+  font-size: 16px; }
 
 .border-block__programms {
   position: relative;
-  z-index: 5;
-  margin-top: 100px;
+  z-index: 6;
+  margin-top: 90px;
   width: 100%; }
 
 .design-wrapper-bottom {
@@ -587,45 +596,46 @@ body {
   width: 100%; }
 
 .programms__title {
-  margin-bottom: 40px;
+  margin-left: 5px;
+  margin-bottom: 35px;
   font-size: 20px;
+  letter-spacing: 1px;
   font-weight: bold; }
 
-.programms__inst-box {
+.programms__instruments-box {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .programms__instruments {
-  padding: 30px 0;
+  padding: 35px 0;
   width: 50%;
-  border-top: 1px solid #afafaf;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  border-top: 1px solid #afafaf; }
 
 .instriments__img {
   height: 50px;
   width: 50px;
   opacity: 0.5;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: none;
+  object-fit: none;
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all; }
-
-.instriments__img:hover {
-  cursor: pointer;
-  opacity: 1; }
+  .instriments__img:hover {
+    cursor: pointer;
+    opacity: 1; }
 
 .instr__img-python {
+  width: 130px;
   -o-object-fit: fill;
-  object-fit: fill;
-  width: 130px; }
+  object-fit: fill; }
 
 .request {
   position: relative;
