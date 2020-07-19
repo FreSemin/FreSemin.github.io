@@ -1,4 +1,4 @@
-/*Обнуление*/
+/*#region Clear default styles*/
 * {
   padding: 0;
   margin: 0;
@@ -72,11 +72,13 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
-/*--------------------*/
+/*#endregion Clear default styles*/
 
+/*#region Imports*/
 @import "../css/fonts";
 @import "variables.scss";
 @import "mixins.scss";
+/*#endregion Imports*/
 
 html {
   scroll-behavior: smooth;
@@ -85,6 +87,7 @@ body {
   font-family: "Gilroy";
 }
 
+/*#region s-blocks*/
 .s-sec {
   width: 100%;
   height: 100vh;
@@ -108,7 +111,6 @@ body {
 }
 .s-sec__wrapper {
   position: relative;
-  // margin: 0 30px;
   max-width: 1300px;
   height: 100%;
 }
@@ -141,11 +143,18 @@ body {
   flex-direction: column;
   height: 100%;
 }
+.cont-stretch {
+  align-content: stretch;
+  height: 100%;
+  width: 100%;
+}
+/*#endregion s-blocks*/
 
-/*#region borders blocks */
+/*#region Borders blocks */
 .border-block {
   position: absolute;
   margin: 0 auto;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -153,7 +162,6 @@ body {
   height: 100%;
   width: 100%;
   max-width: 860px;
-  z-index: 2;
 }
 .border-block_borders {
   border-left-width: 1px;
@@ -202,12 +210,9 @@ body {
 }
 .border-block__grey-block {
   position: relative;
-  display: -webkit-box;
-  display: flex;
   z-index: 1;
-  -webkit-box-align: center;
+  display: flex;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   height: 100%;
   width: 50%;
@@ -248,21 +253,21 @@ body {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
-}
-.border-cont__subtitle:before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: -120px;
-  width: 90px;
-  height: 2px;
-  background: #000;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -120px;
+    width: 90px;
+    height: 2px;
+    background: $bg-black;
+  }
 }
 .border-cont__title {
   position: relative;
   z-index: 4;
   width: 100%;
-  // max-width: 590px;
   font-size: 38px;
   text-transform: uppercase;
   font-weight: bold;
@@ -318,13 +323,12 @@ body {
 }
 .wrapper-top__logo {
 }
-
 .logo__link {
   height: 75px;
 }
 /*#endregion*/
 
-// menu
+/*#region Menu*/
 .menu-cont {
 }
 .menu-cont__link {
@@ -346,7 +350,6 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
-
 .menu-btn-cont__bar-line {
   display: block;
   height: 1px;
@@ -365,18 +368,14 @@ body {
 .bar-line_dark {
   background: $bg-black;
 }
-// menu
+/*#endregion Menu*/
 
+/*#region First*/
 .first-cont__main {
-  align-content: stretch;
   height: 100%;
   width: 100%;
 }
-.cont-stretch {
-  align-content: stretch;
-  height: 100%;
-  width: 100%;
-}
+
 .first-cont__text {
   display: -webkit-box;
   display: flex;
@@ -422,6 +421,7 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+/*#endregion First*/
 
 /*#region Wrapper bottom*/
 .wrapper-bottom {
@@ -476,21 +476,17 @@ body {
 }
 /*#endregion Wrapper bottom*/
 
-
-// elaboration
+/*#region Elaboration*/
 .elaboration {
 }
 .elaboration-text {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   align-content: stretch;
   height: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  z-index: 3;
 }
 .elaboration__text {
   font-size: 130px;
@@ -520,9 +516,9 @@ body {
     font-size: 15px;
   }
 }
-// elaboration
+/*#endregion Elaboration*/
 
-// design
+/*#region Design*/
 .design {
 }
 .border-cont__advantages {
@@ -604,14 +600,14 @@ body {
     opacity: 1;
   }
 }
-// design
+/*#endregion Design*/
 
-// technology
+/*#region Technology*/
 .technology {
 }
-// technology
+/*#endregion Technology*/
 
-// request
+/*#region Request*/
 .request {
   position: relative;
   overflow: hidden;
@@ -631,13 +627,7 @@ body {
   height: 100%;
 }
 .border-block-request {
-  // .border-block__grey-block {
-  //   &:last-child {
-  //     border: none;
-  //   }
-  // }
 }
-
 .request-cont {
   display: flex;
   width: 100%;
@@ -649,9 +639,9 @@ body {
   width: 50%;
 }
 .request__half-text {
-  padding-bottom: 30px;
   position: relative;
   z-index: 2;
+  padding-bottom: 30px;
   margin-left: 45px;
   width: 100%;
   max-width: 440px;
@@ -708,7 +698,6 @@ body {
     background: $bg-white;
   }
 }
-
 .request-body {
   position: relative;
 }
@@ -718,15 +707,9 @@ body {
   justify-content: center;
   width: 100%;
 }
-
 .request-cont-bord {
   margin-top: 95px;
   z-index: 6;
-  .border-block__grey-block {
-    &:last-child {
-      border: none;
-    }
-  }
   .border-cont__title {
     margin-left: -1.5px;
     text-transform: none;
@@ -741,7 +724,7 @@ body {
     line-height: 24px;
   }
 }
-// request
+/*#endregion Request*/
 
 /*#region Partners*/
 .partners {
@@ -830,20 +813,24 @@ body {
   margin-top: 10px;
 }
 .team-chrt__link {
-  width: 100%;
-  min-width: 135px;
-  min-height: 35px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-width: 135px;
+  min-height: 35px;
   color: $text-white;
+  background: $bg-dark;
   border: 0.2px solid $border-team-partners;
   font-size: 12px;
   font-family: "Gilroy";
   font-weight: bold;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  background: $bg-dark;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 .partner-bor-sub {
   position: absolute;
@@ -862,12 +849,12 @@ body {
 }
 .partners-imgs-box {
   position: relative;
-  margin-top: 145px;
-  min-height: 240px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 145px;
+  min-height: 240px;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
 }
@@ -888,8 +875,8 @@ body {
   }
 }
 .partners-imgs-box_second {
-  border-top: none;
   margin-top: 0;
+  border-top: none;
 }
 /*#endregion Partners*/
 
@@ -903,13 +890,12 @@ body {
 .contact-head-text {
   margin: 0 auto;
   z-index: 6;
-  min-height: 140px;
-  max-width: 860px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 140px;
+  max-width: 860px;
 }
-
 .contact-head__text {
   font-weight: 300;
   font-size: 15px;
@@ -986,7 +972,6 @@ body {
   font-size: 12px;
 }
 .ipcard__body {
-  // margin-top: 20px;
 }
 .ipcard__title {
   font-size: 20px;
@@ -1026,7 +1011,6 @@ body {
   flex-direction: column;
 }
 .contact-wr-b__links {
-  // margin-top: 20px;
 }
 /*#endregion Contact*/
 
@@ -1089,33 +1073,28 @@ body {
   .border-cont__advantages {
     margin-top: 95px;
   }
-
   .border-cont__title {
     font-size: 125px;
     letter-spacing: 20px;
     margin-left: -85px;
   }
-
   .contact-body__main {
-    max-width: 50%;
     margin-top: 0;
     margin-left: -85px;
-    width: 100%;
     flex-direction: column-reverse;
+    width: 100%;
+    max-width: 50%;
   }
   .contact-body__ipcard {
     margin-left: 0;
     max-width: 100%;
   }
-
   .ipcard__body {
     margin-top: 0;
   }
-
   .advantages-text {
     margin-left: 85px;
   }
-
   .contact__tel {
     padding-top: 50px;
   }
@@ -1464,7 +1443,7 @@ body {
 }
 /*#endregion Portfolio Page*/
 
-/*#region portfolio design page */
+/*#region Portfolio Design Page*/
 .portfolio-design {
   max-height: none;
   height: auto;
@@ -1607,9 +1586,9 @@ body {
 .portfolio__footer-half-buttons {
   @include half-buttons-effects($bg-white, $text-black, $text-white);
 }
-/*#endregion*/
+/*#endregion Portfolio Design Page*/
 
-/*#region portfolio design image margins */
+/*#region Portfolio Design Image Margins*/
 .portfolio__container-image_mrg-b {
   margin-bottom: 10px;
 }
@@ -1635,60 +1614,60 @@ body {
 .portfolio-image_mrg-top-min {
   margin-top: -80px;
 }
-/*#endregion*/
+/*#endregion Portfolio Design Image Margins*/
 
-/*#region portfolio image sizes */
+/*#region Portfolio Image Sizes*/
+.portfolio__container-image_90x95 {
+  @include portfolio-design-image(90px, 95px);
+}
+.portfolio__container-image_110x70 {
+  @include portfolio-design-image(110px, 70px);
+}
+.portfolio__container-image_130x200 {
+  @include portfolio-design-image(130px, 200px);
+}
+.portfolio__container-image_140x70 {
+  @include portfolio-design-image(140px, 70px);
+}
+.portfolio__container-image_140x120 {
+  @include portfolio-design-image(140px, 120px);
+}
+.portfolio__container-image_140x240 {
+  @include portfolio-design-image(140px, 240px);
+}
+.portfolio__container-image_150x70 {
+  @include portfolio-design-image(150px, 70px);
+}
 .portfolio__container-image_190x110 {
   @include portfolio-design-image(190px, 110px);
 }
 .portfolio__container-image_190x250 {
   @include portfolio-design-image(190px, 250px);
 }
-.portfolio__container-image_250x240 {
-  @include portfolio-design-image(250px, 240px);
-}
-.portfolio__container-image_250x120 {
-  @include portfolio-design-image(250px, 120px);
-}
-.portfolio__container-image_140x240 {
-  @include portfolio-design-image(140px, 240px);
-}
-.portfolio__container-image_140x120 {
-  @include portfolio-design-image(140px, 120px);
-}
-.portfolio__container-image_110x70 {
-  @include portfolio-design-image(110px, 70px);
-}
-.portfolio__container-image_140x70 {
-  @include portfolio-design-image(140px, 70px);
-}
-.portfolio__container-image_150x70 {
-  @include portfolio-design-image(150px, 70px);
-}
-.portfolio__container-image_250x200 {
-  @include portfolio-design-image(250px, 200px);
-}
-.portfolio__container-image_130x200 {
-  @include portfolio-design-image(130px, 200px);
-}
-.portfolio__container-image_320x200 {
-  @include portfolio-design-image(320px, 200px);
-}
-.portfolio__container-image_300x95 {
-  @include portfolio-design-image(300px, 95px);
-}
 .portfolio__container-image_200x95 {
   @include portfolio-design-image(200px, 95px);
-}
-.portfolio__container-image_90x95 {
-  @include portfolio-design-image(90px, 95px);
 }
 .portfolio__container-image_200x280 {
   @include portfolio-design-image(200px, 280px);
 }
-/*#endregion*/
+.portfolio__container-image_250x120 {
+  @include portfolio-design-image(250px, 120px);
+}
+.portfolio__container-image_250x200 {
+  @include portfolio-design-image(250px, 200px);
+}
+.portfolio__container-image_250x240 {
+  @include portfolio-design-image(250px, 240px);
+}
+.portfolio__container-image_300x95 {
+  @include portfolio-design-image(300px, 95px);
+}
+.portfolio__container-image_320x200 {
+  @include portfolio-design-image(320px, 200px);
+}
+/*#endregion Portfolio Image Sizes*/
 
-/*#region portfolio technology page */
+/*#region Portfolio Technology Page*/
 .portfolio__container-image_technology {
   position: relative;
   min-width: 380px;
@@ -1708,9 +1687,9 @@ body {
   width: 100%;
   justify-content: space-between;
 }
-/*#endregion*/
+/*#endregion Portfolio Technology Page*/
 
-/*#region portfolio design image margins */
+/*#region Portfolio Technology Image Margins*/
 .portfolio__technology-image_mrg-b {
   margin-bottom: 5px;
 }
@@ -1742,9 +1721,9 @@ body {
 .portfolio__container-images-title_mrg-none {
   margin-bottom: 0;
 }
-/*#endregion*/
+/*#endregion Portfolio Technology Image Margins*/
 
-/*#region Request Form */
+/*#region Request Form*/
 .request-form-block {
   position: fixed;
   z-index: 11;
@@ -1929,6 +1908,9 @@ body {
 }
 /*#endregion Colors Classes*/
 
+
+/*#region Animations*/
+// contact page animations
 @keyframes closeContactLeftBar {
   10% {
     left: 3px;
@@ -1982,3 +1964,4 @@ body {
     top: 8px;
   }
 }
+/*#endregion Animations*/
