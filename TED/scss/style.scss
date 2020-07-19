@@ -423,12 +423,11 @@ body {
   text-transform: uppercase;
 }
 
-// wrapper bottom
+/*#region Wrapper bottom*/
 .wrapper-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 83px;
   z-index: 5;
 }
 .wrapper-bottom_mrg-5 {
@@ -438,7 +437,6 @@ body {
   position: relative;
 }
 .bottom-logo-text {
-  // margin-bottom: 10px;
   width: 60px;
 }
 .bottom-logo__text {
@@ -456,12 +454,16 @@ body {
   z-index: 5;
 }
 .bottom-scroll__scroll-line {
-  height: 76px;
-  background: #fff;
+  height: 75px;
+  display: block;
   width: 3px;
+  background: $bg-white;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 .wrapper-bottom-link {
-  // margin-bottom: 15px;
   display: flex;
   align-items: flex-end;
 }
@@ -472,7 +474,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-// wrapper bottom
+/*#endregion Wrapper bottom*/
+
 
 // elaboration
 .elaboration {
