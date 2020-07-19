@@ -770,7 +770,7 @@ body {
   .request-cont-bord .border-block__grey-block:last-child {
     border: none; }
   .request-cont-bord .border-cont__title {
-    margin-left: -2px;
+    margin-left: -1.5px;
     text-transform: none;
     letter-spacing: -2px;
     font-size: 50px; }
@@ -781,19 +781,21 @@ body {
     letter-spacing: 1px;
     line-height: 24px; }
 
-.wrapper-top_partner {
+/*#region Partners*/
+.wrapper-top_partners {
   position: absolute;
   width: 100%; }
 
-.border-content-partner {
-  margin-top: 70px; }
+.border-content-partners {
+  margin-top: 70px;
+  z-index: 6; }
 
-.partner-team-box {
+.partners-team-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.partner-cont__half {
+.partners-cont__half {
   position: relative;
   z-index: 5;
   width: 50%; }
@@ -811,21 +813,23 @@ body {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  height: 130px;
-  width: 130px;
+  height: 126px;
+  width: 126px;
   overflow: hidden;
   border-radius: 50%;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  border: 0.2px solid #6e6f6f; }
 
 .team-card-text {
+  margin-top: 25px;
   margin-left: 30px; }
 
 .team-card__title {
-  margin-top: 30px;
   font-size: 24px;
   font-weight: bold;
-  line-height: 24px; }
+  line-height: 20px;
+  letter-spacing: -1px; }
 
 .team-card__subtitle {
   margin-top: 15px;
@@ -833,12 +837,13 @@ body {
   font-size: 16px; }
 
 .team-card-body {
-  margin-top: 30px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .team-chrt {
   display: -webkit-box;
@@ -850,7 +855,7 @@ body {
   flex-direction: column; }
 
 .chrt-box {
-  margin: 10px 0;
+  margin: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,29 +868,40 @@ body {
   font-weight: bold; }
 
 .chrt-scors {
-  margin-left: 20px;
+  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .score-line {
-  margin: 0 2px;
+  margin: 0 0.5px;
   display: block;
-  width: 4px;
-  height: 12px;
-  border-radius: 4px;
-  background: #191919; }
+  width: 3px;
+  height: 9px;
+  background: #000000; }
+
+.team-chrt-link {
+  margin-top: 10px; }
 
 .team-chrt__link {
-  padding: 10px 10px;
-  display: block;
   width: 100%;
-  color: #fff;
-  border: 1px solid #afafaf;
-  font-size: 14px;
+  min-width: 135px;
+  min-height: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+  border: 0.2px solid #6e6f6f;
+  font-size: 12px;
   font-family: "Gilroy";
   font-weight: bold;
-  text-align: center;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   background: #191919; }
 
@@ -893,41 +909,51 @@ body {
   position: absolute;
   top: -55px;
   left: 0;
-  font-size: 38px;
+  margin-left: -1px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
   font-weight: bold;
-  text-transform: uppercase; }
-
-.partner-bor-sub::before {
-  top: 16px; }
+  font-size: 38px; }
+  .partner-bor-sub:before {
+    top: 16px;
+    left: -135px; }
 
 .partners-imgs-box {
   position: relative;
-  margin-top: 150px;
+  margin-top: 145px;
+  min-height: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   border-top: 1px solid #afafaf;
   border-bottom: 1px solid #afafaf; }
 
 .partners-img {
-  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 76px;
   -webkit-transition: 0.8s all;
   -o-transition: 0.8s all;
   transition: 0.8s all;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
+  .partners-img img {
+    -o-object-fit: none;
+    object-fit: none; }
   .partners-img:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
@@ -937,6 +963,7 @@ body {
   border-top: none;
   margin-top: 0; }
 
+/*#endregion Partners*/
 .contact {
   position: relative; }
 

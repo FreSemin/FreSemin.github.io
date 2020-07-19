@@ -716,7 +716,7 @@ body {
     }
   }
   .border-cont__title {
-    margin-left: -2px;
+    margin-left: -1.5px;
     text-transform: none;
     letter-spacing: -2px;
     font-size: 50px;
@@ -731,20 +731,21 @@ body {
 }
 // request
 
-// parthers
-.parter {
+/*#region Partners*/
+.partners {
 }
-.wrapper-top_partner {
+.wrapper-top_partners {
   position: absolute;
   width: 100%;
 }
-.border-content-partner {
+.border-content-partners {
   margin-top: 70px;
+  z-index: 6;
 }
-.partner-team-box {
+.partners-team-box {
   display: flex;
 }
-.partner-cont__half {
+.partners-cont__half {
   position: relative;
   z-index: 5;
   width: 50%;
@@ -759,21 +760,23 @@ body {
   img {
     object-fit: cover;
     object-position: center;
-    height: 130px;
-    width: 130px;
+    height: 126px;
+    width: 126px;
     overflow: hidden;
     border-radius: 50%;
     filter: grayscale(100%);
+    border: 0.2px solid $border-team-partners;
   }
 }
 .team-card-text {
+  margin-top: 25px;
   margin-left: 30px;
 }
 .team-card__title {
-  margin-top: 30px;
   font-size: 24px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 20px;
+  letter-spacing: -1px;
 }
 .team-card__subtitle {
   margin-top: 15px;
@@ -781,16 +784,16 @@ body {
   font-size: 16px;
 }
 .team-card-body {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .team-chrt {
   display: flex;
   flex-direction: column;
 }
 .chrt-box {
-  margin: 10px 0;
+  margin: 5px 0;
   display: flex;
   align-items: center;
 }
@@ -801,29 +804,32 @@ body {
   font-weight: bold;
 }
 .chrt-scors {
-  margin-left: 20px;
+  margin-left: 10px;
   display: flex;
 }
 .score-line {
-  margin: 0 2px;
+  margin: 0 0.5px;
   display: block;
-  width: 4px;
-  height: 12px;
-  border-radius: 4px;
-  background: $bg-dark;
+  width: 3px;
+  height: 9px;
+  background: $bg-black;
 }
 .team-chrt-link {
+  margin-top: 10px;
 }
 .team-chrt__link {
-  padding: 10px 10px;
-  display: block;
   width: 100%;
-  color: #fff;
-  border: 1px solid $border-grey;
-  font-size: 14px;
+  min-width: 135px;
+  min-height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: $text-white;
+  border: 0.2px solid $border-team-partners;
+  font-size: 12px;
   font-family: "Gilroy";
   font-weight: bold;
-  text-align: center;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   background: $bg-dark;
 }
@@ -831,29 +837,38 @@ body {
   position: absolute;
   top: -55px;
   left: 0;
-  font-size: 38px;
-  font-weight: bold;
+  margin-left: -1px;
+  letter-spacing: -2px;
   text-transform: uppercase;
-}
-.partner-bor-sub::before {
-  top: 16px;
+  font-weight: bold;
+  font-size: 38px;
+
+  &:before {
+    top: 16px;
+    left: -135px;
+  }
 }
 .partners-imgs-box {
   position: relative;
-  margin-top: 150px;
+  margin-top: 145px;
+  min-height: 240px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
 }
 .partners-img {
-  margin: 20px 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 76px;
   transition: 0.8s all;
   filter: grayscale(100%);
+
+  img {
+    object-fit: none;
+  }
 
   &:hover {
     filter: grayscale(0%);
@@ -864,7 +879,7 @@ body {
   border-top: none;
   margin-top: 0;
 }
-// parthers
+/*#endregion Partners*/
 
 // contact
 .contact {
