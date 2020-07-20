@@ -659,14 +659,14 @@ body {
   justify-content: space-evenly;
   border-top: 1px solid #afafaf; }
 
-.instriments__img {
+.instruments__img {
   opacity: 0.5;
   -o-object-fit: none;
   object-fit: none;
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all; }
-  .instriments__img:hover {
+  .instruments__img:hover {
     cursor: pointer;
     opacity: 1; }
 
