@@ -518,6 +518,7 @@ body {
   align-items: flex-end; }
 
 .bottom__link {
+  margin-left: 45px;
   font-size: 16px;
   font-family: "Gilroy";
   font-weight: bold;
@@ -1038,13 +1039,9 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
-.contact-b-link {
-  margin: 0 20px; }
-
 .contact-body__main {
   position: relative;
   z-index: 6;
-  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,9 +1071,10 @@ body {
 
 .contact-body__ipcard {
   margin-right: 50px;
-  max-width: 400px; }
+  max-width: 360px; }
 
 .ipcard__head {
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1085,10 +1083,10 @@ body {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px; }
+  justify-content: center; }
 
 .ipcard__img {
+  margin-left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1097,11 +1095,7 @@ body {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  opacity: 0.5; }
-
-.ipcard__img_mrg-r {
-  margin-right: 15px; }
+  align-items: center; }
 
 .ipcard-check__subtitle {
   font-size: 12px; }
@@ -1142,9 +1136,6 @@ body {
   font-weight: 300; }
 
 .contact-wr-b_direction {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1215,6 +1206,7 @@ body {
   height: 100%; }
 
 .contact-border-cont {
+  margin-left: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1224,45 +1216,35 @@ body {
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .contact-border-cont .border-cont__advantages {
-    margin-top: 95px; }
+    margin-top: 190px; }
   .contact-border-cont .border-cont__title {
-    font-size: 125px;
-    letter-spacing: 20px;
-    margin-left: -85px; }
+    font-size: 140px;
+    letter-spacing: 15px; }
   .contact-border-cont .contact-body__main {
-    margin-top: 0;
-    margin-left: -85px;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
-    max-width: 50%; }
+    max-width: 360px; }
   .contact-border-cont .contact-body__ipcard {
-    margin-left: 0;
-    max-width: 100%; }
+    margin-right: 0; }
+  .contact-border-cont .ipcard__subtitle {
+    margin-top: 10px; }
   .contact-border-cont .ipcard__body {
     margin-top: 0; }
   .contact-border-cont .advantages-text {
-    margin-left: 85px; }
+    margin-left: 240px; }
   .contact-border-cont .contact__tel {
-    padding-top: 50px; }
-
-.w-b-l_contact-page {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .w-b-l_contact-page .ipcard__head {
-    margin-bottom: 40px; }
+    padding-top: 20px; }
 
 .contact-form-box {
-  width: 100%; }
+  width: 360px; }
 
 .contact__form {
   display: -webkit-box;
@@ -1271,35 +1253,48 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .contact__label {
-  margin-left: 18px;
-  font-size: 24px;
+  margin-top: 10px;
+  font-size: 18px;
   font-weight: bold; }
 
 .contact__input {
-  margin-top: 10px;
-  padding: 0 20px 8px 18px;
+  margin-top: 20px;
+  padding: 0 5px 8px 5px;
+  width: 100%;
   background: none;
   border-bottom: 1px solid #ffffff;
-  max-width: 365px;
   -webkit-transition: max-width 0.6s ease-out;
   -o-transition: max-width 0.6s ease-out;
   transition: max-width 0.6s ease-out;
   font-size: 18px;
   color: #ffffff; }
-  .contact__input:focus {
-    max-width: 100%; }
 
 .contact__btn {
   margin-top: 75px;
-  margin-left: 50px;
-  max-width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 260px;
+  min-height: 50px;
   font-size: 20px;
-  padding: 20px 40px; }
+  border: 1px solid #ffffff; }
   .contact__btn:hover {
     cursor: pointer; }
+
+.contact-wr-b__imgs {
+  margin-bottom: 30px; }
 
 /*#endregion Contact Page*/
 /*#region Price Page*/

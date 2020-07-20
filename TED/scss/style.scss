@@ -468,6 +468,7 @@ body {
   align-items: flex-end;
 }
 .bottom__link {
+  margin-left: 45px;
   font-size: 16px;
   font-family: "Gilroy";
   font-weight: bold;
@@ -921,13 +922,9 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.contact-b-link {
-  margin: 0 20px;
-}
 .contact-body__main {
   position: relative;
   z-index: 6;
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -951,22 +948,19 @@ body {
 }
 .contact-body__ipcard {
   margin-right: 50px;
-  max-width: 400px;
+  max-width: 360px;
 }
 .ipcard__head {
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
 }
 .ipcard__img {
+  margin-left: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
-}
-.ipcard__img_mrg-r {
-  margin-right: 15px;
 }
 .ipcard-check__subtitle {
   font-size: 12px;
@@ -1007,7 +1001,6 @@ body {
   font-weight: 300;
 }
 .contact-wr-b_direction {
-  justify-content: flex-end;
   flex-direction: column;
 }
 .contact-wr-b__links {
@@ -1066,85 +1059,81 @@ body {
   height: 100%;
 }
 .contact-border-cont {
+  margin-left: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   .border-cont__advantages {
-    margin-top: 95px;
+    margin-top: 190px;
   }
   .border-cont__title {
-    font-size: 125px;
-    letter-spacing: 20px;
-    margin-left: -85px;
+    font-size: 140px;
+    letter-spacing: 15px;
   }
   .contact-body__main {
-    margin-top: 0;
-    margin-left: -85px;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
-    max-width: 50%;
+    max-width: 360px;
   }
   .contact-body__ipcard {
-    margin-left: 0;
-    max-width: 100%;
+    margin-right: 0;
+  }
+  .ipcard__subtitle {
+    margin-top: 10px;
   }
   .ipcard__body {
     margin-top: 0;
   }
   .advantages-text {
-    margin-left: 85px;
+    margin-left: 240px;
   }
   .contact__tel {
-    padding-top: 50px;
-  }
-}
-.w-b-l_contact-page {
-  flex-direction: column;
-  justify-content: center;
-
-  .ipcard__head {
-    margin-bottom: 40px;
+    padding-top: 20px;
   }
 }
 .contact-bottom-link__box {
 }
 .contact-form-box {
-  width: 100%;
+  width: 360px;
 }
 .contact__form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .contact__label {
-  margin-left: 18px;
-  font-size: 24px;
+  margin-top: 10px;
+  font-size: 18px;
   font-weight: bold;
 }
 .contact__input {
-  margin-top: 10px;
-  padding: 0 20px 8px 18px;
+  margin-top: 20px;
+  padding: 0 5px 8px 5px;
+  width: 100%;
   background: none;
   border-bottom: 1px solid $border-white;
-  max-width: 365px;
   transition: max-width 0.6s ease-out;
   font-size: 18px;
   color: $text-white;
-
-  &:focus {
-    max-width: 100%;
-  }
 }
 .contact__btn {
   margin-top: 75px;
-  margin-left: 50px;
-  max-width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 260px;
+  min-height: 50px;
   font-size: 20px;
-  padding: 20px 40px;
+  border: 1px solid $border-white;
 
   &:hover {
     cursor: pointer;
   }
+}
+.contact-wr-b__imgs {
+  margin-bottom: 30px;
 }
 /*#endregion Contact Page*/
 
