@@ -174,8 +174,15 @@ body {
   width: 100%;
   max-width: 300px;
 }
+.border-block__shadow_main-black {
+  box-shadow: $borders-main-shadow;
+}
 .border-block__elaboration {
   z-index: 3;
+}
+.border-block__shadow-elaboration {
+  height: calc(100% + 5px);
+  background: $bg-dark;
 }
 .border-block__shadow-request {
   box-shadow: $borders-request-shadow;
@@ -183,12 +190,6 @@ body {
 .border-block__shadow-contact {
   max-width: 580px;
   border: none;
-  box-shadow: $borders-contact-shadow;
-}
-.border-block__shadow-elaboration {
-  height: calc(100% + 5px);
-  box-shadow: $borders-elaboration-shadow;
-  background: $bg-dark;
 }
 .border-block_border-black {
   border-color: $border-black;
@@ -1895,7 +1896,6 @@ body {
   text-transform: uppercase;
 }
 /*#endregion Colors Classes*/
-
 
 /*#region Animations*/
 // contact page animations
