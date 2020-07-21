@@ -1018,38 +1018,37 @@ body {
 .menu-text {
 }
 .menu__text {
-  margin-left: 45px;
-  font-size: 250px;
+  margin-left: 50px;
+  font-size: 240px;
+  letter-spacing: -4px;
   font-weight: bold;
   text-transform: uppercase;
 }
 .menu-nav-box {
 }
 .menu__nav {
-  margin-left: 160px;
+  margin-top: 10px;
+  margin-left: 120px;
 }
 .menu__list {
   display: flex;
   flex-direction: column;
 }
 .menu__item {
-  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .menu__link {
-  display: inline-flex;
-  align-items: center;
-  font-size: 26px;
+  display: flex;
+  font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 .menu__link-number {
-  margin-right: 40px;
-  display: inline-flex;
-  align-items: center;
-  font-size: 12px;
+  margin-top: 5px;
+  margin-right: 30px;
+  font-size: 15px;
   font-weight: bold;
-  letter-spacing: 2px;
 }
 /*#endregion Menu*/
 
