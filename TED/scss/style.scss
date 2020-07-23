@@ -1707,8 +1707,8 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  width: 18px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   overflow: hidden;
 
   span {
@@ -1716,7 +1716,7 @@ body {
     top: 8px;
     display: block;
     height: 1px;
-    width: 18px;
+    width: 16px;
     background: $bg-white;
     &:first-of-type {
       left: 0;
@@ -1805,7 +1805,7 @@ body {
   color: $text-white;
   background: none;
   border: 0.12px solid $border-white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
