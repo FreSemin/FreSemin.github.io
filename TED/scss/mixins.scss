@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 480px;
+  min-width: 360px;
 
   &::after {
     content: "";
@@ -16,10 +16,10 @@
     z-index: 2;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 58%;
     height: 100%;
     background: $bg-color;
-    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
     transition: all 1s ease;
   }
   a {
@@ -30,9 +30,9 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    height: 86px;
+    height: 64px;
     transition: color 1.5s;
-    font-size: 25px;
+    font-size: 19px;
     font-weight: bold;
 
     &:first-of-type {
@@ -45,8 +45,8 @@
 
   &:hover {
     &::after {
-      right: 40%;
-      clip-path: polygon(0 0, 85% 0, 66% 100%, 0% 100%);
+      right: 42%;
+      clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
       transition: all 1s ease;
     }
     a {
