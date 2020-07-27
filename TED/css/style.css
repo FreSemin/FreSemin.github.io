@@ -486,17 +486,20 @@ body {
 .wrapper-bottom_mrg-5 {
   margin-bottom: 50px; }
 
-.prices-wrapper-bottom {
+.wrapper-bottom_p-abs {
   position: absolute;
   width: 100%;
+  z-index: 6;
+  pointer-events: none; }
+
+.wrapper-bottom_ps-t-380 {
   top: 380px; }
 
-.technology-wrapper-bottom {
-  position: absolute;
-  width: 100%;
-  margin-top: 690px;
-  pointer-events: none;
-  z-index: 6; }
+.wrapper-bottom_ps-t-690 {
+  top: 690px; }
+
+.wrapper-bottom_ps-t-675 {
+  top: 675px; }
 
 .design-wrapper-bottom {
   position: absolute;
@@ -1448,9 +1451,6 @@ body {
   position: relative;
   z-index: 5; }
 
-.prices__footer_mrg-t-1 {
-  margin-top: 100px; }
-
 .prices__footer-container {
   margin: 5px auto 75px auto;
   display: -webkit-box;
@@ -1467,6 +1467,15 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   max-width: 480px; }
+
+.prices__footer_mrg-t-1 {
+  margin-top: 100px; }
+
+.prices__footer_mrg-t-65 {
+  margin-top: 65px; }
+
+.prices__footer_mrg-b-60 {
+  margin-bottom: 60px; }
 
 .prices__footer-title {
   text-transform: uppercase;
@@ -1657,8 +1666,7 @@ body {
 .portfolio__container {
   position: relative;
   z-index: 3;
-  width: 100%;
-  min-height: 580px; }
+  width: 100%; }
 
 .portfolio__container_bg-white {
   background: #ffffff; }
@@ -1695,7 +1703,8 @@ body {
 
 .portfolio__side-text {
   position: relative;
-  width: 200px; }
+  width: 100%;
+  max-width: 150px; }
   .portfolio__side-text p {
     position: absolute;
     text-transform: uppercase;
@@ -1705,23 +1714,27 @@ body {
 .portfolio__side-text-big p {
   font-size: 130px; }
 
-.portfolio__side-text-small p {
+.portfolio__side-text-sml p {
   font-size: 75px;
   letter-spacing: 5px; }
 
 .portfolio__side-text_rotate p {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 280px;
-  left: -265px; }
+  transform: rotate(90deg); }
 
 .portfolio__side-text_rotate-reverse p {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  left: -400px;
-  bottom: 425px; }
+  transform: rotate(-90deg); }
+
+.portfolio__side-text_design-r-p p {
+  top: 190px;
+  left: -170px; }
+
+.portfolio__side-text_design-rv-p p {
+  left: -140px;
+  bottom: 255px; }
 
 .portfolio__container-images {
   display: -webkit-box;
@@ -1753,13 +1766,14 @@ body {
   flex-direction: column; }
 
 .portfolio__container-images-subtitle {
-  margin-top: 35px;
+  margin-top: 40px;
   text-transform: uppercase;
-  line-height: 30px;
+  line-height: 40px;
   font-weight: bold;
   font-size: 32px; }
 
 .portfolio__container-images-title {
+  margin-top: -10px;
   text-transform: uppercase;
   font-size: 162px;
   font-weight: bold;
@@ -1773,6 +1787,7 @@ body {
   -ms-flex-align: center;
   align-items: center; }
   .portfolio__container-images-title_with-slash-text span {
+    margin-left: -10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1781,9 +1796,9 @@ body {
     -ms-flex-direction: column;
     flex-direction: column; }
     .portfolio__container-images-title_with-slash-text span p {
-      font-size: 70px; }
+      font-size: 78px; }
       .portfolio__container-images-title_with-slash-text span p:first-of-type {
-        margin-top: 10px;
+        margin-top: 15px;
         line-height: 45px; }
       .portfolio__container-images-title_with-slash-text span p:last-of-type {
         margin-left: 15px; }
@@ -1802,8 +1817,8 @@ body {
     -o-transition: all 0.6s;
     transition: all 0.6s; }
   .portfolio__container-image img {
-    -o-object-fit: none;
-    object-fit: none;
+    -o-object-fit: fill;
+    object-fit: fill;
     width: 100%;
     height: 100%; }
 
@@ -1882,33 +1897,42 @@ body {
 .portfolio__container-image_mrg-t {
   margin-top: 10px; }
 
+.portfolio__container-image_mrg-t-sml {
+  margin-top: 5px; }
+
 .portfolio__container-image_mrg-l {
   margin-left: 10px; }
 
-.portfolio__container-image_mrg-l-big {
-  margin-left: 20px; }
+.portfolio__container-image_mrg-l-30 {
+  margin-left: 30px; }
+
+.portfolio__container-image_mrg-l-50 {
+  margin-left: 50px; }
 
 .portfolio__container-image_mrg-r {
   margin-right: 10px; }
 
-.portfolio__container-image_mrg-r-big-for-elements {
-  margin-right: 114px; }
+.portfolio__container-image_mrg-r-75 {
+  margin-right: 75px; }
 
 .portfolio__container-image_mrg-sides {
   margin-left: 10px;
   margin-right: 10px; }
 
 .portfolio-image_mrg-top-min {
-  margin-top: -80px; }
+  margin-top: -75px; }
+
+.portfolio__container-images_mrg-b-28 {
+  margin-bottom: 28px; }
 
 /*#endregion Portfolio Design Image Margins*/
 /*#region Portfolio Image Sizes*/
-.portfolio__container-image_90x95 {
+.portfolio__container-image_90x100 {
   width: 90px;
-  height: 95px; }
+  height: 100px; }
 
-.portfolio__container-image_110x70 {
-  width: 110px;
+.portfolio__container-image_115x70 {
+  width: 115px;
   height: 70px; }
 
 .portfolio__container-image_130x200 {
@@ -1931,21 +1955,21 @@ body {
   width: 150px;
   height: 70px; }
 
-.portfolio__container-image_190x110 {
-  width: 190px;
+.portfolio__container-image_185x110 {
+  width: 185px;
   height: 110px; }
 
-.portfolio__container-image_190x250 {
-  width: 190px;
+.portfolio__container-image_185x250 {
+  width: 185px;
   height: 250px; }
 
-.portfolio__container-image_200x95 {
+.portfolio__container-image_200x100 {
   width: 200px;
-  height: 95px; }
+  height: 100px; }
 
-.portfolio__container-image_200x280 {
-  width: 200px;
-  height: 280px; }
+.portfolio__container-image_250x275 {
+  width: 250px;
+  height: 275px; }
 
 .portfolio__container-image_250x120 {
   width: 250px;
@@ -1996,6 +2020,14 @@ body {
   min-width: 140px;
   width: 140px; }
 
+.portfolio__side-text_technology-r-p p {
+  top: 280px;
+  left: -265px; }
+
+.portfolio__side-text_technology-rv-p p {
+  left: -400px;
+  bottom: 425px; }
+
 /*#endregion Portfolio Technology Page*/
 /*#region Portfolio Technology Image Margins*/
 .portfolio__technology-image_mrg-b {
@@ -2006,9 +2038,6 @@ body {
 
 .portfolio__technology-image_mrg-l {
   margin-left: 4px; }
-
-.portfolio__container-image_mrg-l-big {
-  margin-left: 50px; }
 
 .portfolio__technology-image_mrg-r {
   margin-right: 4px; }
@@ -2026,11 +2055,8 @@ body {
 .portfolio__technology-mrg-r-big-min {
   margin-right: -200px; }
 
-.portfolio__container-images-subtitle_mrg-sml {
-  margin-top: 25px; }
-
-.portfolio__container-images-title_mrg-none {
-  margin-bottom: 0; }
+.portfolio__container-images-subtitle_mrg-20 {
+  margin-top: 20px; }
 
 /*#endregion Portfolio Technology Image Margins*/
 /*#region Request Form*/
@@ -2227,7 +2253,7 @@ body {
 .text-contact-grey {
   color: #5f5f5f; }
 
-.text-design-rotate {
+.text-rotate {
   color: #c2c2c2; }
 
 .text-design-dark-grey {
