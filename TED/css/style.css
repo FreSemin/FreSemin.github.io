@@ -110,6 +110,110 @@ h6 {
 /*#endregion buttons*/
 /*#region shadows*/
 /*#endregion shadows*/
+/*#region Request Animations */
+@-webkit-keyframes closeContactLeftBar {
+  10% {
+    left: 3px;
+    top: 5px; }
+  30% {
+    left: 6px;
+    top: 2px; }
+  50% {
+    left: 16px;
+    top: -6px; }
+  70% {
+    background: transparent;
+    left: -16px;
+    top: 30px; }
+  80% {
+    background: #ffffff; }
+  100% {
+    left: 0;
+    top: 8px; } }
+@keyframes closeContactLeftBar {
+  10% {
+    left: 3px;
+    top: 5px; }
+  30% {
+    left: 6px;
+    top: 2px; }
+  50% {
+    left: 16px;
+    top: -6px; }
+  70% {
+    background: transparent;
+    left: -16px;
+    top: 30px; }
+  80% {
+    background: #ffffff; }
+  100% {
+    left: 0;
+    top: 8px; } }
+
+@-webkit-keyframes closeContactRightBar {
+  10% {
+    left: -3px;
+    top: 5px; }
+  30% {
+    left: -6px;
+    top: 2px; }
+  50% {
+    left: -16px;
+    top: -6px; }
+  70% {
+    background: transparent;
+    left: 16px;
+    top: 30px; }
+  80% {
+    background: #ffffff; }
+  100% {
+    left: 0;
+    top: 8px; } }
+
+@keyframes closeContactRightBar {
+  10% {
+    left: -3px;
+    top: 5px; }
+  30% {
+    left: -6px;
+    top: 2px; }
+  50% {
+    left: -16px;
+    top: -6px; }
+  70% {
+    background: transparent;
+    left: 16px;
+    top: 30px; }
+  80% {
+    background: #ffffff; }
+  100% {
+    left: 0;
+    top: 8px; } }
+
+/*#endregion Request Animations*/
+@-webkit-keyframes menuShow {
+  from {
+    left: 100%; }
+  to {
+    left: 0; } }
+@keyframes menuShow {
+  from {
+    left: 100%; }
+  to {
+    left: 0; } }
+
+@-webkit-keyframes menuHide {
+  from {
+    left: 0; }
+  to {
+    left: 100%; } }
+
+@keyframes menuHide {
+  from {
+    left: 0; }
+  to {
+    left: 100%; } }
+
 /*#endregion Imports*/
 html {
   scroll-behavior: smooth; }
@@ -372,10 +476,28 @@ body {
 
 /*#endregion Wrapper Top*/
 /*#region Menu*/
-.menu-cont__link {
+.menu {
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  left: 100%; }
+
+.menu_active {
+  left: 0;
+  -webkit-animation: 1s ease menuShow;
+  animation: 1s ease menuShow; }
+
+.menu_disabled {
+  left: 100%;
+  -webkit-animation: 1s ease menuHide;
+  animation: 1s ease menuHide; }
+
+.menu-cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .menu-cont:hover {
+    cursor: pointer; }
 
 .menu-cont__title {
   margin-right: 15px;
@@ -2269,84 +2391,3 @@ body {
   text-transform: uppercase; }
 
 /*#endregion Colors Classes*/
-/*#region Animations*/
-@-webkit-keyframes closeContactLeftBar {
-  10% {
-    left: 3px;
-    top: 5px; }
-  30% {
-    left: 6px;
-    top: 2px; }
-  50% {
-    left: 16px;
-    top: -6px; }
-  70% {
-    background: transparent;
-    left: -16px;
-    top: 30px; }
-  80% {
-    background: #ffffff; }
-  100% {
-    left: 0;
-    top: 8px; } }
-@keyframes closeContactLeftBar {
-  10% {
-    left: 3px;
-    top: 5px; }
-  30% {
-    left: 6px;
-    top: 2px; }
-  50% {
-    left: 16px;
-    top: -6px; }
-  70% {
-    background: transparent;
-    left: -16px;
-    top: 30px; }
-  80% {
-    background: #ffffff; }
-  100% {
-    left: 0;
-    top: 8px; } }
-
-@-webkit-keyframes closeContactRightBar {
-  10% {
-    left: -3px;
-    top: 5px; }
-  30% {
-    left: -6px;
-    top: 2px; }
-  50% {
-    left: -16px;
-    top: -6px; }
-  70% {
-    background: transparent;
-    left: 16px;
-    top: 30px; }
-  80% {
-    background: #ffffff; }
-  100% {
-    left: 0;
-    top: 8px; } }
-
-@keyframes closeContactRightBar {
-  10% {
-    left: -3px;
-    top: 5px; }
-  30% {
-    left: -6px;
-    top: 2px; }
-  50% {
-    left: -16px;
-    top: -6px; }
-  70% {
-    background: transparent;
-    left: 16px;
-    top: 30px; }
-  80% {
-    background: #ffffff; }
-  100% {
-    left: 0;
-    top: 8px; } }
-
-/*#endregion Animations*/

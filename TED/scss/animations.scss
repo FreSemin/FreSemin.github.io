@@ -1,0 +1,72 @@
+/*#region Request Animations */
+@keyframes closeContactLeftBar {
+  10% {
+    left: 3px;
+    top: 5px;
+  }
+  30% {
+    left: 6px;
+    top: 2px;
+  }
+  50% {
+    left: 16px;
+    top: -6px;
+  }
+  70% {
+    background: transparent;
+    left: -16px;
+    top: 30px;
+  }
+  80% {
+    background: $bg-white;
+  }
+  100% {
+    left: 0;
+    top: 8px;
+  }
+}
+
+@keyframes closeContactRightBar {
+  10% {
+    left: -3px;
+    top: 5px;
+  }
+  30% {
+    left: -6px;
+    top: 2px;
+  }
+  50% {
+    left: -16px;
+    top: -6px;
+  }
+  70% {
+    background: transparent;
+    left: 16px;
+    top: 30px;
+  }
+  80% {
+    background: $bg-white;
+  }
+  100% {
+    left: 0;
+    top: 8px;
+  }
+}
+/*#endregion Request Animations*/
+
+@keyframes menuShow {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes menuHide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
