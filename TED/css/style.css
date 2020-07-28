@@ -238,6 +238,9 @@ body {
 .s-sec_bg-light {
   background: #ffffff; }
 
+.first {
+  z-index: 4; }
+
 .first_bg-first-dark {
   background: #121212; }
 
