@@ -319,8 +319,8 @@ body {
   max-width: 300px; }
 
 .border-block__shadow_main-black {
-  -webkit-box-shadow: 0px 0px 32px 22px #000306;
-  box-shadow: 0px 0px 32px 22px #000306; }
+  -webkit-box-shadow: 0px 0px 32px 12px #000306;
+  box-shadow: 0px 0px 32px 12px #000306; }
 
 .border-block__elaboration {
   z-index: 3; }
@@ -630,11 +630,10 @@ body {
   position: relative; }
 
 .bottom-logo-text {
-  width: 100px; }
+  width: 120px; }
 
 .bottom-logo__text {
   font-size: 15.86px;
-  font-family: "Gilroy";
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase;
@@ -666,7 +665,6 @@ body {
 .bottom__link {
   margin-right: 45px;
   font-size: 15.86px;
-  font-family: "Gilroy";
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px; }
@@ -692,7 +690,7 @@ body {
   height: 100%; }
 
 .elaboration__text {
-  font-size: 130px;
+  font-size: 130.68px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 10px; }
@@ -915,7 +913,6 @@ body {
   color: #ffffff;
   background: #191919;
   font-size: 20px;
-  font-family: "Gilroy";
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase; }
@@ -1071,7 +1068,6 @@ body {
   background: #191919;
   border: 0.2px solid #6e6f6f;
   font-size: 12px;
-  font-family: "Gilroy";
   font-weight: bold;
   letter-spacing: 0.5px;
   text-transform: uppercase; }
