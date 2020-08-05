@@ -425,7 +425,9 @@ body {
   letter-spacing: -1.2px; }
 
 .border-cont__title_ls-technology {
-  letter-spacing: -3px; }
+  letter-spacing: -1.5px;
+  font-size: 35.32px;
+  line-height: 40px; }
 
 .border-cont__title-main {
   margin-top: -20px;
@@ -442,7 +444,7 @@ body {
   margin-left: -100px;
   margin-top: -5px;
   margin-bottom: 35px;
-  font-size: 150px;
+  font-size: 150.25px;
   letter-spacing: 10px; }
 
 .border-cont__parag {
