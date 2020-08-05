@@ -305,7 +305,8 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  max-width: 860px; }
+  max-width: 860px;
+  pointer-events: none; }
 
 .border-block_borders {
   border-left-width: 1px;
@@ -390,19 +391,19 @@ body {
 
 .border-cont {
   position: relative;
-  margin: 140px auto 0 auto;
+  margin: 135px auto 0 auto;
   width: 100%;
   max-width: 860px; }
 
-.border-cont__subtitle {
-  margin-bottom: 35px;
-  margin-left: -43px;
+.border-cont__suptitle {
+  margin-bottom: 30px;
+  margin-left: -50px;
   position: relative;
   z-index: 4;
-  font-size: 20px;
+  font-size: 22.05px;
   font-weight: bold;
-  letter-spacing: 1px; }
-  .border-cont__subtitle:before {
+  letter-spacing: 2px; }
+  .border-cont__suptitle:before {
     content: "";
     position: absolute;
     top: 11px;
@@ -415,13 +416,13 @@ body {
   position: relative;
   z-index: 4;
   width: 100%;
-  font-size: 38px;
+  font-size: 37.41px;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 45px; }
 
 .border-cont__title_ls-design {
-  letter-spacing: -1.5px; }
+  letter-spacing: -1.2px; }
 
 .border-cont__title_ls-technology {
   letter-spacing: -3px; }
@@ -429,7 +430,7 @@ body {
 .border-cont__title-main {
   margin-top: -20px;
   text-align: center;
-  font-size: 190px;
+  font-size: 192.21px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 10px; }
@@ -742,7 +743,7 @@ body {
   width: 50%; }
 
 .advantages-text__number {
-  margin-left: -3px;
+  margin-left: -4px;
   -ms-flex-item-align: start;
   align-self: flex-start;
   -webkit-transform: rotate(-90deg);
@@ -750,12 +751,12 @@ body {
   transform: rotate(-90deg);
   font-family: "PeaceSans";
   letter-spacing: 1px;
-  font-size: 20px; }
+  font-size: 20.83px; }
   .advantages-text__number:before {
     content: "";
     position: absolute;
     top: 9px;
-    left: -30px;
+    left: -40px;
     height: 1px;
     width: 20px;
     -webkit-transform: rotate(90deg);
@@ -764,23 +765,23 @@ body {
     background: #000000; }
 
 .advantages-text__parag {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 20px;
-  padding-right: 130px;
+  padding-right: 120px;
   font-weight: 300;
   line-height: 20px;
+  letter-spacing: 1px;
   font-size: 16px; }
 
 .border-block__programms {
   position: relative;
   z-index: 6;
-  margin-top: 90px;
+  margin-top: 95px;
   width: 100%; }
 
 .programms__title {
-  margin-left: 5px;
-  margin-bottom: 35px;
-  font-size: 20px;
+  margin-bottom: 40px;
+  font-size: 20.83px;
   letter-spacing: 1px;
   font-weight: bold; }
 
@@ -791,7 +792,7 @@ body {
   display: flex; }
 
 .programms__instruments {
-  padding: 35px 0 40px 0;
+  padding: 40px 0 40px 0;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
