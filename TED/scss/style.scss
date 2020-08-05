@@ -31,8 +31,6 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 input,
@@ -348,6 +346,7 @@ body {
   animation: 1s ease menuHide;
 }
 .menu-cont {
+  margin-top: -3px;
   display: flex;
 
   &:hover {
@@ -363,7 +362,7 @@ body {
   text-transform: uppercase;
 }
 .menu-btn {
-  margin-top: 3px;
+  // margin-top: 3px;
 }
 .menu-btn-cont {
   display: flex;
@@ -373,7 +372,7 @@ body {
 .menu-btn-cont__bar-line {
   display: block;
   height: 1px;
-  width: 26px;
+  width: 28px;
   margin-bottom: 6px;
   opacity: 0.7;
 
@@ -399,18 +398,17 @@ body {
 .first-cont__text {
   display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   height: 100%;
 }
 .first-cont-title {
   position: relative;
-  margin-left: 100px;
-  max-width: 725px;
+  margin-left: 50px;
+  max-width: 720px;
   width: 100%;
 }
 .first-cont__title {
-  font-size: 80px;
+  font-size: 83.56px;
   line-height: 100px;
   font-weight: bold;
   text-transform: uppercase;
@@ -418,8 +416,8 @@ body {
 }
 .main-subtitle {
   position: absolute;
-  right: 25px;
-  bottom: 20px;
+  right: 0px;
+  bottom: 25px;
 }
 .main-subtitle-linecont {
   margin-bottom: 20px;
@@ -435,8 +433,8 @@ body {
 .main-subtitle-text {
 }
 .main-subtitle__text {
-  font-size: 16px;
-  font-family: "Gilroy";
+  font-size: 15.28px;
+  // font-family: "Gilroy";
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -479,10 +477,10 @@ body {
   position: relative;
 }
 .bottom-logo-text {
-  width: 60px;
+  width: 100px;
 }
 .bottom-logo__text {
-  font-size: 16px;
+  font-size: 15.86px;
   font-family: "Gilroy";
   letter-spacing: 1px;
   font-weight: bold;
@@ -508,14 +506,19 @@ body {
 .wrapper-bottom-link {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 10px;
 }
 .bottom__link {
-  margin-left: 45px;
-  font-size: 16px;
+  margin-right: 45px;
+  font-size: 15.86px;
   font-family: "Gilroy";
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 /*#endregion Wrapper bottom*/
 
