@@ -331,8 +331,8 @@ body {
   background: #191919; }
 
 .border-block__shadow-request {
-  -webkit-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.6); }
+  -webkit-box-shadow: 0px 0px 23px 23px rgba(6, 8, 9, 0.73);
+  box-shadow: 0px 0px 23px 23px rgba(6, 8, 9, 0.73); }
 
 .border-block__shadow-contact {
   max-width: 580px;
@@ -865,19 +865,20 @@ body {
   padding-bottom: 30px;
   margin-left: 45px;
   width: 100%;
-  max-width: 440px; }
+  max-width: 365px; }
 
 .request__title {
   margin-top: 105px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 82px;
-  font-size: 70px; }
+  font-size: 70.72px; }
 
 .request__parag {
   margin-top: 45px;
   line-height: 20px;
+  letter-spacing: 1px;
   font-size: 18px; }
 
 .request__half_bg-img {
@@ -915,10 +916,11 @@ body {
   border: 0.5px solid #ffffff;
   color: #ffffff;
   background: #191919;
-  font-size: 20px;
+  font-size: 21.91px;
   letter-spacing: 1px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  pointer-events: all; }
   .request__link:hover {
     color: #000000;
     background: #ffffff; }
@@ -945,11 +947,12 @@ body {
     letter-spacing: -2px;
     font-size: 50px; }
   .request-cont-bord .border-cont__parag {
-    margin-top: 5px;
-    padding-right: 70px;
+    margin-top: 15px;
+    padding-right: 50px;
     padding-bottom: 30px;
     letter-spacing: 1px;
-    line-height: 24px; }
+    line-height: 24px;
+    font-size: 20.83px; }
 
 /*#endregion Request*/
 /*#region Partners*/
