@@ -612,12 +612,6 @@ body {
 .wrapper-bottom_mrg-9 {
   margin-bottom: 90px; }
 
-.wrapper-bottom_p-abs {
-  position: absolute;
-  width: 100%;
-  z-index: 6;
-  pointer-events: none; }
-
 .wrapper-bottom_ps-t-380 {
   top: 380px; }
 
@@ -627,10 +621,15 @@ body {
 .wrapper-bottom_ps-t-675 {
   top: 675px; }
 
-.design-wrapper-bottom {
+.wrapper-bottom_p-abs {
   position: absolute;
   bottom: 0;
   width: 100%; }
+
+.wrapper-bottom_illustration {
+  bottom: auto;
+  z-index: 6;
+  pointer-events: none; }
 
 .wrapper-bottom-logo {
   position: relative; }
