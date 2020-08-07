@@ -455,6 +455,9 @@ body {
 .wrapper-bottom_mrg-5 {
   margin-bottom: 50px;
 }
+.wrapper-bottom_mrg-7 {
+  margin-bottom: 70px;
+}
 .wrapper-bottom_mrg-9 {
   margin-bottom: 90px;
 }
@@ -796,7 +799,7 @@ body {
   width: 50%;
 }
 .team-card-box {
-  padding: 0 60px 0 40px;
+  padding: 10px 65px 0 40px;
 }
 .team-card-head {
   display: flex;
@@ -810,7 +813,7 @@ body {
     overflow: hidden;
     border-radius: 50%;
     filter: grayscale(100%);
-    border: 0.2px solid $border-team-partners;
+    border: 0.21px solid $border-team-partners;
   }
 }
 .team-card-text {
@@ -818,18 +821,18 @@ body {
   margin-left: 30px;
 }
 .team-card__title {
-  font-size: 24px;
   font-weight: bold;
   line-height: 20px;
   letter-spacing: -1px;
+  font-size: 24.02px;
 }
 .team-card__subtitle {
-  margin-top: 15px;
+  margin-top: 12px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 16.67px;
 }
 .team-card-body {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -845,7 +848,7 @@ body {
 .chrt__title {
 }
 .chrt__title-text {
-  font-size: 16px;
+  font-size: 16.67px;
   font-weight: bold;
 }
 .chrt-scors {
@@ -860,7 +863,6 @@ body {
   background: $bg-black;
 }
 .team-chrt-link {
-  margin-top: 10px;
 }
 .team-chrt__link {
   display: inline-flex;
@@ -871,8 +873,8 @@ body {
   min-height: 35px;
   color: $text-white;
   background: $bg-dark;
-  border: 0.2px solid $border-team-partners;
-  font-size: 12px;
+  border: 0.21px solid $border-team-partners;
+  font-size: 12.5px;
   font-weight: bold;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -880,6 +882,9 @@ body {
   &:hover {
     cursor: pointer;
   }
+}
+.team-chrt__link_mrg-t-5 {
+  margin-top: 5px;
 }
 .partner-bor-sub {
   position: absolute;
@@ -889,7 +894,7 @@ body {
   letter-spacing: -2px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 37.5px;
 
   &:before {
     top: 16px;
