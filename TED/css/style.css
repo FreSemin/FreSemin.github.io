@@ -327,6 +327,7 @@ body {
   z-index: 3; }
 
 .border-block__shadow-elaboration {
+  min-height: 100vh;
   height: calc(100% + 5px);
   background: #191919; }
 
