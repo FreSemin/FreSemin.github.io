@@ -1414,8 +1414,8 @@ body {
 .portfolio__container_bg-white {
   background: $bg-white;
 }
-.portfolio__container_design-shadow {
-  box-shadow: $portfolio-design-block-shadow;
+.portfolio__container_shadow {
+  box-shadow: $portfolio-container-shadow;
 }
 .portfolio__container_mg-top {
   margin-top: 120px;
@@ -1443,7 +1443,6 @@ body {
 .portfolio__side-text {
   position: relative;
   width: 100%;
-  max-width: 150px;
   p {
     position: absolute;
     text-transform: uppercase;
@@ -1451,12 +1450,18 @@ body {
     letter-spacing: 10px;
   }
 }
-.portfolio__side-text-big {
+.portfolio__side-text_mn-w-200 {
+  min-width: 200px;
+}
+.portfolio__side-text_mn-w-150 {
+  min-width: 150px;
+}
+.portfolio__side-text_big {
   p {
     font-size: 130px;
   }
 }
-.portfolio__side-text-sml {
+.portfolio__side-text_sml {
   p {
     font-size: 75px;
     letter-spacing: 5px;
@@ -1484,7 +1489,6 @@ body {
     bottom: 255px;
   }
 }
-
 .portfolio__container-images {
   display: flex;
   flex-direction: column;
@@ -1499,17 +1503,18 @@ body {
   display: flex;
   flex-direction: column;
 }
-.portfolio__container-images-subtitle {
-  margin-top: 40px;
+.portfolio__container-images-suptitle {
+  margin-top: 50px;
+  max-width: 510px;
   text-transform: uppercase;
   line-height: 40px;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 32.66px;
 }
 .portfolio__container-images-title {
   margin-top: -10px;
   text-transform: uppercase;
-  font-size: 162px;
+  font-size: 163.63px;
   font-weight: bold;
   letter-spacing: 10px;
 }
@@ -1522,7 +1527,7 @@ body {
     flex-direction: column;
 
     p {
-      font-size: 78px;
+      font-size: 77.91px;
 
       &:first-of-type {
         margin-top: 15px;
@@ -1577,8 +1582,8 @@ body {
 .portfolio__container-image_mrg-r {
   margin-right: 10px;
 }
-.portfolio__container-image_mrg-r-75 {
-  margin-right: 75px;
+.portfolio__container-image_mrg-r-31 {
+  margin-right: 31px;
 }
 .portfolio__container-image_mrg-sides {
   margin-left: 10px;
@@ -1587,8 +1592,8 @@ body {
 .portfolio-image_mrg-top-min {
   margin-top: -75px;
 }
-.portfolio__container-images_mrg-b-28 {
-  margin-bottom: 28px;
+.portfolio__container-images_mrg-b-16 {
+  margin-bottom: 16px;
 }
 /*#endregion Portfolio Design Image Margins*/
 
@@ -1623,8 +1628,8 @@ body {
 .portfolio__container-image_200x100 {
   @include portfolio-design-image(200px, 100px);
 }
-.portfolio__container-image_250x275 {
-  @include portfolio-design-image(250px, 275px);
+.portfolio__container-image_210x275 {
+  @include portfolio-design-image(210px, 275px);
 }
 .portfolio__container-image_250x120 {
   @include portfolio-design-image(250px, 120px);
@@ -1709,7 +1714,7 @@ body {
 .portfolio__technology-mrg-r-big-min {
   margin-right: -200px;
 }
-.portfolio__container-images-subtitle_mrg-20 {
+.portfolio__container-images-suptitle_mrg-t-20 {
   margin-top: 20px;
 }
 /*#endregion Portfolio Technology Image Margins*/
@@ -1894,8 +1899,8 @@ body {
 .consultation_mrg-t-1 {
   margin-top: 100px;
 }
-.consultation_mrg-t-65 {
-  margin-top: 65px;
+.consultation_mrg-t-70 {
+  margin-top: 70px;
 }
 .consultation_mrg-b-60 {
   margin-bottom: 60px;
