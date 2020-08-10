@@ -1705,7 +1705,7 @@ body {
   box-shadow: 0px 3px 24px 6px rgba(0, 3, 6, 0.2); }
 
 .portfolio__container_mg-top {
-  margin-top: 120px; }
+  margin-top: 130px; }
 
 .portfolio__container_design-layerupper {
   z-index: 5; }
@@ -1801,9 +1801,11 @@ body {
 
 .portfolio__container-images-suptitle {
   margin-top: 50px;
-  max-width: 510px;
+  min-width: 490px;
+  max-width: 490px;
   text-transform: uppercase;
   line-height: 40px;
+  letter-spacing: -1px;
   font-weight: bold;
   font-size: 32.66px; }
 
@@ -2031,7 +2033,7 @@ body {
 .portfolio__container-images_technology {
   max-width: 1148px; }
 
-.portfolio__container-image_technology {
+.portfolio__container-image-link {
   position: relative;
   width: 100%;
   height: 100%;
@@ -2042,12 +2044,12 @@ body {
   -webkit-box-shadow: 0px 3px 8px 5px rgba(155, 155, 156, 0.66);
   box-shadow: 0px 3px 8px 5px rgba(155, 155, 156, 0.66); }
 
-.portfolio__container-image_technology-empty {
+.portfolio__container-image-link-empty {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-.portfolio__technology-link {
-  display: block;
+.portfolio__container-image-link-link {
+  display: inline-block;
   width: 100%;
   height: 100%; }
 
@@ -2085,7 +2087,7 @@ body {
   margin-left: -140px; }
 
 .portfolio__technology-mrg-r-for-elements {
-  margin-right: 24px; }
+  margin-right: 30px; }
 
 .portfolio__technology-mrg-r-big-min {
   margin-right: -200px; }
@@ -2281,7 +2283,7 @@ body {
   z-index: 5; }
 
 .consultation__container {
-  margin: 0px auto 75px auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2306,13 +2308,16 @@ body {
 .consultation_mrg-b-60 {
   margin-bottom: 60px; }
 
+.consultation_mrg-b-70 {
+  margin-bottom: 70px; }
+
 .consultation__title {
   text-transform: uppercase;
   font-size: 24.91px;
   font-weight: bold; }
 
 .consultation__parag {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 14.71px;
