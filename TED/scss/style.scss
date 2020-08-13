@@ -1772,10 +1772,10 @@ body {
 }
 .request-form__close-btn {
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 15px;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   overflow: hidden;
 
   span {
@@ -1783,8 +1783,9 @@ body {
     top: 8px;
     display: block;
     height: 1px;
-    width: 16px;
-    background: $bg-white;
+    width: 20px;
+    background: $border-request-grey;
+
     &:first-of-type {
       left: 0;
       transform: rotate(-45deg);
@@ -1826,17 +1827,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.request-form__field-box_pdg-b-sml {
-  padding-bottom: 20px;
-}
 .request-form__field-box_bg-dark {
   background: $bg-dark;
 }
 .request-form__field-box_shadows {
-  box-shadow: $request-contact-field-box-shadow;
+  box-shadow: $request-field-box-container-shadow;
 }
 .request-form__label {
-  font-size: 15px;
+  font-size: 15.21px;
   font-weight: bold;
   text-transform: uppercase;
 
@@ -1844,23 +1842,27 @@ body {
     cursor: pointer;
   }
 }
-.request-form__label_mrg-t-big {
-  margin-top: 40px;
-}
-.request-form__label_mrg-t-sml {
+.request-form__label_mrg-t-20 {
   margin-top: 20px;
+}
+.request-form__label_mrg-t-45 {
+  margin-top: 45px;
 }
 .request-form__field {
   padding: 0 0 4px 0;
-  border-bottom: 1px solid $border-white;
+  border-bottom: 2px solid $border-request-grey;
   background: none;
-  font-size: 12px;
+  letter-spacing: 1px;
+  font-size: 12.09px;
   font-weight: 300;
 }
-.request-form__field_mrg-t-big {
+.request-form__field_text-smaller {
+  font-size: 11.72px;
+}
+.request-form__field_mrg-t-20 {
   margin-top: 20px;
 }
-.request-form__field_mrg-t-sml {
+.request-form__field_mrg-t-15 {
   margin-top: 15px;
 }
 .request-form__btn {
@@ -1872,10 +1874,9 @@ body {
   color: $text-white;
   background: none;
   border: 0.12px solid $border-white;
-  letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 16px;
   font-weight: bold;
+  font-size: 16.67px;
   transition: all 1s;
 
   &:hover {

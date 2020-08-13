@@ -2148,18 +2148,18 @@ body {
 
 .request-form__close-btn {
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 15px;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   overflow: hidden; }
   .request-form__close-btn span {
     position: absolute;
     top: 8px;
     display: block;
     height: 1px;
-    width: 16px;
-    background: #ffffff; }
+    width: 20px;
+    background: #707070; }
     .request-form__close-btn span:first-of-type {
       left: 0;
       -webkit-transform: rotate(-45deg);
@@ -2209,40 +2209,41 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-.request-form__field-box_pdg-b-sml {
-  padding-bottom: 20px; }
-
 .request-form__field-box_bg-dark {
   background: #191919; }
 
 .request-form__field-box_shadows {
-  -webkit-box-shadow: 0px 0px 32px 22px #000507;
-  box-shadow: 0px 0px 32px 22px #000507; }
+  -webkit-box-shadow: 0px 0px 32px 8px #000507;
+  box-shadow: 0px 0px 32px 8px #000507; }
 
 .request-form__label {
-  font-size: 15px;
+  font-size: 15.21px;
   font-weight: bold;
   text-transform: uppercase; }
   .request-form__label:hover {
     cursor: pointer; }
 
-.request-form__label_mrg-t-big {
-  margin-top: 40px; }
-
-.request-form__label_mrg-t-sml {
+.request-form__label_mrg-t-20 {
   margin-top: 20px; }
+
+.request-form__label_mrg-t-45 {
+  margin-top: 45px; }
 
 .request-form__field {
   padding: 0 0 4px 0;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 2px solid #707070;
   background: none;
-  font-size: 12px;
+  letter-spacing: 1px;
+  font-size: 12.09px;
   font-weight: 300; }
 
-.request-form__field_mrg-t-big {
+.request-form__field_text-smaller {
+  font-size: 11.72px; }
+
+.request-form__field_mrg-t-20 {
   margin-top: 20px; }
 
-.request-form__field_mrg-t-sml {
+.request-form__field_mrg-t-15 {
   margin-top: 15px; }
 
 .request-form__btn {
@@ -2260,10 +2261,9 @@ body {
   color: #ffffff;
   background: none;
   border: 0.12px solid #ffffff;
-  letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 16px;
   font-weight: bold;
+  font-size: 16.67px;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
