@@ -83,7 +83,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Gilroy";
+  font-family: $main-font;
 }
 
 /*#region s-blocks*/
@@ -401,7 +401,6 @@ body {
 }
 
 .first-cont__text {
-  display: -webkit-box;
   display: flex;
   align-items: center;
   height: 100%;
@@ -566,7 +565,7 @@ body {
     margin-top: 5px;
     margin-right: 10px;
     transform: rotate(90deg);
-    font-family: "Conthrax";
+    font-family: $elements-font;
     font-weight: bold;
     font-size: 15px;
   }
@@ -585,7 +584,6 @@ body {
 }
 .advantages-text {
   position: relative;
-  display: -webkit-box;
   display: flex;
   width: 50%;
 }
@@ -593,7 +591,7 @@ body {
   margin-left: -4px;
   align-self: flex-start;
   transform: rotate(-90deg);
-  font-family: "PeaceSans";
+  font-family: $numbers-font;
   letter-spacing: 1px;
   font-size: 20.83px;
 
@@ -1338,7 +1336,6 @@ body {
   align-content: stretch;
   height: 100%;
   position: relative;
-  display: -webkit-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
