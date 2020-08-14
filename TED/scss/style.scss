@@ -323,10 +323,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.wrapper-top_mrg {
+.wrapper-top_mrg-t-6 {
   margin-top: 60px;
 }
-.wrapper-top_mrg-sml {
+.wrapper-top_mrg-t-4 {
   margin-top: 40px;
 }
 .wrapper-top__logo {
@@ -487,7 +487,6 @@ body {
   position: relative;
 }
 .bottom-logo-text {
-  width: 120px;
 }
 .bottom-logo__text {
   font-size: 15.86px;
@@ -1036,11 +1035,16 @@ body {
   line-height: 25px;
 }
 .ipcard__subtitle {
-  margin-top: 20px;
   font-size: 16.67px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 1px;
+}
+.ipcard__subtitle_mrg-t-1 {
+  margin-top: 10px;
+}
+.ipcard__subtitle_mrg-t-2 {
+  margin-top: 20px;
 }
 .contact-wr-b {
   margin-top: 50px;
@@ -1143,9 +1147,6 @@ body {
   }
   .contact-body__ipcard {
     margin-right: 0;
-  }
-  .ipcard__subtitle {
-    margin-top: 10px;
   }
   .ipcard__body {
     margin-top: 0;
