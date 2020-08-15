@@ -446,13 +446,13 @@ body {
 .border-cont__title-main_technology {
   margin-left: -100px;
   margin-top: -5px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   font-size: 150.25px;
   letter-spacing: 10px; }
 
 .border-cont__parag {
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 20.83px;
   line-height: 30px; }
 
 .border-block_no-borders {
@@ -509,7 +509,7 @@ body {
 
 .menu-cont__title {
   margin-right: 15px;
-  font-size: 12px;
+  font-size: 11.67px;
   font-weight: 300;
   text-transform: uppercase; }
 
@@ -777,11 +777,11 @@ body {
 .advantages-text__parag {
   margin-top: 20px;
   margin-left: 20px;
-  padding-right: 120px;
+  padding-right: 110px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 1px;
-  font-size: 16px; }
+  font-size: 16.67px; }
 
 .border-block__programms {
   position: relative;
@@ -890,7 +890,7 @@ body {
   margin-top: 50px;
   line-height: 20px;
   letter-spacing: 1.2px;
-  font-size: 18px; }
+  font-size: 18.01px; }
 
 .request__half_bg-img {
   position: absolute;
@@ -956,13 +956,13 @@ body {
     margin-left: -1.5px;
     text-transform: none;
     letter-spacing: -2px;
-    font-size: 50px; }
+    font-size: 50.09px; }
   .request-cont-bord .border-cont__parag {
     margin-top: 15px;
     padding-right: 50px;
     padding-bottom: 30px;
     letter-spacing: 1.2px;
-    line-height: 24px;
+    line-height: 26px;
     font-size: 20.83px; }
 
 /*#endregion Request*/
@@ -1209,8 +1209,8 @@ body {
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.contact-body__main_mrg-t-7 {
-  margin-top: 70px; }
+.contact-body__main_mrg-t-6 {
+  margin-top: 60px; }
 
 .contact__tel {
   width: 100%;
@@ -1259,9 +1259,6 @@ body {
   .ipcard__img:last-child {
     margin-right: 0; }
 
-.ipcard-check__subtitle {
-  font-size: 12px; }
-
 .ipcard__title {
   font-size: 20.76px;
   font-weight: bold;
@@ -1280,7 +1277,7 @@ body {
   margin-top: 20px; }
 
 .contact-wr-b {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 30px;
   -webkit-box-align: end;
   -ms-flex-align: end;
@@ -1288,6 +1285,7 @@ body {
 
 .contact-wr-b__text-box {
   position: absolute;
+  bottom: 35px;
   left: 45%;
   right: 45%;
   min-width: 150px;
@@ -2300,16 +2298,16 @@ body {
   justify-content: center;
   max-width: 480px; }
 
-.consultation_mrg-t-1 {
+.consultation__container_mrg-t-1 {
   margin-top: 100px; }
 
-.consultation_mrg-t-70 {
+.consultation__container_mrg-t-70 {
   margin-top: 70px; }
 
-.consultation_mrg-b-60 {
+.consultation__container_mrg-b-60 {
   margin-bottom: 60px; }
 
-.consultation_mrg-b-70 {
+.consultation__container_mrg-b-70 {
   margin-bottom: 70px; }
 
 .consultation__title {
