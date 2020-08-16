@@ -6,6 +6,12 @@
     margin-right: auto;
   }
 }
+@media (max-width: 1439px) {
+  .portfolio__side-text {
+    min-width: auto;
+    max-width: none;
+  }
+}
 @media (min-width: 1300px) {
   .s-sec__wrapper {
     margin: 0 auto;

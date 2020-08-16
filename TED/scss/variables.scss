@@ -1,3 +1,20 @@
+/*#region */
+$main-font: "Gilroy";
+$elements-font: "Conthrax";
+$numbers-font: "PeaceSans";
+/*#endregion*/
+
+/*#region texts*/
+$text-white: #ffffff;
+$text-black: #000000;
+$text-dark: #191919;
+$text-contact-grey: #5f5f5f;
+$text-price-grey: #eeeeee;
+$text-rotate: #c2c2c2;
+$text-design-dark-grey: #525252;
+$text-design-light-grey: #9d9d9d;
+/*#endregion texts*/
+
 /*#region backgrounds*/
 $bg-white: #ffffff;
 $bg-black: #000000;
@@ -17,29 +34,19 @@ $border-menu-black: #0c0c0c;
 $border-contact-page-black: #111111;
 $border-text-grey: #e2e2e2;
 $border-team-partners: #6e6f6f;
+$border-request-grey: #707070;
 /*#endregion borders*/
-
-/*#region texts*/
-$text-white: #ffffff;
-$text-black: #000000;
-$text-dark: #191919;
-$text-contact-grey: #5f5f5f;
-$text-price-grey: #eeeeee;
-$text-rotate: #c2c2c2;
-$text-design-dark-grey: #525252;
-$text-design-light-grey: #9d9d9d;
-/*#endregion texts*/
 
 /*#region buttons*/
 $btn-bg-white: #ffffff;
 /*#endregion buttons*/
 
 /*#region shadows*/
-$borders-main-shadow: 0px 0px 32px 22px rgba(0, 3, 6, 1);
-$borders-request-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.6);
+$borders-main-shadow: 0px 0px 24.96px 7.04px rgba(0, 3, 6, 1);
+$borders-request-shadow: 0px 0px 58.52px 17.48px rgba(6, 8, 9, 0.73);
 $price-shadow: 0px 0px 160px 0px rgba(39, 70, 9, 1);
-$portfolio-shadow: 0px 0px 26px 19px rgba(6, 8, 9, 1);
-$portfolio-design-block-shadow: 0px 3px 24px 13px rgba(0,3,6,0.76);
-$portfolio-technology-block-shadow: 0px 3px 8px 5px rgba(155,155,156,0.66);;
-$request-contact-field-box-shadow: 0px 0px 32px 22px rgba(0, 5, 7, 1);
+$portfolio-shadow: 0px 0px 21.06px 4.94px rgba(6, 8, 9, 1);
+$portfolio-container-shadow: 0px 3px 20.88px 3.12px rgba(0, 3, 6, 0.76);
+$portfolio-image-link-shadow: 0px 3px 8px 5px rgba(155, 155, 156, 0.66);
+$request-field-box-container-shadow: 0px 0px 24.96px 7.04px rgba(0, 5, 7, 1);
 /*#endregion shadows*/

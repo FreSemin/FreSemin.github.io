@@ -1,9 +1,11 @@
+/*#region */
+/*#endregion*/
+/*#region texts*/
+/*#endregion texts*/
 /*#region backgrounds*/
 /*#endregion backgrounds*/
 /*#region borders*/
 /*#endregion borders*/
-/*#region texts*/
-/*#endregion texts*/
 /*#region buttons*/
 /*#endregion buttons*/
 /*#region shadows*/
@@ -12,6 +14,11 @@
   .portfolio__container-boxes {
     margin-left: auto;
     margin-right: auto; } }
+
+@media (max-width: 1439px) {
+  .portfolio__side-text {
+    min-width: auto;
+    max-width: none; } }
 
 @media (min-width: 1300px) {
   .s-sec__wrapper {
