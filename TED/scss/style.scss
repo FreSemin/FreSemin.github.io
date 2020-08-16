@@ -303,9 +303,9 @@ body {
   letter-spacing: 10px;
 }
 .border-cont__parag {
-  margin-top: 25px;
   font-size: 20.83px;
-  line-height: 30px;
+  line-height: 26px;
+  letter-spacing: 1.2px;
 }
 .border-block_no-borders {
   border: none;
@@ -399,17 +399,19 @@ body {
   height: 100%;
   width: 100%;
 }
-
 .first-cont__text {
   display: flex;
   align-items: center;
   height: 100%;
 }
-.first-cont-title {
+.first-cont-title-box {
   position: relative;
   margin-left: 50px;
   max-width: 720px;
   width: 100%;
+}
+.first-cont-title {
+
 }
 .first-cont__title {
   font-size: 83.56px;
@@ -470,8 +472,8 @@ body {
 .wrapper-bottom_ps-t-690 {
   top: 690px;
 }
-.wrapper-bottom_ps-t-675 {
-  top: 675px;
+.wrapper-bottom_ps-t-670 {
+  top: 670px;
 }
 .wrapper-bottom_p-abs {
   position: absolute;
@@ -605,10 +607,13 @@ body {
     background: $bg-black;
   }
 }
-.advantages-text__parag {
+.advantages-text__text {
   margin-top: 20px;
   margin-left: 20px;
-  padding-right: 110px;
+  display: flex;
+  flex-direction: column;
+}
+.advantages-text__parag {
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 1px;
@@ -696,16 +701,20 @@ body {
   width: 100%;
   max-width: 365px;
 }
-.request__title {
+.request__text-title {
   margin-top: 105px;
+}
+.request__title {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 82px;
   font-size: 70.72px;
 }
-.request__parag {
+.request__text {
   margin-top: 50px;
+}
+.request__parag {
   line-height: 20px;
   letter-spacing: 1.2px;
   font-size: 18.01px;
@@ -770,14 +779,10 @@ body {
     letter-spacing: -2px;
     font-size: 50.09px;
   }
-  .border-cont__parag {
-    margin-top: 15px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    letter-spacing: 1.2px;
-    line-height: 26px;
-    font-size: 20.83px;
-  }
+}
+.request__text-content {
+  margin-top: 15px;
+  padding-bottom: 30px;
 }
 /*#endregion Request*/
 
@@ -822,7 +827,8 @@ body {
   margin-top: 25px;
   margin-left: 30px;
 }
-.team-card__title {
+.team-card__title {}
+.team-card__title-text {
   font-weight: bold;
   line-height: 20px;
   letter-spacing: -1px;
@@ -948,12 +954,11 @@ body {
   z-index: 6;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
   min-height: 140px;
   max-width: 860px;
 }
 .contact-head__text {
-  max-width: 340px;
   font-weight: 300;
   font-size: 15.35px;
 
@@ -1507,6 +1512,8 @@ body {
   margin-top: 50px;
   min-width: 490px;
   max-width: 490px;
+}
+.portfolio__container-images-suptitle-text {
   text-transform: uppercase;
   line-height: 40px;
   letter-spacing: -1px;
@@ -1685,7 +1692,7 @@ body {
 .portfolio__side-text_technology-rv-p {
   p {
     left: -400px;
-    bottom: 425px;
+    bottom: 445px;
   }
 }
 /*#endregion Portfolio Technology Page*/
@@ -1915,10 +1922,12 @@ body {
   font-size: 24.91px;
   font-weight: bold;
 }
-.consultation__parag {
+.consultation__text {
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 50px;
-  text-align: center;
+}
+.consultation__parag {
   font-size: 14.71px;
   font-weight: 300;
   line-height: 15px;
