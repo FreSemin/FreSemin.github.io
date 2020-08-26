@@ -341,14 +341,11 @@ body {
 .border-block_border-dark {
   border-color: #111111; }
 
-.border-block_border-contact-page-black {
-  border-color: #111111; }
-
-.border-block_border-menu-black {
-  border-color: #0c0c0c; }
+.border-block_border-black-light {
+  border-color: #191919; }
 
 .border-block_border-black-dark {
-  border-color: #191919; }
+  border-color: #0c0c0c; }
 
 .border-block_border-grey {
   border-color: #afafaf; }
@@ -530,7 +527,7 @@ body {
 .bar-line_bg-white {
   background: #ffffff; }
 
-.bar-line_dark {
+.bar-line_black {
   background: #000000; }
 
 /*#endregion Menu*/
@@ -962,11 +959,12 @@ body {
 .request-cont-bord {
   margin-top: 95px;
   z-index: 6; }
-  .request-cont-bord .border-cont__title {
-    margin-left: -1.5px;
-    text-transform: none;
-    letter-spacing: -2px;
-    font-size: 50.09px; }
+
+.request-cont-bord__title {
+  margin-left: -1.5px;
+  text-transform: none;
+  letter-spacing: -2px;
+  font-size: 50.09px; }
 
 .request__text-content {
   margin-top: 15px;
@@ -1379,6 +1377,9 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     width: 100%;
     max-width: 360px; }
   .contact-border-cont .contact-body__ipcard {
@@ -1787,6 +1788,9 @@ body {
 .portfolio__container-images-suptitle {
   margin-top: 40px; }
 
+.portfolio__container-images-suptitle_mrg-l-m-1 {
+  margin-left: -10px; }
+
 .portfolio__container-images-suptitle-text {
   text-transform: uppercase;
   line-height: 40px;
@@ -1947,7 +1951,7 @@ body {
   margin-left: 10px;
   margin-right: 10px; }
 
-.portfolio-image_mrg-top-min {
+.portfolio-image_mrg-t-m-75 {
   margin-top: -75px; }
 
 /*#endregion Portfolio Design Image Margins*/
@@ -2041,10 +2045,6 @@ body {
   width: 100%;
   height: 100%; }
 
-.portfolio__technology-side-text {
-  min-width: 140px;
-  width: 140px; }
-
 .portfolio__side-text_technology-r-p p {
   top: 280px;
   left: -265px; }
@@ -2055,29 +2055,29 @@ body {
 
 /*#endregion Portfolio Technology Page*/
 /*#region Portfolio Technology Image Margins*/
-.portfolio__technology-image_mrg-b {
+.portfolio__image-link_mrg-b {
   margin-bottom: 4px; }
 
-.portfolio__technology-image_mrg-t {
+.portfolio__image-link_mrg-t {
   margin-top: 4px; }
 
-.portfolio__technology-image_mrg-l {
+.portfolio__image-link_mrg-l {
   margin-left: 4px; }
 
-.portfolio__technology-image_mrg-r {
+.portfolio__image-link_mrg-r {
   margin-right: 4px; }
 
-.portfolio__technology-image_mrg-sides {
+.portfolio__image-link_mrg-sides {
   margin-left: 4px;
   margin-right: 4px; }
 
-.portfolio__technology-mrg-l-big-min {
+.portfolio__image-link_mrg-l-m-140 {
   margin-left: -140px; }
 
-.portfolio__technology-mrg-r-for-elements {
+.portfolio__image-link_mrg-r-30 {
   margin-right: 30px; }
 
-.portfolio__technology-mrg-r-big-min {
+.portfolio__image-link_mrg-r-m-200 {
   margin-right: -200px; }
 
 .portfolio__container-images-suptitle_mrg-t-20 {
@@ -2226,7 +2226,7 @@ body {
   font-size: 12.09px;
   font-weight: 300; }
 
-.request-form__field_text-smaller {
+.request-form__field_text-sml {
   font-size: 11.72px; }
 
 .request-form__field_mrg-t-20 {
