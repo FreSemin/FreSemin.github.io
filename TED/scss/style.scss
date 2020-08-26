@@ -100,14 +100,14 @@ body {
 .s-sec_bg-dark {
   background-color: $bg-dark;
 }
-.s-sec_bg-light {
+.s-sec_bg-white {
   background: $bg-white;
 }
 .first {
   z-index: 4;
 }
-.first_bg-first-dark {
-  background: $first-bg-dark;
+.first_bg-dark-light {
+  background: $bg-dark-light;
 }
 .s-sec__wrapper {
   position: relative;
@@ -279,7 +279,7 @@ body {
 .border-cont__title-main {
   margin-top: -20px;
   text-align: center;
-  color: $border-text-grey;
+  color: $border-light;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -379,7 +379,7 @@ body {
 .bar-line_bg-white {
   background: $bg-white;
 }
-.bar-line_black {
+.bar-line_bg-black {
   background: $bg-black;
 }
 /*#endregion Menu*/
@@ -815,7 +815,7 @@ body {
     overflow: hidden;
     border-radius: 50%;
     filter: grayscale(100%);
-    border: 0.21px solid $border-team-partners;
+    border: 0.21px solid $border-grey-medium;
   }
 }
 .team-card-text {
@@ -877,7 +877,7 @@ body {
   min-height: 35px;
   color: $text-white;
   background: $bg-dark;
-  border: 0.21px solid $border-team-partners;
+  border: 0.21px solid $border-grey-medium;
   font-size: 12.5px;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -1275,7 +1275,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: -0.5px;
-  color: $text-price-grey;
+  color: $text-light;
 }
 .prices__offers-card {
   position: relative;
@@ -1290,8 +1290,8 @@ body {
     margin-bottom: 0;
   }
 }
-.prices__offers-card_border-b-grey {
-  border-bottom: 1px solid $border-price-grey;
+.prices__offers-card_border-b-grey-light-light {
+  border-bottom: 1px solid $border-grey-light;
 }
 .prices__offers-inf {
   display: flex;
@@ -1726,7 +1726,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background: $bg-request-form-block;
+  background: $bg-black-transparet;
 }
 .request-form-block_active {
   display: flex;
@@ -1776,7 +1776,7 @@ body {
     display: block;
     height: 1px;
     width: 20px;
-    background: $border-request-grey;
+    background: $border-grey-dark;
 
     &:first-of-type {
       left: 0;
@@ -1842,7 +1842,7 @@ body {
 }
 .request-form__field {
   padding: 0 0 4px 0;
-  border-bottom: 2px solid $border-request-grey;
+  border-bottom: 2px solid $border-grey-dark;
   background: none;
   letter-spacing: 1px;
   font-size: 12.09px;
@@ -1923,7 +1923,7 @@ body {
 .consultation__half-buttons {
   @include half-buttons-effects($bg-black, $text-white, $text-black);
 }
-.consultation__half-buttons_border-dark {
+.consultation__half-buttons_border-black-light {
   border: 0.21px solid $border-black-light;
 }
 .consultation__half-buttons_border-white {
@@ -1941,17 +1941,17 @@ body {
 .text-dark {
   color: $text-dark;
 }
-.text-contact-grey {
-  color: $text-contact-grey;
+.text-grey-medium {
+  color: $text-grey-medium;
 }
-.text-rotate {
-  color: $text-rotate;
+.text-grey-light {
+  color: $text-grey-light;
 }
-.text-design-dark-grey {
-  color: $text-design-dark-grey;
+.text-grey-dark {
+  color: $text-grey-dark;
 }
-.text-design-light-grey {
-  color: $text-design-light-grey;
+.text-grey {
+  color: $text-grey;
 }
 .btn_white {
   background: $btn-bg-white;
