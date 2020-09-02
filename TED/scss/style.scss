@@ -1862,7 +1862,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 35px;
-  width: 145px;
+  min-width: 145px;
   color: $text-white;
   background: none;
   border: 0.12px solid $border-white;
