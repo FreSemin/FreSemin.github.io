@@ -4,7 +4,7 @@ const menuBtnClose = document.getElementById("menu-btn-close");
 
 function menuShow() {
   menuBlock.classList.remove("menu_disabled");
-  
+
   menuBlock.classList.add("menu_active");
 
   document.body.style.overflow = "hidden"; // Hide Scroll
@@ -18,8 +18,8 @@ function menuHide() {
   document.body.style.overflow = "visible"; // Show Scroll
 }
 
-menuBtns.forEach((btnElement) => {
-  btnElement.addEventListener("click", menuShow);
+menuBtns.forEach((btn) => {
+  btn.addEventListener("click", menuShow);
 });
 
 menuBtnClose.addEventListener("click", menuHide);

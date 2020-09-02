@@ -22,10 +22,7 @@
 
 @media (min-width: 1300px) {
   .s-sec__wrapper {
-    margin: 0 auto; }
-  .portfolio-design__wrapper-top {
-    margin-left: auto;
-    margin-right: auto; } }
+    margin: 0 auto; } }
 
 @media (max-height: 899px) {
   .first-cont__title {

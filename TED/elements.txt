@@ -1,0 +1,313 @@
+<!-- Elements-blocks -->
+
+<!-- White -->
+<!-- ------------------------------------------------------------------------------- -->
+
+<!-- Wrapper-top: Start -->
+<div class="wrapper-top wrapper-top_mrg-t-6">
+    <div class="wrapper-top__logo">
+        <a href="index.html" class="logo__link">
+            <img src="./img/main/logo/logo-white.png" alt="" />
+        </a>
+    </div>
+    <div class="menu-cont">
+        <div class="menu-cont-title">
+            <p class="menu-cont__title text-white">
+                menu
+            </p>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn-cont">
+                <span class="menu-btn-cont__bar-line bar-line_bg-white"></span>
+                <span class="menu-btn-cont__bar-line bar-line_bg-white"></span>
+                <span class="menu-btn-cont__bar-line bar-line_bg-white"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Wrapper-top: End -->
+
+<!-- Wrapper-bottom: Start -->
+<div class="wrapper-bottom wrapper-bottom_mrg-5">
+    <div class="wrapper-bottom-logo">
+        <div class="bottom-logo-text text-white">
+            <p class="bottom-logo__text">
+                TECHNOLOGY
+            </p>
+            <p class="bottom-logo__text">
+                ELABORATION
+            </p>
+            <p class="bottom-logo__text">
+                DESIGN.
+            </p>
+        </div>
+    </div>
+    <div class="wrapper-bottom-link">
+        <a href="#" class="bottom__link text-white">
+            #portfolio
+        </a>
+    </div>
+</div>
+<!-- Wrapper-bottom: End -->
+
+<!-- Consultation: Start -->
+<div class="consultation consultation__container_mrg-t-1">
+    <div class="consultation__container consultation__container_mrg-b-70">
+        <h6 class="consultation__title text-white">
+            проконсультироваться по проекту
+        </h6>
+        <div class="consultation__text text-white">
+            <p class="consultation__parag">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            </p>
+            <p class="consultation__parag">
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ipsum
+            </p>
+        </div>
+        <div class="portfolio__footer-half-btns consultation__half-btns_border-white">
+            <a href="#">
+                портфолио
+            </a>
+            <a href="#">
+                подробнее
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Consultation: End -->
+
+
+
+<!-- ------------------------------------------------------------------------------- -->
+<!-- Dark -->
+
+<!-- Wrapper-top: Start -->
+<div class="wrapper-top wrapper-top_mrg-t-6">
+    <div class="wrapper-top__logo">
+        <a href="index.html" class="logo__link">
+            <img src="./img/main/logo/logo-black.png" alt="" />
+        </a>
+    </div>
+    <div class="menu-cont">
+        <div class="menu-cont-title">
+            <p class="menu-cont__title text-dark">
+                menu
+            </p>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn-cont">
+                <span class="menu-btn-cont__bar-line bar-line_bg-black"></span>
+                <span class="menu-btn-cont__bar-line bar-line_bg-black"></span>
+                <span class="menu-btn-cont__bar-line bar-line_bg-black"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Wrapper-top: End -->
+
+<!-- Wrapper-bottom: Start -->
+<div class="wrapper-bottom wrapper-bottom_mrg-5">
+    <div class="wrapper-bottom-logo">
+        <div class="bottom-logo-text text-black">
+            <p class="bottom-logo__text">
+                TECHNOLOGY
+            </p>
+            <p class="bottom-logo__text">
+                ELABORATION
+            </p>
+            <p class="bottom-logo__text">
+                DESIGN.
+            </p>
+        </div>
+    </div>
+    <div class="wrapper-bottom-link">
+        <a href="#" class="bottom__link text-black">
+            #portfolio
+        </a>
+    </div>
+</div>
+<!-- Wrapper-bottom: End -->
+
+<!-- Consultation: Start -->
+<div class="consultation">
+    <div class="consultation__container consultation__container_mrg-b-70">
+        <h6 class="consultation__title text-dark">
+            проконсультироваться по проекту
+        </h6>
+        <div class="consultation__text text-dark">
+            <p class="consultation__parag">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            </p>
+            <p class="consultation__parag">
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ipsum
+            </p>
+        </div>
+        <div class="consultation__half-btns consultation__half-btns_border-black-light">
+            <a href="#">
+                портфолио
+            </a>
+            <a href="#">
+                подробнее
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Consultation: End -->
+
+
+<!-- ------------------------------------------------------------------------------- -->
+
+<!-- Menu: Start -->
+<section class="s-sec s-sec_bg-dark menu">
+    <div class="s-sec__wrapper">
+        <div class="conteiner">
+
+            <!-- Border Block: Start -->
+            <div class="border-block border-block_border-black-dark">
+                <div class="border-block__menu-block"></div>
+                <div class="border-block__menu-block"></div>
+            </div>
+            <!-- Border Block: End -->
+
+            <!-- Wrapper-top: Start -->
+            <div class="wrapper-top wrapper-top_mrg-t-6">
+                <div class="wrapper-top__logo">
+                    <a href="index.html" class="logo__link">
+                        <img src="./img/main/logo/logo-white.png" alt="" />
+                    </a>
+                </div>
+                <div class="menu-cont" id="menu-btn-close">
+                    <div class="menu-cont-title">
+                        <p class="menu-cont__title text-white">
+                            close bars
+                        </p>
+                    </div>
+                    <div class="menu-btn">
+                        <div class="menu-btn-cont">
+                            <span class="menu-btn-cont__bar-line bar-line_bg-white"></span>
+                            <span class="menu-btn-cont__bar-line bar-line_bg-white"></span>
+                            <span class="menu-btn-cont__bar-line bar-line_bg-white"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Wrapper-top: End -->
+
+            <div class="menu-content ">
+                <div class="menu-text">
+                    <h6 class="menu__text text-black">
+                        меню
+                    </h6>
+                </div>
+                <div class="menu-nav-box">
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="./index.html" class="menu__link text-white">
+                                    <span class="menu__link-number">
+                                        01
+                                    </span>
+                                    о нас
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./portfolio.html" class="menu__link text-white">
+                                    <span class="menu__link-number">
+                                        02
+                                    </span>
+                                    портфолио
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./prices.html" class="menu__link text-white">
+                                    <span class="menu__link-number">
+                                        03
+                                    </span>
+                                    прайс
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./contact.html" class="menu__link text-white">
+                                    <span class="menu__link-number">
+                                        04
+                                    </span>
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Wrapper-bottom: Start -->
+            <div class="wrapper-bottom  wrapper-bottom_mrg-5">
+                <div class="wrapper-bottom-logo">
+                    <div class="bottom-logo-text text-white">
+                        <p class="bottom-logo__text">
+                            TECHNOLOGY
+                        </p>
+                        <p class="bottom-logo__text">
+                            ELABORATION
+                        </p>
+                        <p class="bottom-logo__text">
+                            DESIGN.
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapper-bottom-link">
+                    <a href="#" class="bottom__link text-white">
+                        instagram
+                    </a>
+                    <a href="#" class="bottom__link text-white">
+                        vkontakte
+                    </a>
+                </div>
+            </div>
+            <!-- Wrapper-bottom: End -->
+
+        </div>
+    </div>
+</section>
+<!-- Menu: End -->
+
+
+<!-- ------------------------------------------------------------------------------- -->
+
+<!-- Request Form: Start -->
+<div class="request-form-block" id="contact-form">
+    <form action="#" method="POST" class="request-form__form">
+        <div class="request-form__img">
+            <img src="./img/contact/contact-form-lines.png" alt="">
+        </div>
+
+        <div class="request-form__content">
+            <div class="request-form__close-btn" id="contact-form-close">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="request-form__logo">
+                <img src="./img/main/logo/logo-white_sml.png" alt="">
+            </div>
+            <div class="request-form__field-box request-form__field-box_bg-dark request-form__field-box_shadows">
+                <label for="contact-field-name" class="request-form__label request-form__label_mrg-t-45 text-white">
+                    имя:
+                </label>
+                <input type="text" class="request-form__field request-form__field_mrg-t-20 text-white"
+                    id="contact-field-name" placeholder="Введите Ваше имя">
+            </div>
+            <div class="request-form__field-box">
+                <label for="contact-field-tel" class="request-form__label request-form__label_mrg-t-20 text-white">
+                    телефон:
+                </label>
+                <input type="text"
+                    class="request-form__field request-form__field_text-sml request-form__field_mrg-t-15 text-white"
+                    id="contact-field-tel" placeholder="Введите Ваш номер телефона">
+            </div>
+            <div
+                class="request-form__field-box request-form__field-box_content-center request-form__field-box_bg-dark request-form__field-box_shadows">
+                <input type="submit" value="отправить" class="request-form__btn">
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Request Form: End -->
