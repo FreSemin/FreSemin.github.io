@@ -740,7 +740,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 1s;
-  border: 0.5px solid $border-white;
+  border: 1.96px solid $border-white;
   color: $text-white;
   background: $bg-dark;
   font-size: 21.91px;
@@ -877,7 +877,7 @@ body {
   min-height: 35px;
   color: $text-white;
   background: $bg-dark;
-  border: 0.21px solid $border-grey-medium;
+  border: 0.88px solid $border-grey-medium;
   font-size: 12.5px;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -1178,7 +1178,6 @@ body {
   align-items: center;
   min-width: 260px;
   min-height: 50px;
-  border: 1px solid $border-white;
   font-size: 20.83px;
 
   &:hover {
@@ -1862,10 +1861,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 35px;
-  min-width: 145px;
+  width: 145px;
   color: $text-white;
   background: none;
-  border: 0.12px solid $border-white;
+  border: 0.5px solid $border-white;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16.67px;
@@ -1924,10 +1923,10 @@ body {
   @include half-buttons-effects($bg-black, $text-white, $text-black);
 }
 .consultation__half-buttons_border-black-light {
-  border: 0.21px solid $border-black-light;
+  border: 0.88px solid $border-black-light;
 }
 .consultation__half-buttons_border-white {
-  border: 0.21px solid $border-white;
+  border: 0.88px solid $border-white;
 }
 /*#endregion Consultation Button*/
 

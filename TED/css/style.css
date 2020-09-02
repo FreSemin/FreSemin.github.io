@@ -931,7 +931,7 @@ body {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  border: 0.5px solid #ffffff;
+  border: 1.96px solid #ffffff;
   color: #ffffff;
   background: #191919;
   font-size: 21.91px;
@@ -1085,7 +1085,7 @@ body {
   min-height: 35px;
   color: #ffffff;
   background: #191919;
-  border: 0.21px solid #6e6f6f;
+  border: 0.88px solid #6e6f6f;
   font-size: 12.5px;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -1428,7 +1428,6 @@ body {
   align-items: center;
   min-width: 260px;
   min-height: 50px;
-  border: 1px solid #ffffff;
   font-size: 20.83px; }
   .contact__btn:hover {
     cursor: pointer; }
@@ -2246,10 +2245,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   min-height: 35px;
-  min-width: 145px;
+  width: 145px;
   color: #ffffff;
   background: none;
-  border: 0.12px solid #ffffff;
+  border: 0.5px solid #ffffff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16.67px;
@@ -2382,10 +2381,10 @@ body {
       color: #000000; }
 
 .consultation__half-buttons_border-black-light {
-  border: 0.21px solid #191919; }
+  border: 0.88px solid #191919; }
 
 .consultation__half-buttons_border-white {
-  border: 0.21px solid #ffffff; }
+  border: 0.88px solid #ffffff; }
 
 /*#endregion Consultation Button*/
 /*#region Text-Colors Classes*/
