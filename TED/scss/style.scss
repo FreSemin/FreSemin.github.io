@@ -1559,8 +1559,8 @@ body {
     height: 100%;
   }
 }
-.portfolio__footer-half-buttons {
-  @include half-buttons-effects($bg-white, $text-black, $text-white);
+.portfolio__footer-half-btns {
+  @include half-btns-effects($bg-white, $text-black, $text-white);
 }
 /*#endregion Portfolio Design Page*/
 
@@ -1921,13 +1921,13 @@ body {
   font-weight: 300;
   line-height: 15px;
 }
-.consultation__half-buttons {
-  @include half-buttons-effects($bg-black, $text-white, $text-black);
+.consultation__half-btns {
+  @include half-btns-effects($bg-black, $text-white, $text-black);
 }
-.consultation__half-buttons_border-black-light {
+.consultation__half-btns_border-black-light {
   border: 0.88px solid $border-black-light;
 }
-.consultation__half-buttons_border-white {
+.consultation__half-btns_border-white {
   border: 0.88px solid $border-white;
 }
 /*#endregion Consultation Button*/

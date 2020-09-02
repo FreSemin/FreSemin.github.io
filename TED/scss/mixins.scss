@@ -2,7 +2,7 @@
   width: $width;
   height: $height;
 }
-@mixin half-buttons-effects($bg-color, $text-color-first, $text-color-second) {
+@mixin half-btns-effects($bg-color, $text-color-first, $text-color-second) {
   position: relative;
   z-index: 6;
   display: flex;
