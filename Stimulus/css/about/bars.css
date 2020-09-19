@@ -1,0 +1,28 @@
+.bars {
+}
+.bars__cont {
+  margin-bottom: 20px;
+}
+.bars__text {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+}
+.bars__title {
+}
+.bars__percents {
+}
+.bars_lines {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+}
+.bars_text-dark {
+  color: #272b2c;
+}
+.bars_text-white {
+  color: #fff;
+}

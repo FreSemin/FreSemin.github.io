@@ -1,0 +1,55 @@
+.start-screen {
+  height: auto;
+  max-height: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.start-screen__half {
+  width: 100%;
+}
+.start-screen-inf {
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+.about__half {
+  width: 100%;
+}
+.about__skills {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.skills__img {
+  width: 100%;
+  min-height: 380px;
+}
+.skills__content {
+  width: 100%;
+}
+.cards {
+  flex-wrap: wrap-reverse;
+}
+.card__cont {
+  width: 100%;
+}
+.experiences {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.experiences__half {
+  width: 100%;
+}
+.contact-inf {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.contact__img {
+  width: 100%;
+  min-height: 400px;
+}
+.contact__inf {
+  width: 100%;
+}

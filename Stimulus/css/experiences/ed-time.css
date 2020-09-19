@@ -1,0 +1,43 @@
+.ed-time__text {
+  margin-left: 25px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.ed-time__icon {
+  text-align: center;
+  font-family: "FontAwesome";
+}
+.ed-time__icon_laptope:before {
+  content: "\f109";
+  font-size: 40px;
+}
+.ed-time__header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+.ed-time__title {
+  font-size: 20px;
+}
+.ed-time__title-time {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.title-time_darkred {
+  color: #6c2f34;
+}
+.title-time_darkorange {
+  color: #89702d;
+}
+.ed-time__body {
+  margin-top: 20px;
+}
+.ed-time__parag {
+  font-size: 14px;
+  line-height: 25px;
+}

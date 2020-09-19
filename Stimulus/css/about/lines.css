@@ -1,0 +1,21 @@
+.lines__black-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #272b2c;
+}
+.lines__white-line {
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+.lines__black-line_first-line {
+  width: 90%;
+}
+.lines__black-line_second-line {
+  width: 70%;
+}
+.lines__black-line_third-line {
+  width: 80%;
+}

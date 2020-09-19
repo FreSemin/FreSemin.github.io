@@ -1,0 +1,52 @@
+.about {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  max-width: 1480px;
+}
+.about__half {
+  width: 50%;
+}
+.about__half_bg-light {
+  background: #fff;
+}
+.about__text {
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 35px;
+}
+.about_text-black {
+  color: #000;
+}
+.about__title {
+  font-size: 30px;
+  font-weight: 300;
+}
+.about_text-orange {
+  color: #e6ae61;
+}
+.about__subtitle {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.about__parag {
+  font-size: 16px;
+  line-height: 20px;
+}
+.about_text-grey {
+  color: #9e9da3;
+}
+.about__parag_first {
+  margin-top: 40px;
+}
+.about__parag_second {
+  margin-top: 20px;
+}
+.about__skills {
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}

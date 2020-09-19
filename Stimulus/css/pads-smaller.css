@@ -1,0 +1,34 @@
+/* .s-block__half { */
+  /* width: 100%; */
+/* } */
+.about {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.about__half {
+  width: 100%;
+}
+.skills__img {
+  height: auto;
+}
+.cards {
+  flex-wrap: wrap;
+}
+.card__cont {
+  width: 50%;
+}
+.contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.contact__half {
+  width: 100%;
+}
+.contact__img {
+  height: auto;
+}
+.contact__inf {
+  min-height: 450px;
+}

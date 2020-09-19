@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Stimulus</title>
+</head>
+
+<body>
+  <main class="main">
+    <!-- start screen start -->
+    <section class="start-screen start-screen_bg-pink ">
+
+      <!-- menu -->
+      <div class="start-screen__menu menu">
+        <div class="menu__logo">
+          <a href="#" class="menu__logo-link">
+            Stimulus
+          </a>
+        </div>
+        <input type="checkbox" name="menu-toggle" id="menu-check">
+        <div class="menu__toggle menu__toggle_bars s-block_text-black">
+        </div>
+        <nav>
+          <ul class="menu__list">
+            <li class="menu-list__item"><a href="#home" class="menu-list__item-link menu-list__item-link_eff menu-list-item_active">
+                home
+              </a></li>
+            <li class="menu-list__item"><a href="#about" class="menu-list__item-link menu-list__item-link_eff menu-list__item-link_grey">
+                about me
+              </a></li>
+            <li class="menu-list__item"><a href="#experiences"
+                class="menu-list__item-link menu-list__item-link_eff menu-list__item-link_grey">
+                experiences
+              </a></li>
+            <li class="menu-list__item"><a href="#testimonial"
+                class="menu-list__item-link menu-list__item-link_eff menu-list__item-link_grey">
+                testimonial
+              </a></li>
+            <li class="menu-list__item"><a href="#contact" class="menu-list__item-link menu-list__item-link_eff menu-list__item-link_grey">
+                contact
+              </a></li>
+          </ul>
+        </nav>
+
+      </div>
+      <!-- menu -->
+
+      <div class="start-screen__half" id="home">
+        <img src="img/home-img.jpg" class="start-screen__img" alt="man">
+      </div>
+      <div class="start-screen__half">
+        <div class="start-screen-inf">
+          <div class="start-screen-inf__cont">
+            <h2 class="start-screen-inf__subtitle start-screen_text-grey">
+              welcome to my website
+            </h2>
+            <h1 class="start-screen-inf__title">
+              Hello, I am <span class="start-screen-inf__title_text-imp">Stimulus</span> currently based in New York
+              city.
+            </h1>
+            <p class="start-screen-inf__text start-screen_text-grey">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit accusamus excepturi cumque obcaecati
+              ad adipisci veritatis repellendus commodi minima, exercitationem, iusto eligendi? Esse quis doloremque ut?
+              Asperiores officia exercitationem aperiam cupiditate!
+            </p>
+
+            <div class="start-screen-inf__link-box">
+              <a href="#" class="start-screen-inf__link start-screen-inf__link_effect">get started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start screen end -->
+
+    <!-- about start -->
+    <section class="about" id="about">
+      <div class="about__half about__half_bg-light">
+        <div class="about__text">
+          <h2 class="about__title about_text-black">
+            Donec auctor
+          </h2>
+          <h3 class="about__subtitle about_text-orange">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3>
+          <p class="about__parag about__parag_first about_text-grey">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti omnis fuga odio nulla eveniet, excepturi
+            sed. Pariatur, corporis. A, sapiente voluptas molestias quae odit eum doloribus.
+          </p>
+          <p class="about__parag about__parag_second about_text-grey">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laudantium similique ad adipisci voluptate
+            quis? Corrupti rem quam sapiente ipsum.
+          </p>
+        </div>
+      </div>
+
+      <div class="about__half">
+        <div class="about__skills skills">
+          <img src="img/about-img.jpg" class="skills__img" alt="man seat">
+          <div class="skills__content skills__content_bg-orange ">
+            <div class="skills__text">
+              <h4 class="skills__title skills_text-think skills_text-white">
+                My Skills
+              </h4>
+              <h5 class="skills__subtitle skills_text-think skills_text-white">
+                Photoshop. HTML CSS JS. Web Design
+              </h5>
+              <div class="skills_bars bars">
+                <div class="bars__cont">
+                  <div class="bars__text">
+                    <h6 class="bars__title bars_text-dark">
+                      Frontend Design
+                    </h6>
+                    <p class="bars__percents bars_text-white">
+                      90%
+                    </p>
+                  </div>
+                  <div class="bars_lines lines">
+                    <div class="lines__white-line"></div>
+                    <div class="lines__black-line lines__black-line_first-line"></div>
+                  </div>
+                </div>
+                <div class="bars__cont">
+                  <div class="bars__text ">
+                    <h6 class="bars__title bars_text-dark">
+                      Backend processing
+                    </h6>
+                    <p class="bars__percents bars_text-white">
+                      70%
+                    </p>
+                  </div>
+                  <div class="bars_lines lines">
+                    <div class="lines__white-line"></div>
+                    <div class="lines__black-line lines__black-line_second-line"></div>
+                  </div>
+                </div>
+                <div class="bars__cont">
+                  <div class="bars__text">
+                    <h6 class="bars__title bars_text-dark">
+                      HTML & CSS3
+                    </h6>
+                    <p class="bars__percents bars_text-white">
+                      80%
+                    </p>
+                  </div>
+                  <div class="bars_lines lines">
+                    <div class="lines__white-line"></div>
+                    <div class="lines__black-line lines__black-line_third-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- cards start -->
+    <section class="cards ">
+      <div class="card__cont cards_bg-orange cards_text-white">
+        <div class="card__head">
+          <div class="card__icon card__icon_desktop">
+
+          </div>
+          <h6 class="card__title">
+            Interface Design
+          </h6>
+        </div>
+        <div class="card__body">
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nobis.
+          </p>
+        </div>
+      </div>
+      <div class="card__cont cards_bg-red cards_text-white">
+        <div class="card__head">
+          <div class="card__icon card__icon_plane">
+
+          </div>
+          <h6 class="card__title">
+            Media Strategy
+          </h6>
+        </div>
+        <div class="card__body">
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nobis.
+          </p>
+        </div>
+      </div>
+      <div class="card__cont cards_bg-black cards_text-white">
+        <div class="card__head">
+          <div class="card__icon card__icon_table">
+
+          </div>
+          <h6 class="card__title">
+            Mobile App
+          </h6>
+        </div>
+        <div class="card__body">
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nobis.
+          </p>
+        </div>
+      </div>
+      <div class="card__cont cards_bg-white cards_text-black">
+        <div class="card__head">
+          <div class="card__icon card__icon_html">
+
+          </div>
+          <h6 class="card__title">
+            Coding
+          </h6>
+        </div>
+        <div class="card__body">
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nobis.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- cards end -->
+
+    <!-- experiences start -->
+    <section class="experiences" id="experiences">
+      <div class="experiences__half">
+        <img src="img/experience-img.jpg" alt="" class="experiences__img">
+      </div>
+      <div class="experiences__half experiences_bg-red">
+        <div class="experiences__cont experiences_text-think experiences_text-white">
+          <h6 class="experiences-cont__title">
+            My Experiences
+          </h6>
+          <p class="experiences-cont__subtitle">
+            Previous companies and tasks
+          </p>
+          <div class="experiences-cont_ed-time ed-time">
+            <div class="ed-time__icon ed-time__icon_laptope">
+
+            </div>
+            <div class="ed-time__text">
+              <div class="ed-time__header">
+                <h6 class="ed-time__title">
+                  Graphic Designer
+                </h6>
+                <p class="ed-time__title-time title-time_darkred">
+                  2014 Jul - 2015 Sep
+                </p>
+              </div>
+              <div class="ed-time__body">
+                <p class="ed-time__parag">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="experiences-cont_ed-time ed-time">
+            <div class="ed-time__icon ed-time__icon_laptope">
+
+            </div>
+            <div class="ed-time__text">
+              <div class="ed-time__header">
+                <h6 class="ed-time__title">
+                  Web Designer
+                </h6>
+                <p class="ed-time__title-time title-time_darkred">
+                  2015 Oct - 2017 Jan
+                </p>
+              </div>
+              <div class="ed-time__body">
+                <p class="ed-time__parag">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- experiences end -->
+
+    <!-- experiences(education) start -->
+    <section class="experiences">
+      <div class="experiences__half experiences_bg-orange">
+        <div class="experiences__cont experiences_text-think experiences_text-white">
+          <h6 class="experiences-cont__title">
+            My Education
+          </h6>
+          <p class="experiences-cont__subtitle">
+            In cursus orci non ipsum gravida dignissim
+          </p>
+          <div class="experiences-cont_ed-time ed-time">
+            <div class="ed-time__icon ed-time__icon_laptope">
+
+            </div>
+            <div class="ed-time__text">
+              <div class="ed-time__header">
+                <h6 class="ed-time__title">
+                  Master in Designer
+                </h6>
+                <p class="ed-time__title-time title-time_darkorange">
+                  2012 Jan - 2014 May
+                </p>
+              </div>
+              <div class="ed-time__body">
+                <p class="ed-time__parag">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolor fugiat mollitia, eum odio
+                  nisi? Accusamus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="experiences-cont_ed-time ed-time">
+            <div class="ed-time__icon ed-time__icon_laptope">
+
+            </div>
+            <div class="ed-time__text">
+              <div class="ed-time__header">
+                <h6 class="ed-time__title">
+                  Bachelor of Arts
+                </h6>
+                <p class="ed-time__title-time title-time_darkorange">
+                  2008 May - 2011 Dec
+                </p>
+              </div>
+              <div class="ed-time__body">
+                <p class="ed-time__parag">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate et maxime dolor asperiores minus
+                  fuga ex?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experiences__half">
+        <img src="img/education-img.jpg" alt="" class="experiences__img">
+      </div>
+    </section>
+    <!-- experiences(education) end -->
+
+
+    <!-- testimonial start  -->
+    <section class="testimonial" id="testimonial">
+      <div class="testimonial__bg">
+        <div class="testimonial__bg_dark"></div>
+        <img src="img/quotes-bg.jpg" alt="" class="testimonial-bg__img">
+      </div>
+      <div class="testimonial__cont">
+        <div class="testimonial__icon testimonial__icon_star testimonial_text-white testimonial__icon_hover-gold">
+
+        </div>
+        <p class="testimonial__main-text testimonial_text-white testimonial_text-think">
+          Proin lobortis eu diam et facilies. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.
+        </p>
+        <p class="testimonial__subtext testimonial_text-grey">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores quisquam placeat tempora
+          tenetur.
+        </p>
+      </div>
+
+    </section>
+    <!-- testimonial end  -->
+
+    <!-- contact start -->
+    <section class="contact" id="contact">
+      <div class="contact__half contact-form">
+        <form action="#" class="contact__form contact_text-white contact_text-think contact_bg-red">
+          <h6 class="contact-form__title">
+            Say hello..
+          </h6>
+          <p class="contact-form__subtitle">
+            Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.
+          </p>
+          <input type="text" class="contact__inpt contact-inpt-name contact__inpt_bb-gold" placeholder="Your Name">
+          <input type="email" class="contact__inpt contact-inpt-email contact__inpt_bb-gold" placeholder="Your Email">
+          <textarea name="message" id="" class="contact__inpt contact-textarea contact__inpt_bb-gold"
+            placeholder="Write your message..."></textarea>
+          <input type="submit" class="contact__btn contact__btn_eff" value="Send">
+        </form>
+      </div>
+      <div class="contact__half contact-inf">
+        <img src="img/contact-img.jpg" alt="" class="contact__img">
+        <div class="contact__inf contact_bg-black contact_text-think">
+          <h6 class="contact-inf__title contact_text-white">
+            Visit my office
+          </h6>
+          <p class="contact-inf__subtitle contact_text-grey">
+            456 New Street 22000, New York City, USA
+          </p>
+          
+          <!-- contact-inf__list -->
+          <div class="contact-inf_list contact-list">
+            <h6 class="contact-inf__title contact-list__title contact_text-white">
+              Contact.
+            </h6>
+            <div class="contact-inf__list-box contact_text-white">
+              <a href="tel:01-0110-0220" class="cont-list__item contact-items contact_text-grey ">
+                <div class="contact-item__icon contact-item__icon_tel">
+
+                </div>
+                01-0110-0220
+              </a>
+              <a href="mailto:hello@company.co" class="cont-list__item contact-items contact_text-orange ">
+                <div class="contact-item__icon contact-item__icon_letter contact_text-grey">
+
+                </div>
+                hello@company.co
+              </a>
+              <a href="index.html" target="_blank" class="cont-list__item contact-items contact_text-orange ">
+                <div class="contact-item__icon contact-item__icon_planet contact_text-grey">
+
+                </div>
+                company.co
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="footer footer_bg-white">
+      <div class="footer__body footer_text-grey">
+        <p class="footer__text ">
+          Copyright © 2016 Your Company | Design: <a href="index.html" target="_blank"
+            class="footer-text__link footer-text__link-text-orange footer-text__link_eff">templatemo</a>
+        </p>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/" target="_blank"
+            class="link__item link__item_facebook link__item_eff link__item_text-grey"></a>
+          <a href="https://twitter.com/" target="_blank"
+            class="link__item link__item_twitter link__item_eff link__item_text-grey"></a>
+          <a href="https://www.google.com/" target="_blank"
+            class="link__item link__item_googlepls link__item_eff link__item_text-grey"></a>
+          <a href="https://dribbble.com/" target="_blank"
+            class="link__item link__item_dribbble link__item_eff link__item_text-grey"></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            class="link__item link__item_linkedin link__item_eff link__item_text-grey"></a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+  </main>
+</body>
+
+</html>

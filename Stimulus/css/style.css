@@ -1,0 +1,62 @@
+@import url("null.css");
+/* null */
+
+@import url("fonts.css");
+/* fonts */
+
+@import url("../css/menu/menu.css");
+/* menu */
+
+@import url("../css/start-screen/start-screen.css");
+/* start-screen */
+
+@import url("../css/start-screen/start-screen-inf.css");
+/* start-screen-inf */
+
+@import url("../css/about/about.css");
+/* about */
+
+@import url("../css/about/skills.css");
+/* about skills */
+/* skills */
+
+@import url("../css/about/bars.css");
+/* about skills bars */
+
+@import url("../css/about/lines.css");
+/* bars lines */
+
+@import url("../css/cards/cards.css");
+/* cards */
+
+@import url("../css/experiences/experiences.css");
+/* experiences */
+
+@import url("../css/experiences/ed-time.css");
+/* ed-time */
+
+@import url("../css/testimonial/testimonial.css");
+/* testimonials */
+
+@import url("../css/contact/contact.css");
+/* contact  */
+
+@import url("../css/contact/contact-list.css");
+/* contact-list */
+
+@import url("../css/contact/contact-inf.css");
+/* contact-inf */
+
+@import url("../css/contact/contact-items.css");
+/* contact-items */
+
+@import url("../css/footer/footer.css");
+/* footer */
+
+@import url("../css/footer/footer-links.css");
+/* footer links */
+
+@import url("pads.css"), (max-width: 1165px);
+@import url("pads-smaller.css"), (max-width: 930px);
+@import url("phones.css"), (max-width: 670px);
+/* media*/
