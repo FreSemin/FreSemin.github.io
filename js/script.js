@@ -21,24 +21,6 @@
 })();
 /* end Scroll Down Button */
 
-// Filter
-//   $(function () {
-//     $('.toggles button').click(function () {
-//       var get_id = this.id;
-//       var get_current = $('.g_p_el .' + get_id);
-
-//       $('.g_p_el').not(get_current).hide(500);
-//       get_current.show(500);
-//     });
-
-//     $('#showall').click(function () {
-//       $('.g_p_el').show(500);
-//     });
-// });
-// Filter end
-
-// gulp menu
-
 window.onscroll = function() {
   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
   var o = document.getElementById("sticky");

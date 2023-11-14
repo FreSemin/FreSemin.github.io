@@ -979,7 +979,7 @@
     $(function () {
       $('.toggles button').click(function () {
         var get_id = this.id;
-        var get_current = $('.g_p_el .' + get_id);
+        var get_current = $('.g_p_el.' + get_id);
 
         $('.g_p_el').not(get_current).hide(500);
         get_current.show(500);
