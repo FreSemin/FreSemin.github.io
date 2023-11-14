@@ -80,9 +80,10 @@ h6 {
   scroll-behavior: smooth;
 } */
 body {
+  margin: 0 auto;
   font-family: "Work sans", sans-serif;
   font-size: 1rem;
-  max-width: 1440px;
+  max-width: 1980px;
 }
 
 h1,
