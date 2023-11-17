@@ -21,6 +21,11 @@
 })();
 /* end Scroll Down Button */
 
+document.addEventListener("DOMContentLoaded", function () {
+  let loader = document.getElementById("loader");
+  loader.style.display = "none";
+});
+
 window.onscroll = function() {
   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
   var o = document.getElementById("sticky");
