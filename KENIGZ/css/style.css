@@ -3049,6 +3049,9 @@ body {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.contact_inf_cont_icon_img {
+  text-align: center;  }
+
 .contact_inf_cont_icon_img img {
   max-height: 110px; }
 
