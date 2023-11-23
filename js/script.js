@@ -24,6 +24,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   let loader = document.getElementById("loader");
   loader.style.display = "none";
+
+  new WOW().init();
 });
 
 window.onscroll = function() {
