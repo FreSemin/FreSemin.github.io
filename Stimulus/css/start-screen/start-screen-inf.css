@@ -37,6 +37,7 @@
 }
 .start-screen-inf__link {
   padding: 15px 40px;
+  display: inline-block;
   border: 4px solid #232d2c;
   border-radius: 50px;
   -webkit-transition: 0.2s all;
