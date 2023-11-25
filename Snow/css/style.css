@@ -630,6 +630,7 @@ textarea {
   margin-bottom: 2em;
 }
 .contact_box_row_second textarea {
+  min-height: 150px;
   height: 150px;
   width: 100%;
   min-width: 100%;
