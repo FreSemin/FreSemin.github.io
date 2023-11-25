@@ -60,3 +60,8 @@
 @import url("pads-smaller.css"), (max-width: 930px);
 @import url("phones.css"), (max-width: 670px);
 /* media*/
+
+.main__wrapper {
+  max-width: 1980px;
+  overflow: hidden;
+}

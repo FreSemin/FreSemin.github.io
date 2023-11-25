@@ -4,9 +4,7 @@
   display: -webkit-box;
   display: flex;
   height: 100vh;
-  max-height: 820px;
   width: 100%;
-  max-width: 1480px;
 }
 .start-screen_bg-pink {
   background: #f0e2d7;

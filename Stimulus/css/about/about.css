@@ -3,7 +3,6 @@
   display: -webkit-box;
   display: flex;
   width: 100%;
-  max-width: 1480px;
 }
 .about__half {
   width: 50%;
