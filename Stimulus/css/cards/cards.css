@@ -3,7 +3,6 @@
   display: -webkit-box;
   display: flex;
   width: 100%;
-  max-width: 1480px;
 }
 .card__cont {
   padding: 50px 20px;
