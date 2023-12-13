@@ -14,6 +14,3 @@ List of web-sites:
 - [WEBDESIGN](https://fresemin.github.io/webdesign/);
 - [YourBoots](https://fresemin.github.io/YourBoots/);
 - [Recipes-App](https://fresemin.github.io/Recipes-app);
-
-
-[Link](https://fresemin.github.io/)
